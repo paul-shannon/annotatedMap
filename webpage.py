@@ -32,16 +32,18 @@ class WebPage:
     def getStandardIncludes(self):
 
        includeText = """
-          <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A'
-             type='text/javascript'></script>
           <link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'>
           <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
           <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
           <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
 
         """
+       googleApiKeyFilename = os.path.join(os.path.split(os.path.abspath(__file__))[0], "googleApi.key")
+       assert(os.path.exists(googleApiKeyFilename))
+       googleApiScriptStatement =  open(googleApiKeyFilename).read()
 
-       return(includeText)
+
+       return("%s\%s" % (includeText, googleApiScriptStatement))
 
     #--------------------------------------------------------------------------------
     def getCSS(self):

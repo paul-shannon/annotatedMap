@@ -36,7 +36,6 @@ def test_toHTML(display=True):
        os.system("open %s" % filename)
 
 #--------------------------------------------------------------------------------------------------------------
-if __name__ == '__main__':
-    runTests()
+runTests()
 
 
