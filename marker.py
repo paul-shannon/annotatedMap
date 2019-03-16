@@ -91,9 +91,9 @@ class Marker:
                                 self.siteAnnotation.getTitle())
 
         html = """
-            \"\"\"<div id='infoWindow1_tabs' class='infoWindowTab'>
+            `<div id='infoWindow1_tabs' class='infoWindowTab'>
                   <ul>
- 		    <li><a href='#tab_1'>Description</a>
+ 		    <li><a href='#tab_1'>DESCRIPTION</a>
  		    <li><a href='#tab_2'>Video</a>
  		    <li><a href='#tab_3'>Photo</a>
                    </ul>
@@ -112,7 +112,7 @@ class Marker:
                 <div id='tab_3'>
                 <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
  		</div>
-                </div>\"\"\"
+                </div>`
                """
 
         s1 = """
@@ -124,17 +124,18 @@ class Marker:
                 content: markup
                });
             google.maps.event.addListener(infoWindow1, 'domready', function() {
-            $("#infoWindow1_tabs").tabs();
-            $("a[href='#tab_1']").click()
-            });
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_1']").click()
+              });
 
-           google.maps.event.addListener(marker1, 'click', function (){
-           if(currentInfoWindow != null)
-              currentInfoWindow.close()
-           infoWindow1.setPosition(mapCenter);
-           infoWindow1.open(map);
-           currentInfoWindow = infoWindow1;
-           }); """
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(mapCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } """
 
         return(s0 + s1 + s2)
 

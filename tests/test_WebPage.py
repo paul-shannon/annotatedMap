@@ -5,6 +5,7 @@ import sys
 sys.path.append("..")
 from webpage import *
 from siteAnnotation import *
+from marker import *
 #--------------------------------------------------------------------------------------------------------------
 def runTests():
 
@@ -18,7 +19,9 @@ def test_constructor():
     directory = "../testSites/sewardParkDemo"
     webpage = WebPage(directory)
     assert(webpage.getDirectory() == directory)
-    assert(webpage.getSiteAnnotationDirectories() == ['sewardParkGroundZero', 'sewardParkKingfisherPoint'])
+    testSites = ['sewardParkGroundZero', 'sewardParkKingfisherPoint']
+    testSitesFullPaths = [os.path.join(directory, site) for site in testSites]
+    assert(webpage.getSiteAnnotationDirectories() == testSitesFullPaths)
 
 #--------------------------------------------------------------------------------------------------------------
 def test_toHTML(display=True):

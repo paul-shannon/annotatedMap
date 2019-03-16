@@ -139,6 +139,8 @@ function createMarkers()
 $(document).ready(function() {
     console.log("ready!")
     initializeMap()
+    console.log("==== map var, before calling createMarker_1: ")
+    console.log(map)
     createMarker_1()
     })
 

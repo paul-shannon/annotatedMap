@@ -4,6 +4,11 @@ import yaml
 from yattag import *
 import pdb
 import os
+import sys
+#------------------------------------------------------------------------------------------------------------------------
+sys.path.append("..")
+from siteAnnotation import *
+from marker import *
 #------------------------------------------------------------------------------------------------------------------------
 class WebPage:
 
@@ -65,17 +70,32 @@ class WebPage:
     #--------------------------------------------------------------------------------
     def generateMarkerJavascriptFunctions(self):
 
-        for siteAnnotation in self.siteAnnotationDirectories
+       markerNumber = 0
+       for siteAnnotationDirectory in self.siteAnnotationDirectories:
+          markerNumber += 1
+          yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
+          assert(os.path.exists(yamlFile))
+          pdb.set_trace()
+          siteAnnotation = SiteAnnotation(yamlFile)
+          marker = Marker(siteAnnotation, markerNumber)
+          filename = "marker_%d.js" % markerNumber
+          print(" writing marker function to %s" % filename)
+          marker.toJavascriptFile(filename)
+
+
     #--------------------------------------------------------------------------------
     def getMarkerJavascriptFunctions(self):
 
-      jsFilename = os.path.join(os.path.split(os.path.abspath(__file__))[0], "marker1.js")
+      jsFilename = os.path.join(os.getcwd(), "marker_1.js")
+      print("wish to load javascript marker function file: %s" % jsFilename)
       assert(os.path.exists(jsFilename))
       jsSource = "<script>\n%s</script>" % open(jsFilename).read()
       return(jsSource)
 
     #--------------------------------------------------------------------------------
     def toHTML(self):
+
+      self.generateMarkerJavascriptFunctions()
 
       htmlDoc = Doc()
       htmlDoc.asis('<!DOCTYPE html>')

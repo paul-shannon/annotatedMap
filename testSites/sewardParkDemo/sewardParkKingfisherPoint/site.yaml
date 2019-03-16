@@ -3,14 +3,13 @@ lat: 47.554852
 lon: -122.254974
 radius:  10
 severity: 1
+summaryTextFile: overview.html
 photoTabs:
-   1:
-      title: me
-      url: https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg
+   - title: me
+     url: https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg
 videoTabs:
-   1:
-      title: composting at seward park
-      url: https://youtu.be/vG4vr83Ffd4
+   - title: composting at seward park
+     url: https://youtu.be/vG4vr83Ffd4
 
 
 
