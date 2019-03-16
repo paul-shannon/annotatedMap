@@ -15,8 +15,10 @@ class WebPage:
     #--------------------------------------------------------------------------------
     def __init__(self, directory):
 
+        assert(os.path.isdir(directory))
         self.directory = directory
-        self.siteAnnotationDirectories = os.listdir(directory)
+        subdirs = os.listdir(directory)
+        self.siteAnnotationDirectories = [os.path.join(directory, subdir) for subdir in subdirs]
 
     #--------------------------------------------------------------------------------
     def getDirectory(self):
@@ -60,6 +62,17 @@ class WebPage:
       jsSource = "<script>\n%s</script>" % open(jsFilename).read()
       return(jsSource)
 
+    #--------------------------------------------------------------------------------
+    def generateMarkerJavascriptFunctions(self):
+
+        for siteAnnotation in self.siteAnnotationDirectories
+    #--------------------------------------------------------------------------------
+    def getMarkerJavascriptFunctions(self):
+
+      jsFilename = os.path.join(os.path.split(os.path.abspath(__file__))[0], "marker1.js")
+      assert(os.path.exists(jsFilename))
+      jsSource = "<script>\n%s</script>" % open(jsFilename).read()
+      return(jsSource)
 
     #--------------------------------------------------------------------------------
     def toHTML(self):
@@ -73,6 +86,7 @@ class WebPage:
               htmlDoc.asis(self.getStandardIncludes())
               htmlDoc.asis(self.getCSS())
               htmlDoc.asis(self.getJavascript())
+              htmlDoc.asis(self.getMarkerJavascriptFunctions())
           with htmlDoc.tag('body'):
              with htmlDoc.tag("div", id="map_canvas", klass="mapCanvasClass"):
                htmlDoc.text("yo!")

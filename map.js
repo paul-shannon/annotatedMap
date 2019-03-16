@@ -6,7 +6,7 @@ var marker1, marker2, infoWindow1, infoWindow2;
 //----------------------------------------------------------------------------------------------------
 function initializeMap()
 {
-    console.log("==== initialzing map")
+   console.log("==== initialzing map")
    var iniLat = 47.5551369;
    var iniLon = -122.2553546;
    var iniZoom = 15;
@@ -31,6 +31,8 @@ function initializeMap()
 //----------------------------------------------------------------------------------------------------
 function createMarkers()
 {
+
+  /**************
   var iniLat = 47.5551369;
   var iniLon = -122.2553546;
   var mapCenter = new google.maps.LatLng(iniLat, iniLon);
@@ -77,16 +79,6 @@ function createMarkers()
      //   '<span style="font-family: Trebuchet MS; font-size:10pt; color: maroon"><b>1</b>' +
      //   '<iframe width="300" height="215" src="http://www.youtube.com/embed/vG4vr83Ffd4" frameborder="0" allowfullscreen></iframe>'
 
-  var centerLat  =   47.55364950712636;
-  var centerLong = -122.2468900680542;
-
-  infoWindow2 = new google.maps.InfoWindow({
-                 content:
-                    '<span style="font-family: Trebuchet MS; font-size:10pt; color: maroon"><b>2</b>' +
-                    '<iframe width="300" height="215" src="http://www.youtube.com/embed/vG4vr83Ffd4" frameborder="0" allowfullscreen></iframe>',
-                 position: new google.maps.LatLng(centerLat, centerLong)
-                 });
-
    google.maps.event.addListener(infoWindow1, 'domready', function() {
      $("#infoWindow1_tabs").tabs();
      $("a[href='#tab_1']").click()
@@ -99,6 +91,18 @@ function createMarkers()
      infoWindow1.open(map);
      currentInfoWindow = infoWindow1;
      });
+
+
+   **********/
+  var centerLat  =   47.55364950712636;
+  var centerLong = -122.2468900680542;
+
+  infoWindow2 = new google.maps.InfoWindow({
+                 content:
+                    '<span style="font-family: Trebuchet MS; font-size:10pt; color: maroon"><b>2</b>' +
+                    '<iframe width="300" height="215" src="http://www.youtube.com/embed/vG4vr83Ffd4" frameborder="0" allowfullscreen></iframe>',
+                 position: new google.maps.LatLng(centerLat, centerLong)
+                 });
 
   var delta = 0.0005;
 
@@ -135,5 +139,6 @@ function createMarkers()
 $(document).ready(function() {
     console.log("ready!")
     initializeMap()
+    createMarker_1()
     })
 
