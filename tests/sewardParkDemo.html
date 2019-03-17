@@ -211,6 +211,62 @@ $(document).ready(function() {
               infoWindow1.open(map);
               currentInfoWindow = infoWindow1;
               });
+         } </script><script>
+ function createMarker_2() {
+           var markerLat = 47.554852;
+           var markerLon = -122.254974;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 10,
+                      title: 'Seward Park Kingfisher Point',
+                      map: map
+                      });
+            var markup = 
+            `<div id='infoWindow2_tabs' class='infoWindowTab'>
+                  <ul>
+ 		    <li><a href='#tab_1'>DESCRIPTION</a>
+ 		    <li><a href='#tab_2'>Video</a>
+ 		    <li><a href='#tab_3'>Photo</a>
+                   </ul>
+                 <div id='tab_1'>
+                  <ul>
+ 		   <li><b> Name:<b> <i> name of site goes here</i>
+ 		   <li><b> Date of first report:<b> <i> 23 oct 2017</i>
+ 		   <li><b> Status: <b> <i> tentative die-off, to be confirmed next May</i>
+ 		   <li><b> Size:<b> <i> 1/4 acre</i>
+ 		   <li> <a href='nytimes.com'>More info</a>
+ 		 </ul>
+ 		</div>
+                <div id='tab_2'>
+                <iframe width='470' height='230' src='http://www.youtube.com/embed/vG4vr83Ffd4' frameborder='0' allowfullscreen></iframe>
+ 		</div>
+                <div id='tab_3'>
+                <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
+ 		</div>
+                </div>`
+               
+            
+           infoWindow2 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow2, 'domready', function() {
+              $("#infoWindow2_tabs").tabs();
+              $("a[href='#tab_1']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow2.setPosition(markerCenter);
+              infoWindow2.open(map);
+              currentInfoWindow = infoWindow2;
+              });
          } </script></head>
   <body>
     <div id="map_canvas" class="mapCanvasClass">yo!</div>

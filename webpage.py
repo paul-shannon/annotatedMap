@@ -84,33 +84,39 @@ class WebPage:
     def generateMarkerJavascriptFunctions(self):
 
        markerNumber = 0
+       markerFunctionFileNames = []
+
        for siteAnnotationDirectory in self.siteAnnotationDirectories:
+          print("--- creating js function for site descirbed in %s" % siteAnnotationDirectory)
           markerNumber += 1
           yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
           assert(os.path.exists(yamlFile))
           siteAnnotation = SiteAnnotation(yamlFile)
-            # on popup, the marker window places itself on the center of the map.
-            # we may need to position it to the south of the map center, so that the marker window
-            # is -centered- over the mapCenter
           marker = Marker(siteAnnotation, markerNumber)
           filename = "marker_%d.js" % markerNumber
           print(" writing marker function to %s" % filename)
+          markerFunctionFileNames.append(filename)
           marker.toJavascriptFile(filename)
 
+       return(markerFunctionFileNames)
 
     #--------------------------------------------------------------------------------
-    def getMarkerJavascriptFunctions(self):
+    def getMarkerJavascriptFunctions(self, markerFunctionFileNames):
 
-      jsFilename = os.path.join(os.getcwd(), "marker_1.js")
-      print("wish to load javascript marker function file: %s" % jsFilename)
-      assert(os.path.exists(jsFilename))
-      jsSource = "<script>\n%s</script>" % open(jsFilename).read()
+      jsSource = "";
+
+      for jsFilename in markerFunctionFileNames:
+         jsFilename = os.path.join(os.getcwd(), jsFilename)
+         print("wish to load javascript marker function file: %s" % jsFilename)
+         assert(os.path.exists(jsFilename))
+         jsSource = jsSource + "<script>\n%s</script>" % open(jsFilename).read()
+
       return(jsSource)
 
     #--------------------------------------------------------------------------------
     def toHTML(self):
 
-      self.generateMarkerJavascriptFunctions()
+      markerFunctionFileNames = self.generateMarkerJavascriptFunctions()
 
       htmlDoc = Doc()
       htmlDoc.asis('<!DOCTYPE html>')
@@ -121,7 +127,7 @@ class WebPage:
               htmlDoc.asis(self.getStandardIncludes())
               htmlDoc.asis(self.getCSS())
               htmlDoc.asis(self.getJavascript())
-              htmlDoc.asis(self.getMarkerJavascriptFunctions())
+              htmlDoc.asis(self.getMarkerJavascriptFunctions(markerFunctionFileNames))
           with htmlDoc.tag('body'):
              with htmlDoc.tag("div", id="map_canvas", klass="mapCanvasClass"):
                htmlDoc.text("yo!")

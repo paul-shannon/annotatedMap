@@ -91,7 +91,7 @@ class Marker:
                                 self.siteAnnotation.getTitle())
 
         html = """
-            `<div id='infoWindow1_tabs' class='infoWindowTab'>
+            `<div id='infoWindow%d_tabs' class='infoWindowTab'>
                   <ul>
  		    <li><a href='#tab_1'>DESCRIPTION</a>
  		    <li><a href='#tab_2'>Video</a>
@@ -113,29 +113,29 @@ class Marker:
                 <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
  		</div>
                 </div>`
-               """
+               """ % self.markerNumber
 
         s1 = """
             var markup = %s
             """  %  html
 
         s2 = """
-           infoWindow1 = new google.maps.InfoWindow({
+           infoWindow%d = new google.maps.InfoWindow({
                 content: markup
                });
-            google.maps.event.addListener(infoWindow1, 'domready', function() {
-              $("#infoWindow1_tabs").tabs();
+            google.maps.event.addListener(infoWindow%d, 'domready', function() {
+              $("#infoWindow%d_tabs").tabs();
               $("a[href='#tab_1']").click()
               });
 
            google.maps.event.addListener(marker, 'click', function (){
               if(currentInfoWindow != null)
                  currentInfoWindow.close()
-              infoWindow1.setPosition(markerCenter);
-              infoWindow1.open(map);
-              currentInfoWindow = infoWindow1;
+              infoWindow%d.setPosition(markerCenter);
+              infoWindow%d.open(map);
+              currentInfoWindow = infoWindow%d;
               });
-         } """
+         } """ % (self.markerNumber, self.markerNumber, self.markerNumber, self.markerNumber, self.markerNumber, self.markerNumber)
 
         return(s0 + s1 + s2)
 
