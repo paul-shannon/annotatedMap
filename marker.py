@@ -1,6 +1,7 @@
 # generate the following javascript function, with embedded HTML, from a SiteAnnotation object
 #------------------------------------------------------------------------------------------------------------------------
 from yattag import *
+import pdb
 #------------------------------------------------------------------------------------------------------------------------
 class Marker:
 
@@ -36,7 +37,7 @@ class Marker:
 
         html = self.createPopupContent()
         s1 = """
-            var markup = '%s'
+            var markup = `%s`
             """  %  html
 
         s2 = """
@@ -64,10 +65,27 @@ class Marker:
 
       anno = self.siteAnnotation
       htmlDoc = Doc()
+      # pdb.set_trace()
       with htmlDoc.tag("div", id="infoWindow%d_tabs" % self.markerNumber, klass="infoWindowTab"):
-         htmlDoc.text(anno.title)
+         with htmlDoc.tag("ul"):
+             with htmlDoc.tag("li"):
+                 with htmlDoc.tag("a", href="#tab_1"):
+                   htmlDoc.text("Description")
+             with htmlDoc.tag("li"):
+                 with htmlDoc.tag("a", href="#tab_2"):
+                   htmlDoc.text("Video")
+             with htmlDoc.tag("li"):
+                 with htmlDoc.tag("a", href="#tab_3"):
+                   htmlDoc.text("Photo")
+         with htmlDoc.tag("div", id="tab_1"):
+            htmlDoc.text("tab 1")
+         with htmlDoc.tag("div", id="tab_2"):
+            htmlDoc.text("tab 2")
+         with htmlDoc.tag("div", id="tab_3"):
+            htmlDoc.text("tab 3")
 
-      htmlText = htmlDoc.getvalue()
+
+      htmlText = indent(htmlDoc.getvalue())
       return(htmlText)
 
 
