@@ -46,7 +46,7 @@ class Marker:
                });
             google.maps.event.addListener(infoWindow%d, 'domready', function() {
               $("#infoWindow%d_tabs").tabs();
-              $("a[href='#tab_1']").click()
+              $("a[href='#tab_0']").click()
               });
 
            google.maps.event.addListener(marker, 'click', function (){
@@ -65,56 +65,45 @@ class Marker:
 
       anno = self.siteAnnotation
       htmlDoc = Doc()
-      # pdb.set_trace()
+      #pdb.set_trace()
+      tabNumber = 1  # always an overview tab
+      summaryTabsNeeded = 0
+      if(len(anno.summaryTextFile) > 0):
+          summaryTabsNeeded = 1
+      photoTabsNeeded = len(anno.photoTabs)
+      videoTabsNeeded = len(anno.videoTabs)
+
+      tabList = [{"type": "overview", "content": "overview goes here"}]
+      if(summaryTabsNeeded):
+          tabList.append({"type": "summary", "content": anno.summaryTextFile})
+      for i in range(photoTabsNeeded):
+          tabList.append({"type": "photo", "content": anno.photoTabs[i]})
+      for i in range(videoTabsNeeded):
+          tabList.append({"type": "video", "content": anno.videoTabs[i]})
+
       with htmlDoc.tag("div", id="infoWindow%d_tabs" % self.markerNumber, klass="infoWindowTab"):
          with htmlDoc.tag("ul"):
-             with htmlDoc.tag("li"):
-                 with htmlDoc.tag("a", href="#tab_1"):
-                   htmlDoc.text("Description")
-             with htmlDoc.tag("li"):
-                 with htmlDoc.tag("a", href="#tab_2"):
-                   htmlDoc.text("Video")
-             with htmlDoc.tag("li"):
-                 with htmlDoc.tag("a", href="#tab_3"):
-                   htmlDoc.text("Photo")
-         with htmlDoc.tag("div", id="tab_1"):
-            htmlDoc.text("tab 1")
-         with htmlDoc.tag("div", id="tab_2"):
-            htmlDoc.text("tab 2")
-         with htmlDoc.tag("div", id="tab_3"):
-            htmlDoc.text("tab 3")
+             for tabNumber in range(len(tabList)):
+                with htmlDoc.tag("li"):
+                    with htmlDoc.tag("a", href="#tab_%d" % tabNumber):
+                       htmlDoc.text(tabList[tabNumber]["type"])
+
+         for tabNumber in range(len(tabList)):
+            with htmlDoc.tag("div", id="tab_%d" % tabNumber):
+               tabType = tabList[tabNumber]["type"]
+               if(tabType == "overview"):
+                  htmlDoc.text(tabList[tabNumber]["content"])
+               if(tabType == "summary"):
+                  htmlDoc.text(tabList[tabNumber]["content"])
+               if(tabType == "photo"):
+                  htmlDoc.text(tabList[tabNumber]["content"]["title"])
+               if(tabType == "video"):
+                  htmlDoc.text(tabList[tabNumber]["content"]["title"])
 
 
       htmlText = indent(htmlDoc.getvalue())
       return(htmlText)
 
-
-      # content = """
-      #       `<div id='infoWindow%d_tabs' class='infoWindowTab'>
-      #             <ul>
- # 		    <li><a href='#tab_1'>DESCRIPTION</a>
- # 		    <li><a href='#tab_2'>Video</a>
- # 		    <li><a href='#tab_3'>Photo</a>
- #                   </ul>
- #                 <div id='tab_1'>
- #                  <ul>
- # 		   <li><b> Name:<b> <i> %s</i>
- # 		   <li><b> Date of first report:<b> <i> 23 oct 201%d</i>
- # 		   <li><b> Status: <b> <i> tentative die-off, to be confirmed next May</i>
- # 		   <li><b> Size:<b> <i> 1/4 acre</i>
- # 		   <li> <a href='nytimes.com'>More info</a>
- # 		 </ul>
- # 		</div>
- #                <div id='tab_2'>
- #                <iframe width='470' height='230' src='http://www.youtube.com/embed/vG4vr83Ffd4' frameborder='0' allowfullscreen></iframe>
- # 		</div>
- #                <div id='tab_3'>
- #                <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
- # 		</div>
- #                </div>`
- #               """ % (self.markerNumber, anno.title, self.markerNumber)
-#
-#       return(content)
 
     #------------------------------------------------------------------------------------------------------------------------
     def newCreatePopupContent(self):
