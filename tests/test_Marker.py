@@ -9,6 +9,7 @@ from marker import *
 def runTests():
 
     test_constructor()
+    test_createPopupContent()
     test_toJavascript()
     test_toJavascriptFile()
 
@@ -18,6 +19,15 @@ def test_constructor():
     print("--- test_constructor")
     siteAnno = SiteAnnotation("../testSites/sewardParkDemo/sewardParkGroundZero/site.yaml")
     marker = Marker(siteAnno, 1)
+
+#--------------------------------------------------------------------------------------------------------------
+def test_createPopupContent():
+
+    print("--- test_createPopupContent")
+    siteAnno = SiteAnnotation("../testSites/sewardParkDemo/sewardParkGroundZero/site.yaml")
+    marker = Marker(siteAnno, 1)
+    tabs = marker.createPopupContent()
+    pdb.set_trace()
 
 #--------------------------------------------------------------------------------------------------------------
 def test_toJavascript():

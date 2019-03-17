@@ -1,5 +1,7 @@
 # generate the following javascript function, with embedded HTML, from a SiteAnnotation object
 #------------------------------------------------------------------------------------------------------------------------
+from yattag import *
+#------------------------------------------------------------------------------------------------------------------------
 class Marker:
 
     siteAnnotation = None
@@ -34,7 +36,7 @@ class Marker:
 
         html = self.createPopupContent()
         s1 = """
-            var markup = %s
+            var markup = '%s'
             """  %  html
 
         s2 = """
@@ -60,34 +62,46 @@ class Marker:
     #------------------------------------------------------------------------------------------------------------------------
     def createPopupContent(self):
 
-      content = """
-            `<div id='infoWindow%d_tabs' class='infoWindowTab'>
-                  <ul>
- 		    <li><a href='#tab_1'>DESCRIPTION</a>
- 		    <li><a href='#tab_2'>Video</a>
- 		    <li><a href='#tab_3'>Photo</a>
-                   </ul>
-                 <div id='tab_1'>
-                  <ul>
- 		   <li><b> Name:<b> <i> name of site goes here</i>
- 		   <li><b> Date of first report:<b> <i> 23 oct 201%d</i>
- 		   <li><b> Status: <b> <i> tentative die-off, to be confirmed next May</i>
- 		   <li><b> Size:<b> <i> 1/4 acre</i>
- 		   <li> <a href='nytimes.com'>More info</a>
- 		 </ul>
- 		</div>
-                <div id='tab_2'>
-                <iframe width='470' height='230' src='http://www.youtube.com/embed/vG4vr83Ffd4' frameborder='0' allowfullscreen></iframe>
- 		</div>
-                <div id='tab_3'>
-                <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
- 		</div>
-                </div>`
-               """ % (self.markerNumber, self.markerNumber)
+      anno = self.siteAnnotation
+      htmlDoc = Doc()
+      with htmlDoc.tag("div", id="infoWindow%d_tabs" % self.markerNumber, klass="infoWindowTab"):
+         htmlDoc.text(anno.title)
 
-      return(content)
+      htmlText = htmlDoc.getvalue()
+      return(htmlText)
 
 
+      # content = """
+      #       `<div id='infoWindow%d_tabs' class='infoWindowTab'>
+      #             <ul>
+ # 		    <li><a href='#tab_1'>DESCRIPTION</a>
+ # 		    <li><a href='#tab_2'>Video</a>
+ # 		    <li><a href='#tab_3'>Photo</a>
+ #                   </ul>
+ #                 <div id='tab_1'>
+ #                  <ul>
+ # 		   <li><b> Name:<b> <i> %s</i>
+ # 		   <li><b> Date of first report:<b> <i> 23 oct 201%d</i>
+ # 		   <li><b> Status: <b> <i> tentative die-off, to be confirmed next May</i>
+ # 		   <li><b> Size:<b> <i> 1/4 acre</i>
+ # 		   <li> <a href='nytimes.com'>More info</a>
+ # 		 </ul>
+ # 		</div>
+ #                <div id='tab_2'>
+ #                <iframe width='470' height='230' src='http://www.youtube.com/embed/vG4vr83Ffd4' frameborder='0' allowfullscreen></iframe>
+ # 		</div>
+ #                <div id='tab_3'>
+ #                <img src='https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg'>
+ # 		</div>
+ #                </div>`
+ #               """ % (self.markerNumber, anno.title, self.markerNumber)
+#
+#       return(content)
+
+    #------------------------------------------------------------------------------------------------------------------------
+    def newCreatePopupContent(self):
+
+      anno = self.siteAnnotation
 
     #------------------------------------------------------------------------------------------------------------------------
     def toJavascriptFile(self, filename):
