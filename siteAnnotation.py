@@ -11,26 +11,36 @@ import os
 #------------------------------------------------------------------------------------------------------------------------
 class SiteAnnotation:
 
+   directoryAbsolutePath = None   # where the annotation (site.yaml, notes.html, etc) can be found
    title = "",
    lat = 0
    lon = 0
-   radius = 0
-   severity = 0
-   summaryTextFile = ''
+   firstReported = None
+   lastUpdate = None
+   contributedBy = None
+   radius = 0         # a map metric, approximate, used only for rendering markers on the map
+   area = 0           # in acres
+   severity = 0       # informal scale of 0 - 10
+   notesFile = ''
    photoTabs = []
    videoTabs = []
 
    def __init__(self, yamlFile):
        assert(os.path.exists(yamlFile))
+       self.directoryAbsolutePath = os.path.dirname(yamlFile)
        info = yaml.load(open(yamlFile))
        keys = list(info.keys())
        assert(self.validAnnotation(info))
        self.title = info["title"]
+       self.firstReported = info["firstReported"]
+       self.lastUpdate = info["lastUpdate"]
+       self.contact = info["contact"]
        self.lat = info["lat"]
        self.lon = info["lon"]
+       self.area = info["area"]
        self.radius = info["radius"]
        self.severity = info["severity"]
-       self.summaryTextFile = info["summaryTextFile"]
+       self.notesFile = info["notesFile"]
        if("photoTabs" in keys):
           self.photoTabs = info["photoTabs"]
        if("videoTabs" in keys):
@@ -39,7 +49,8 @@ class SiteAnnotation:
      # a draft version only.  better error messages and consistent return strategy needed
    def validAnnotation(self, info):
       keys = list(info.keys())
-      requiredKeys = ['title', 'lat', 'lon', 'radius', 'severity', 'summaryTextFile']
+      requiredKeys = ['title', 'lat', 'lon', 'firstReported', 'lastUpdate', 'contact',
+                      'radius', 'area', 'severity', 'notesFile']
       if(not all([requiredKey in keys for requiredKey in requiredKeys])):
           print("invalid yaml file, missing required keys:")
           print(list(set(requiredKeys) - set(["title"])))

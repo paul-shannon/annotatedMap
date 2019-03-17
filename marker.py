@@ -2,6 +2,7 @@
 #------------------------------------------------------------------------------------------------------------------------
 from yattag import *
 import pdb
+import os
 #------------------------------------------------------------------------------------------------------------------------
 class Marker:
 
@@ -67,48 +68,92 @@ class Marker:
       htmlDoc = Doc()
       #pdb.set_trace()
       tabNumber = 1  # always an overview tab
-      summaryTabsNeeded = 0
-      if(len(anno.summaryTextFile) > 0):
-          summaryTabsNeeded = 1
+      notesTabNeeded = 0
+      if(len(anno.notesFile) > 0):
+          notesTabNeeded = 1
       photoTabsNeeded = len(anno.photoTabs)
       videoTabsNeeded = len(anno.videoTabs)
 
-      tabList = [{"type": "overview", "content": "overview goes here"}]
-      if(summaryTabsNeeded):
-          tabList.append({"type": "summary", "content": anno.summaryTextFile})
+      tabList = [{"type": "overview", "title": "Overview", "content": "overview goes here"}]
+      if(notesTabNeeded):
+          tabList.append({"type": "notes", "title": "Notes", "content": anno.notesFile})
       for i in range(photoTabsNeeded):
-          tabList.append({"type": "photo", "content": anno.photoTabs[i]})
+          tabList.append({"type": "photo", "title": anno.photoTabs[i]["title"], "content": anno.photoTabs[i]})
       for i in range(videoTabsNeeded):
-          tabList.append({"type": "video", "content": anno.videoTabs[i]})
+          tabList.append({"type": "video", "title": anno.videoTabs[i]["title"], "content": anno.videoTabs[i]})
 
       with htmlDoc.tag("div", id="infoWindow%d_tabs" % self.markerNumber, klass="infoWindowTab"):
          with htmlDoc.tag("ul"):
              for tabNumber in range(len(tabList)):
                 with htmlDoc.tag("li"):
                     with htmlDoc.tag("a", href="#tab_%d" % tabNumber):
-                       htmlDoc.text(tabList[tabNumber]["type"])
+                       htmlDoc.text(tabList[tabNumber]["title"])
 
          for tabNumber in range(len(tabList)):
             with htmlDoc.tag("div", id="tab_%d" % tabNumber):
                tabType = tabList[tabNumber]["type"]
                if(tabType == "overview"):
-                  htmlDoc.text(tabList[tabNumber]["content"])
-               if(tabType == "summary"):
-                  htmlDoc.text(tabList[tabNumber]["content"])
+                  self.createOverviewTabContent(htmlDoc)
+               if(tabType == "notes"):
+                  self.createNotesTabContent(htmlDoc)
                if(tabType == "photo"):
-                  htmlDoc.text(tabList[tabNumber]["content"]["title"])
+                  self.createPhotoTabContent(htmlDoc, tabList[tabNumber])
                if(tabType == "video"):
-                  htmlDoc.text(tabList[tabNumber]["content"]["title"])
-
+                  self.createVideoTabContent(htmlDoc, tabList[tabNumber])
 
       htmlText = indent(htmlDoc.getvalue())
       return(htmlText)
 
+    #------------------------------------------------------------------------------------------------------------------------
+    def createOverviewTabContent(self, htmlDoc):
+
+       anno = self.siteAnnotation
+
+       with htmlDoc.tag("h4"):
+           htmlDoc.text(anno.title)
+       with htmlDoc.tag("ul"):
+            htmlDoc.line('li', 'First reported: %s' % anno.firstReported)
+            htmlDoc.line('li', 'Last update: %s' % anno.lastUpdate)
+            htmlDoc.line('li', 'lat: %f' % anno.lat)
+            htmlDoc.line('li', 'lon: %f' % anno.lon)
+            htmlDoc.line('li', 'area: %5.2f acres' % anno.area)
+            htmlDoc.line('li', 'severity: %d' % anno.severity)
+            htmlDoc.line('li', 'current contact: %s' % anno.contact)
+
 
     #------------------------------------------------------------------------------------------------------------------------
-    def newCreatePopupContent(self):
+    def createNotesTabContent(self, htmlDoc):
 
-      anno = self.siteAnnotation
+       anno = self.siteAnnotation
+       fullPath = os.path.join(anno.directoryAbsolutePath, anno.notesFile)
+       assert(os.path.exists(fullPath))
+       text = open(fullPath).read()
+
+       htmlDoc.asis(text)
+
+    #------------------------------------------------------------------------------------------------------------------------
+    def createPhotoTabContent(self, htmlDoc, tabInfo):
+
+       anno = self.siteAnnotation
+       title = tabInfo["content"]["title"]
+       url = tabInfo["content"]["url"]
+
+       with htmlDoc.tag("div"):
+          htmlDoc.stag("img", src="%s" % url, height="600") #, width="700")
+
+    #------------------------------------------------------------------------------------------------------------------------
+    def createVideoTabContent(self, htmlDoc, tabInfo):
+
+       anno = self.siteAnnotation
+       title = tabInfo["content"]["title"]
+       url = tabInfo["content"]["url"]
+
+       pdb.set_trace()
+       with htmlDoc.tag("div"):
+          htmlDoc.asis('<iframe src="%s"  height="500" frameborder="0" allowfullscreen></iframe>' % url)
+          #htmlDoc.stag("iframe", src="%s" % url, height="500", frameborder="0" allowfullscreen="True")
+
+     #'<iframe width="300" height="215" src="http://www.youtube.com/embed/vG4vr83Ffd4" frameborder="0" allowfullscreen></iframe>',
 
     #------------------------------------------------------------------------------------------------------------------------
     def toJavascriptFile(self, filename):

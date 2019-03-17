@@ -1,15 +1,19 @@
 title:  Seward Park Kingfisher Point
 lat: 47.554852
 lon: -122.254974
+firstReported: 2019-03-17
+lastUpdate:  2019-03-17
+contact: Paul Shannon
 radius:  10
-severity: 1
-summaryTextFile: overview.html
+area: 0
+severity: 0
+notesFile: notes.html
 photoTabs:
    - title: me
      url: https://www.systemsbiology.org/wp-content/uploads/paul-shannon-web-300x300.jpg
 videoTabs:
    - title: composting at seward park
-     url: https://youtu.be/vG4vr83Ffd4
+     url: https://www.youtube.com/embed/vG4vr83Ffd4
 
 
 
