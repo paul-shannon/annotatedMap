@@ -1,3 +1,4 @@
 __pycache__/
 googleApi.key
 tests/*.js
+tests/sewardParkDemo.html
