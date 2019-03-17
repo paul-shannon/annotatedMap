@@ -115,6 +115,8 @@ function createMarkers()
   google.maps.event.addListener(marker1, 'click', function (){
      if(currentInfoWindow != null)
         currentInfoWindow.close()
+     console.log(" about to open popup, mapCenter: ")
+     console.log(mapCenter)
      infoWindow1.setPosition(mapCenter);
      infoWindow1.open(map);
      currentInfoWindow = infoWindow1;

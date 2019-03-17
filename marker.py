@@ -71,16 +71,16 @@ class Marker:
     def toJavascript(self):
 
         s0 = """ function createMarker_%d() {
-           var iniLat = %f;
-           var iniLon = %f;
-           var mapCenter = new google.maps.LatLng(iniLat, iniLon);
+           var markerLat = %f;
+           var markerLon = %f;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
            marker = new google.maps.Circle({
                       strokeColor: '#FF0000',
                       strokeOpacity: 0.8,
                       strokeWeight: 2,
                       fillColor: '#FFAAAA',
                       fillOpacity: 0.35,
-                      center: mapCenter,
+                      center: markerCenter,
                       radius: %d,
                       title: '%s',
                       map: map
@@ -131,7 +131,7 @@ class Marker:
            google.maps.event.addListener(marker, 'click', function (){
               if(currentInfoWindow != null)
                  currentInfoWindow.close()
-              infoWindow1.setPosition(mapCenter);
+              infoWindow1.setPosition(markerCenter);
               infoWindow1.open(map);
               currentInfoWindow = infoWindow1;
               });

@@ -157,16 +157,16 @@ $(document).ready(function() {
 
 </script><script>
  function createMarker_1() {
-           var iniLat = 47.555474;
-           var iniLon = -122.248945;
-           var mapCenter = new google.maps.LatLng(iniLat, iniLon);
+           var markerLat = 47.555474;
+           var markerLon = -122.248945;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
            marker = new google.maps.Circle({
                       strokeColor: '#FF0000',
                       strokeOpacity: 0.8,
                       strokeWeight: 2,
                       fillColor: '#FFAAAA',
                       fillOpacity: 0.35,
-                      center: mapCenter,
+                      center: markerCenter,
                       radius: 100,
                       title: 'Seward Park Ground Zero',
                       map: map
@@ -207,7 +207,7 @@ $(document).ready(function() {
            google.maps.event.addListener(marker, 'click', function (){
               if(currentInfoWindow != null)
                  currentInfoWindow.close()
-              infoWindow1.setPosition(mapCenter);
+              infoWindow1.setPosition(markerCenter);
               infoWindow1.open(map);
               currentInfoWindow = infoWindow1;
               });

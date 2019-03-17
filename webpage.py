@@ -16,14 +16,27 @@ class WebPage:
     annotationsDirectory = ''
     htmlDoc = None
     htmlText = ''
+    mapCenterLat = None
+    mapCenterLon = None
+    mapZoom = None
 
     #--------------------------------------------------------------------------------
     def __init__(self, directory):
 
         assert(os.path.isdir(directory))
         self.directory = directory
-        subdirs = os.listdir(directory)
-        self.siteAnnotationDirectories = [os.path.join(directory, subdir) for subdir in subdirs]
+        configFile = os.path.join(directory, "config.yaml")
+        assert(os.path.exists(configFile))
+        config = yaml.load(open(configFile))
+        keys = list(config.keys())
+        assert("mapCenter" in keys)
+        assert("mapZoom" in keys)
+        self.mapCenterLat = config["mapCenter"]["lat"]
+        self.mapCenterLon = config["mapCenter"]["lon"]
+        self.mapZoom = config["mapZoom"]
+        subDirsAndFiles = os.listdir(directory)
+        subDirsAndFilesFullPath = [os.path.join(directory, f) for f in subDirsAndFiles]
+        self.siteAnnotationDirectories = [f for f in subDirsAndFilesFullPath if os.path.isdir(f)]
 
     #--------------------------------------------------------------------------------
     def getDirectory(self):
@@ -75,8 +88,10 @@ class WebPage:
           markerNumber += 1
           yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
           assert(os.path.exists(yamlFile))
-          pdb.set_trace()
           siteAnnotation = SiteAnnotation(yamlFile)
+            # on popup, the marker window places itself on the center of the map.
+            # we may need to position it to the south of the map center, so that the marker window
+            # is -centered- over the mapCenter
           marker = Marker(siteAnnotation, markerNumber)
           filename = "marker_%d.js" % markerNumber
           print(" writing marker function to %s" % filename)
