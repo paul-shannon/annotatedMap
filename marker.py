@@ -70,7 +70,7 @@ class Marker:
 
     def toJavascript(self):
 
-        s0 = """ function createMarker_%d() {
+        s0 = """ function create_marker_%d() {
            var markerLat = %f;
            var markerLon = %f;
            var markerCenter = new google.maps.LatLng(markerLat, markerLon);

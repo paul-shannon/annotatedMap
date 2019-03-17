@@ -105,11 +105,18 @@ class WebPage:
 
       jsSource = "";
 
+      createMarkersFunction = "function createMarkers(){"
+
       for jsFilename in markerFunctionFileNames:
-         jsFilename = os.path.join(os.getcwd(), jsFilename)
-         print("wish to load javascript marker function file: %s" % jsFilename)
-         assert(os.path.exists(jsFilename))
-         jsSource = jsSource + "<script>\n%s</script>" % open(jsFilename).read()
+         jsFilenamePath = os.path.join(os.getcwd(), jsFilename)
+         print("wish to load javascript marker function file: %s" % jsFilenamePath)
+         assert(os.path.exists(jsFilenamePath))
+         jsSource = jsSource + "<script>\n%s</script>" % open(jsFilenamePath).read()
+         functionShortName = jsFilename.replace(".js", "")
+         createMarkersFunction += " create_%s();" % functionShortName;
+
+      createMarkersFunction += "}\n"
+      jsSource = jsSource + "<script>\n%s</script>" % createMarkersFunction
 
       return(jsSource)
 
