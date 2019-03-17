@@ -1,20 +1,20 @@
 var map;
 var currentInfoWindow = null;
-var marker1, marker2, infoWindow1, infoWindow2;
+// var marker1, marker2, infoWindow1, infoWindow2;
 //----------------------------------------------------------------------------------------------------
 function initializeMap()
 {
    console.log("==== initialzing map")
-   var iniLat = 47.5551369;
-   var iniLon = -122.2553546;
-   var iniZoom = 15;
-   var mapCenter = new google.maps.LatLng(iniLat, iniLon);
+   var initialLat = %f;
+   var initialLon = %f;
+   var initialZoom = %f;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
 
    var mapOptions = {
-       zoom: iniZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
        }
    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-   google.maps.event.addListener(map, 'tilesloaded', function () { createMarkers() });
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
 
    var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
                   {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},

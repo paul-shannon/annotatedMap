@@ -77,7 +77,11 @@ class WebPage:
 
       jsFilename = os.path.join(os.path.split(os.path.abspath(__file__))[0], "map.js")
       assert(os.path.exists(jsFilename))
-      jsSource = "<script>\n%s</script>" % open(jsFilename).read()
+
+      jsSource = open(jsFilename).read()
+      jsSource = jsSource % (self.mapCenterLat, self.mapCenterLon, self.mapZoom)
+      jsSource = "<script>\n%s</script>" % jsSource
+
       return(jsSource)
 
     #--------------------------------------------------------------------------------
