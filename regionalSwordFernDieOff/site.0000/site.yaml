@@ -1,0 +1,14 @@
+area: 10
+color: red
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.555546
+lon: -122.248967
+notesFile: notes.html
+radius: 100
+severity: 0
+text: first noted 2014, now 20+ contiguous acres, intermittent spread throughout Seward
+  Park
+title: GroundZero
+type: simple
