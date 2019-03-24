@@ -84,8 +84,8 @@ class SiteAnnotation:
    def getSeverity(self):
        return(self.severity)
 
-   def getSummaryTextFile(self):
-       return(self.summaryTextFile)
+   def getNotesFileName(self):
+       return(self.notesFile)
 
    def getPhotoTabs(self):
        return(self.photoTabs)

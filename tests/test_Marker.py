@@ -27,7 +27,6 @@ def test_createPopupContent():
     siteAnno = SiteAnnotation("../testSites/sewardParkDemo/sewardParkGroundZero/site.yaml")
     marker = Marker(siteAnno, 1)
     tabs = marker.createPopupContent()
-    pdb.set_trace()
 
 #--------------------------------------------------------------------------------------------------------------
 def test_toJavascript():

@@ -148,7 +148,7 @@ class Marker:
        title = tabInfo["content"]["title"]
        url = tabInfo["content"]["url"]
 
-       pdb.set_trace()
+       #pdb.set_trace()
        with htmlDoc.tag("div"):
           htmlDoc.asis('<iframe src="%s"  height="500" frameborder="0" allowfullscreen></iframe>' % url)
           #htmlDoc.stag("iframe", src="%s" % url, height="500", frameborder="0" allowfullscreen="True")

@@ -20,7 +20,7 @@ def test_constructor():
     assert(siteAnno.getLon() == -122.248945)
     assert(siteAnno.getRadius() == 100)
     assert(siteAnno.getSeverity() == 10)
-    assert(siteAnno.getSummaryTextFile() == "overview.html")
+    assert(siteAnno.getNotesFileName() == "notes.html")
     assert(len(siteAnno.getPhotoTabs()) == 2)
     assert(len(siteAnno.getVideoTabs()) == 1)
 
