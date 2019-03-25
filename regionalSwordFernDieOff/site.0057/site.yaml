@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.55642653021992
+lon: -122.1054896329461
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 45 dead to this point. 10 + dead in area. Al Smith Field Report 43
+title: 45 dead
+type: simple

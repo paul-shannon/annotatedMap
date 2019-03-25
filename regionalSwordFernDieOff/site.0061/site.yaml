@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.50716332706997
+lon: -122.0827953661086
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 183 dead to this point. going home. Al Smith Field Report 47
+title: 183 dead
+type: simple

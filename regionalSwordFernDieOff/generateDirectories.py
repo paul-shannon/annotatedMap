@@ -3,7 +3,7 @@ import os
 import yaml
 sites = json.load(open('v4.js'))
 
-for i in range(3):
+for i in range(len(sites)):
    directoryName = "site.%04d" % i
    if(not os.path.exists(directoryName)):
        os.mkdir(directoryName)
@@ -20,6 +20,10 @@ for i in range(3):
    print("siteFileName: '%s'" % siteFileName)
    siteFile = open(siteFileName, "w")
    yaml.dump(site, siteFile, default_flow_style=False)
+   notesFileName = os.path.join(directoryName, site["notesFile"])
+   notesFile = open(notesFileName, "w")
+   notesFile.write(site["text"])
+   notesFile.close()
    
    
 

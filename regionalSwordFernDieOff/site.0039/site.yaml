@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.59584736674281
+lon: -122.1677542337945
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 20 plus dead vs a couple a year ago. Al Smith Field Report 24
+title: increasing deaths over time
+type: simple

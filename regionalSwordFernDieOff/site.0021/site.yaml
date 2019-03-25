@@ -1,0 +1,14 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.51419740819194
+lon: -122.0233545586077
+notesFile: notes.html
+radius: 100
+severity: 0
+text: about  15 dead to this point, but another 20 dead in immediate area. Al Smith
+  Field Report 5
+title: 15 dead plus 20 nearby
+type: simple

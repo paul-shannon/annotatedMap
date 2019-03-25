@@ -1,0 +1,14 @@
+area: 10
+color: orange
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.59278286716147
+lon: -122.1151105331921
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 100+ dead now on both sides of trail. previously about 30 dead. Al Smith Field
+  Report 33
+title: increasing deaths over time
+type: simple

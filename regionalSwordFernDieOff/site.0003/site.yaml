@@ -1,0 +1,13 @@
+area: 10
+color: orange
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.583745
+lon: -122.225208
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 1/4 acre, last report 2016
+title: Upper Luther Burbank Park
+type: simple

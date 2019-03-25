@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.59179067337578
+lon: -122.2271185460458
+notesFile: notes.html
+radius: 100
+severity: 0
+text: this time counted 30+ dead in area. Al Smith Field Report 55
+title: '>30 dead'
+type: simple

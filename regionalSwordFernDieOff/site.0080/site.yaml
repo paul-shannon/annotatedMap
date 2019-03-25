@@ -1,0 +1,14 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.71062932440764
+lon: -122.2447893819402
+notesFile: notes.html
+radius: 100
+severity: 0
+text: about 7 dead in immediate vicinity, but others looking very sick indeed. 20+
+  dead in area. Al Smith Field Report 65
+title: 7 dead plus 20 nearby
+type: simple

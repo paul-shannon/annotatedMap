@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.52771500699448
+lon: -122.0670131575899
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 25 or so dead in area. Al Smith Field Report 40
+title: 25 dead
+type: simple
