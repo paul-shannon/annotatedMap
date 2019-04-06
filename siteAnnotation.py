@@ -34,7 +34,10 @@ class SiteAnnotation:
        self.title = info["title"]
        self.firstReported = info["firstReported"]
        self.lastUpdate = info["lastUpdate"]
-       self.contact = info["contact"]
+       if("contact" in info.keys()):
+          self.contact = info["contact"]
+       else:
+          self.contact = ""
        self.lat = info["lat"]
        self.lon = info["lon"]
        self.area = info["area"]
@@ -49,7 +52,7 @@ class SiteAnnotation:
      # a draft version only.  better error messages and consistent return strategy needed
    def validAnnotation(self, info):
       keys = list(info.keys())
-      requiredKeys = ['title', 'lat', 'lon', 'firstReported', 'lastUpdate', 'contact',
+      requiredKeys = ['title', 'lat', 'lon', 'firstReported', 'lastUpdate',
                       'radius', 'area', 'severity', 'notesFile']
       if(not all([requiredKey in keys for requiredKey in requiredKeys])):
           print("invalid yaml file, missing required keys:")

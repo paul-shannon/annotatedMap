@@ -1,13 +1,22 @@
-area: 10
+area: 2
 color: red
-contact: ''
-firstReported: '2000-01-01'
-lastUpdate: '2000-01-01'
+contact: Paul Shannon
+firstReported: '2010-01-01'
+lastUpdate: '2019-03-28'
 lat: 47.701276
 lon: -122.583528
 notesFile: notes.html
 radius: 100
-severity: 0
-text: Two acres, private second-growth forest, first regional report 2010
+severity: 10
+text: Two acres, private second-growth forest, first report in the region, 2010
 title: Sandy Hook Road
 type: simple
+photoTabs:
+  - title: April 2017
+    url: https://lh3.googleusercontent.com/56unZLrv9LEcafvoAMfMDkEjR5jJNnXGUHhcF0_h19sArknGjR5XQwB2ISmj_nSxxohlG8UD_DeJ7mFGctgaCstR2qIVNuVilaASc-G6mUxRHMWzO8-bUBVMAILHfujRQ0lzoPYE4ZY=w2400
+videoTabs:
+   - title: 4/17 video site survey
+     url: https://www.youtube.com/embed/uC38AX3aeRo
+
+
+

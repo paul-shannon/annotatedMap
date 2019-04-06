@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
+
+        \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+.mapCanvasClass{
+   margin: 20px;
+   height: 90vh;
+   width: 90vw;
+}
+
+.infoWindowTab {
+    height: 650px;
+    width: 800px;
+}
+
+</style><script>
+var map;
+var currentInfoWindow = null;
+// var marker1, marker2, infoWindow1, infoWindow2;
+//----------------------------------------------------------------------------------------------------
+function initializeMap()
+{
+   console.log("==== initialzing map")
+   var initialLat = 47.604881;
+   var initialLon = -122.526786;
+   var initialZoom = 13.000000;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
+
+   var mapOptions = {
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       }
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
+
+   var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "water",          elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "geometry",  stylers: [{ visibility: "off" }]}
+                 ];
+
+   map.setOptions({styles: myStyle});
+
+} // initializeMap
+//----------------------------------------------------------------------------------------------------
+$(document).ready(function() {
+    console.log("ready!")
+    initializeMap()
+    })
+
+</script><script>
+ function create_marker_1() {
+           var markerLat = 47.604903;
+           var markerLon = -122.531818;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 100,
+                      title: 'IslandWood',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow1_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">2/19 photo</a>
+    </li>
+    <li>
+      <a href="#tab_3">2/19 video</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>IslandWood</h4>
+    <ul>
+      <li>First reported: 2018</li>
+      <li>Last update: 2019-03-28</li>
+      <li>lat: 47.604903</li>
+      <li>lon: -122.531818</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 10</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <div style="width:580px">
+      <h5>Chronology</h5>
+      <ul><li><b> March 2019</b>, Tim Billo:
+     <p><i>the die-off at Islandwood seems quite a bit worse too &mdash; in that it has spread down
+    the entire trail from their woods down to the harbor. I also discovered a patch that looked like
+    an older die-off &mdash; ferns reduced to stubble, and a very bare understory like Seward's
+    ground zero &mdash; so a site that may have been overlooked in the past.</i></ul>
+      <h5> Photos and Videos</h5>
+      <ul><li><b>2/19 photo</b>: a cluster of dead sword fern crowns, likely died a couple of years ago.
+         <li><b>2/19 video</b>: Tim walks through several neighboring die-off sites
+       </ul>
+    </div>
+  </div>
+  <div id="tab_2">
+    <div>
+      <img src="https://lh3.googleusercontent.com/iVT6p0Sx40pjJj7v1BrmTojQ4is-iecdlvGUr7ovJE3DJROTAypt6t-ph4pykjq3mxs9cS9kTjDVIqTMWXjBDsg9FYg4Qw28ir9aA27ijoOh9wPRqES64u8ubo4Y_Ys_5uOA0MKUlag=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <iframe src="https://www.youtube.com/embed/8zf5GQ1dWPM?rel=0"  height="500" width="500" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow1 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow1, 'domready', function() {
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(markerCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } </script><script>
+ function create_marker_2() {
+           var markerLat = 47.595072;
+           var markerLon = -122.522760;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 100,
+                      title: 'Fort Ward and Blakely Harbor Parks, with connecting trail',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow2_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">8/17</a>
+    </li>
+    <li>
+      <a href="#tab_3">1/19</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Fort Ward and Blakely Harbor Parks, with connecting trail</h4>
+    <ul>
+      <li>First reported: 2017-08-23</li>
+      <li>Last update: 2019-03-28</li>
+      <li>lat: 47.595072</li>
+      <li>lon: -122.522760</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 10</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <div style="width:500px">
+  A mile long  <a href="https://www.google.com/maps/d/u/0/viewer?mid=1zwkGRmz53Dp6f0nORI82JVs3zp4&ll=47.59072250443086%2C-122.52289000000002&z=15"
+  target="_blank">trail</a> connects two parks in southern Bainbridge Island - Fort Ward and Port
+  Blakeley - maintained by the Bainbridge Island Metro Park and  Recreation District.  We first heard
+  of sword fern die-off in the summer of 2017.  It is now quite extensive and quite severe.
+
+<h5> Chronology</h5><ul><li><b>August 2017</b>: Darrell Howe made the first report: "Recently walked the trail from Fort Ward to Blakeley
+      Harbor on Bainbridge and noticed what appears to be fern die-off."
+
+    <li><b>March 2019</b>: Tim Billo reports "the situation along the trail above Blakely Harbor
+    is astounding--although I can't say if it is better or worse since I had never visited
+    before. It looks much like Seward Park did 3 years ago. Hundreds of dead ferns there in a large
+    contiguous area, and smaller patches further up the trail."
+
+  </ul><h5> Photos and Videos</h5><ul><li><b>8/17 photo</b>: accompanied Darrell Howe's first report from the connecting trail.
+         <li><b>2/19 video</b>: Tim's video from the trail.
+       </ul></div>
+  </div>
+  <div id="tab_2">
+    <div>
+      <img src="https://lh3.googleusercontent.com/qZWlMebh78j-0DKaLBnuQOn2pXyEukvPA7MqkMeMuO0r3nFTefzZ7Re9Ya9gv5VIu3LpiLr4AWVO4VVg1KKTvO1RWzXf3MLy5CJQ6ObBfIknAcczu75WhSTa0Qd4f46dCSY-Ih5CTGs=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <iframe src="https://www.youtube.com/embed/bFWLWprsUwA?rel=0"  height="500" width="500" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow2 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow2, 'domready', function() {
+              $("#infoWindow2_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow2.setPosition(markerCenter);
+              infoWindow2.open(map);
+              currentInfoWindow = infoWindow2;
+              });
+         } </script><script>
+function createMarkers(){ create_marker_1(); create_marker_2();}
+</script></head>
+  <body>
+    <div id="map_canvas" class="mapCanvasClass">yo!</div>
+  </body>
+</html>

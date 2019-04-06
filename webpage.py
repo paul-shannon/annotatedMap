@@ -91,14 +91,14 @@ class WebPage:
        markerFunctionFileNames = []
 
        for siteAnnotationDirectory in self.siteAnnotationDirectories:
-          print("--- creating js function for site descirbed in %s" % siteAnnotationDirectory)
+          # print("--- creating js function for site descirbed in %s" % siteAnnotationDirectory)
           markerNumber += 1
           yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
           assert(os.path.exists(yamlFile))
           siteAnnotation = SiteAnnotation(yamlFile)
           marker = Marker(siteAnnotation, markerNumber)
           filename = "marker_%d.js" % markerNumber
-          print(" writing marker function to %s" % filename)
+          #print(" writing marker function to %s" % filename)
           markerFunctionFileNames.append(filename)
           marker.toJavascriptFile(filename)
 
@@ -113,7 +113,7 @@ class WebPage:
 
       for jsFilename in markerFunctionFileNames:
          jsFilenamePath = os.path.join(os.getcwd(), jsFilename)
-         print("wish to load javascript marker function file: %s" % jsFilenamePath)
+         #print("wish to load javascript marker function file: %s" % jsFilenamePath)
          assert(os.path.exists(jsFilenamePath))
          jsSource = jsSource + "<script>\n%s</script>" % open(jsFilenamePath).read()
          functionShortName = jsFilename.replace(".js", "")

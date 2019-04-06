@@ -118,7 +118,8 @@ class Marker:
             htmlDoc.line('li', 'lon: %f' % anno.lon)
             htmlDoc.line('li', 'area: %5.2f acres' % anno.area)
             htmlDoc.line('li', 'severity: %d' % anno.severity)
-            htmlDoc.line('li', 'current contact: %s' % anno.contact)
+            if(len(anno.contact) > 0):
+               htmlDoc.line('li', 'Current contact: %s' % anno.contact)
 
 
     #------------------------------------------------------------------------------------------------------------------------
@@ -150,7 +151,7 @@ class Marker:
 
        #pdb.set_trace()
        with htmlDoc.tag("div"):
-          htmlDoc.asis('<iframe src="%s"  height="500" frameborder="0" allowfullscreen></iframe>' % url)
+          htmlDoc.asis('<iframe src="%s"  height="500" width="500" frameborder="0" allowfullscreen></iframe>' % url)
           #htmlDoc.stag("iframe", src="%s" % url, height="500", frameborder="0" allowfullscreen="True")
 
      #'<iframe width="300" height="215" src="http://www.youtube.com/embed/vG4vr83Ffd4" frameborder="0" allowfullscreen></iframe>',
