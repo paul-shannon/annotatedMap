@@ -1,0 +1,33 @@
+area: 10
+color: red
+contact: ''
+firstReported: '2018-12-01'
+lastUpdate:
+lat:  47.554986
+lon:  -122.2516566
+notesFile: notes.html
+radius: 100
+severity: 0
+text: nothing yet
+title:
+type: simple
+
+
+title:  Delfino Restoration Work Party Decebmer 1, 2018
+lat:  47.554986
+lon:  -122.2516566
+firstReported: 2018-12-01
+lastUpdate:
+radius:  10
+area: 10
+severity: 10
+notesFile: notes.html
+videoTabs:
+   - title: "video"
+     url: https://www.youtube.com/embed/l0xVAf4-fFY?rel=0
+
+
+
+
+
+
