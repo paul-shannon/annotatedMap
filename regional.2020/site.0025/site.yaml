@@ -1,0 +1,13 @@
+area: 10
+color: orange
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.53118964815624
+lon: -121.9983830571527
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 122 dead counted from trail in just 100'.' Al Smith Field Report 9
+title: 122 dead along trail
+type: simple

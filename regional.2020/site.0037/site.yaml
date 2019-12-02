@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.5634311006828
+lon: -122.3008602367887
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 30 plus dead over couple hundred feet by fifty feet. Al Smith Field Report 21
+title: '>30 dead'
+type: simple

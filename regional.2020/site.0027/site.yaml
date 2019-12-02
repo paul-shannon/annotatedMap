@@ -1,0 +1,14 @@
+area: 10
+color: orange
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.58335215773569
+lon: -122.2255192591456
+notesFile: notes.html
+radius: 100
+severity: 0
+text: over 100 dead, but unlike north mercerdale not many new dead in last year and
+  one half. Al Smith Field Report 11
+title: '>100 dead'
+type: simple

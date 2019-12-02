@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.59584074430801
+lon: -122.167543383081
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 20 plus dead in area, 2 or 3 dead previously. Al Smith Field Report 18
+title: increasing deaths over time
+type: simple

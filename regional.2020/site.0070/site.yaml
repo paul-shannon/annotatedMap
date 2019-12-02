@@ -1,0 +1,14 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.58275980015264
+lon: -122.2258667363363
+notesFile: notes.html
+radius: 100
+severity: 0
+text: going for better GPS point. 20+ dead in immediate area and all evidence of pathogen
+  straying into east ravine. Al Smith Field Report 56
+title: '>20 dead'
+type: simple

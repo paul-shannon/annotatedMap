@@ -1,0 +1,14 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.53052140989762
+lon: -122.0232397967299
+notesFile: notes.html
+radius: 100
+severity: 0
+text: '1000+ dead sword ferns counted so far on trails: swamp 450, big tree 100, plateau
+  lake 200, school? 150, brink 150. Al Smith Field Report 32'
+title: '>1000 dead'
+type: simple

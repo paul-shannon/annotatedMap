@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
+
+        \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+.mapCanvasClass{
+   margin: 20px;
+   height: 90vh;
+   width: 90vw;
+}
+
+.infoWindowTab {
+    height: 650px;
+    width: 800px;
+}
+
+</style><script>
+var map;
+var currentInfoWindow = null;
+// var marker1, marker2, infoWindow1, infoWindow2;
+//----------------------------------------------------------------------------------------------------
+function initializeMap()
+{
+   console.log("==== initialzing map")
+   var initialLat = 47.600000;
+   var initialLon = -122.418343;
+   var initialZoom = 9.000000;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
+
+   var mapOptions = {
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       }
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
+
+   var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "water",          elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "geometry",  stylers: [{ visibility: "off" }]}
+                 ];
+
+   map.setOptions({styles: myStyle});
+
+} // initializeMap
+//----------------------------------------------------------------------------------------------------
+$(document).ready(function() {
+    console.log("ready!")
+    initializeMap()
+    })
+
+</script><script>
+ function create_marker_1() {
+           var markerLat = 47.696636;
+           var markerLon = -122.050549;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Redmond Watershed Preserve Die-off 2',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow1_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Die-off 2</h4>
+    <ul>
+      <li>First reported: 2019-06-05</li>
+      <li>Last update: 2019-06-05</li>
+      <li>lat: 47.696636</li>
+      <li>lon: -122.050549</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow1 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow1, 'domready', function() {
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(markerCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } </script><script>
+ function create_marker_2() {
+           var markerLat = 47.710220;
+           var markerLon = -122.249290;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Denny Creek Trailhead',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow2_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Denny Creek Trailhead</h4>
+    <ul>
+      <li>First reported: 2019-06-05</li>
+      <li>Last update: 2019-06-05</li>
+      <li>lat: 47.710220</li>
+      <li>lon: -122.249290</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow2 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow2, 'domready', function() {
+              $("#infoWindow2_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow2.setPosition(markerCenter);
+              infoWindow2.open(map);
+              currentInfoWindow = infoWindow2;
+              });
+         } </script><script>
+ function create_marker_3() {
+           var markerLat = 47.697997;
+           var markerLon = -122.051710;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Redmond Watershed Preserve Die-off 1',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow3_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Die-off 1</h4>
+    <ul>
+      <li>First reported: 2019-06-05</li>
+      <li>Last update: 2019-06-05</li>
+      <li>lat: 47.697997</li>
+      <li>lon: -122.051710</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1"><h4>Weowna Parks Trail</h4>
+
+Just north of the parking lot a trail goes left and right, directly perpendicular to that
+intersection going the opposite way of the parking lot walkway is a large die off.
+
+<div style="width: 500px"><table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' ><thead><tr><th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th><th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th></tr></thead><tbody><tr><td style='text-align: left;'>ID</td><td style='text-align: left;'>50228</td></tr><tr><td style='text-align: left;'>Date</td><td style='text-align: left;'>06/17/2019</td></tr><tr><td style='text-align: left;'>Site.Name</td><td style='text-align: left;'>Weomna Park</td></tr><tr><td style='text-align: left;'>Surveyor</td><td style='text-align: left;'>Caleb GM</td></tr><tr><td style='text-align: left;'>Geo.Location</td><td style='text-align: left;'>47.592794,-122.114915</td></tr><tr><td style='text-align: left;'>Elevation</td><td style='text-align: left;'>232</td></tr><tr><td style='text-align: left;'>Area</td><td style='text-align: left;'>10m radius</td></tr><tr><td style='text-align: left;'>Shape</td><td style='text-align: left;'>circle</td></tr><tr><td style='text-align: left;'>Slope</td><td style='text-align: left;'>0</td></tr><tr><td style='text-align: left;'>Aspect</td><td style='text-align: left;'>0</td></tr><tr><td style='text-align: left;'>Fern.Count..Healthy.</td><td style='text-align: left;'>82</td></tr><tr><td style='text-align: left;'>Fern.Count..No.new.growth.</td><td style='text-align: left;'>2</td></tr><tr><td style='text-align: left;'>Fern.Count..Dead.</td><td style='text-align: left;'>54</td></tr><tr><td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td><td style='text-align: left;'>75</td></tr><tr><td style='text-align: left;'>Leaf.Litter.Depth</td><td style='text-align: left;'>80</td></tr><tr><td style='text-align: left;'>Canopy.Cover</td><td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td></tr><tr><td style='text-align: left;'>Trees...DBH.</td><td style='text-align: left;'>mostly peripheral except maple on center point</td></tr><tr><td style='text-align: left;'>Trees..Distribution.</td><td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td></tr><tr><td style='text-align: left;'>Trees..Species.</td><td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td></tr><tr><td style='text-align: left;'>Shrubs..Species.</td><td style='text-align: left;'>in grove of large cedars</td></tr><tr><td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td><td style='border-bottom: 2px solid grey; text-align: left;'></td></tr></tbody></table></div></div>
+</div>`
+            
+           infoWindow3 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow3, 'domready', function() {
+              $("#infoWindow3_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow3.setPosition(markerCenter);
+              infoWindow3.open(map);
+              currentInfoWindow = infoWindow3;
+              });
+         } </script><script>
+ function create_marker_4() {
+           var markerLat = 47.337007;
+           var markerLon = -123.309368;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'NF-24 (near Vance Creek Viaduct trailhead)',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow4_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>NF-24 (near Vance Creek Viaduct trailhead)</h4>
+    <ul>
+      <li>First reported: 2019-06-19</li>
+      <li>Last update: 2019-06-19</li>
+      <li>lat: 47.337007</li>
+      <li>lon: -123.309368</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow4 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow4, 'domready', function() {
+              $("#infoWindow4_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow4.setPosition(markerCenter);
+              infoWindow4.open(map);
+              currentInfoWindow = infoWindow4;
+              });
+         } </script><script>
+ function create_marker_5() {
+           var markerLat = 47.847857;
+           var markerLon = -122.048754;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Lord Hill Die-off 2',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow5_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Lord Hill Die-off 2</h4>
+    <ul>
+      <li>First reported: 2019-06-25</li>
+      <li>Last update: 2019-06-25</li>
+      <li>lat: 47.847857</li>
+      <li>lon: -122.048754</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow5 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow5, 'domready', function() {
+              $("#infoWindow5_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow5.setPosition(markerCenter);
+              infoWindow5.open(map);
+              currentInfoWindow = infoWindow5;
+              });
+         } </script><script>
+ function create_marker_6() {
+           var markerLat = 47.412360;
+           var markerLon = -123.322170;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 1000,
+                      title: 'Brown Creek Campground, Olympic National Forest',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow6_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Brown Creek Campground, Olympic National Forest</h4>
+    <ul>
+      <li>First reported: 2018-08-01</li>
+      <li>Last update: 2019-06-06</li>
+      <li>lat: 47.412360</li>
+      <li>lon: -123.322170</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow6 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow6, 'domready', function() {
+              $("#infoWindow6_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow6.setPosition(markerCenter);
+              infoWindow6.open(map);
+              currentInfoWindow = infoWindow6;
+              });
+         } </script><script>
+ function create_marker_7() {
+           var markerLat = 47.523645;
+           var markerLon = -121.467627;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Snoqualmie River (SRD2)',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow7_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Snoqualmie River (SRD2)</h4>
+    <ul>
+      <li>First reported: 2019-06-26</li>
+      <li>Last update: 2019-06-26</li>
+      <li>lat: 47.523645</li>
+      <li>lon: -121.467627</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow7 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow7, 'domready', function() {
+              $("#infoWindow7_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow7.setPosition(markerCenter);
+              infoWindow7.open(map);
+              currentInfoWindow = infoWindow7;
+              });
+         } </script><script>
+ function create_marker_8() {
+           var markerLat = 45.472610;
+           var markerLon = -122.275430;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Sandy River Gorge Secret Trail',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow8_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Sandy River Gorge Secret Trail</h4>
+    <ul>
+      <li>First reported: 2019-06-10</li>
+      <li>Last update: 2019-06-10</li>
+      <li>lat: 45.472610</li>
+      <li>lon: -122.275430</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow8 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow8, 'domready', function() {
+              $("#infoWindow8_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow8.setPosition(markerCenter);
+              infoWindow8.open(map);
+              currentInfoWindow = infoWindow8;
+              });
+         } </script><script>
+ function create_marker_9() {
+           var markerLat = 44.780050;
+           var markerLon = -122.579400;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Osprey Road, Marion County OR',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow9_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Osprey Road, Marion County OR</h4>
+    <ul>
+      <li>First reported: 2019-08-01</li>
+      <li>Last update: 2019-08-01</li>
+      <li>lat: 44.780050</li>
+      <li>lon: -122.579400</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow9 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow9, 'domready', function() {
+              $("#infoWindow9_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow9.setPosition(markerCenter);
+              infoWindow9.open(map);
+              currentInfoWindow = infoWindow9;
+              });
+         } </script><script>
+ function create_marker_10() {
+           var markerLat = 47.413170;
+           var markerLon = -123.307880;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'FS210 (Near Brown Creek Campground)',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow10_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>FS210 (Near Brown Creek Campground)</h4>
+    <ul>
+      <li>First reported: 2019-06-17</li>
+      <li>Last update: 2019-06-17</li>
+      <li>lat: 47.413170</li>
+      <li>lon: -123.307880</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow10 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow10, 'domready', function() {
+              $("#infoWindow10_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow10.setPosition(markerCenter);
+              infoWindow10.open(map);
+              currentInfoWindow = infoWindow10;
+              });
+         } </script><script>
+ function create_marker_11() {
+           var markerLat = 47.701276;
+           var markerLon = -122.583528;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 100,
+                      title: 'Sandy Hook Road',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow11_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">April 2017</a>
+    </li>
+    <li>
+      <a href="#tab_3">4/17 video site survey</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Sandy Hook Road</h4>
+    <ul>
+      <li>First reported: 2010-01-01</li>
+      <li>Last update: 2019-03-28</li>
+      <li>lat: 47.701276</li>
+      <li>lon: -122.583528</li>
+      <li>area:  2.00 acres</li>
+      <li>severity: 10</li>
+      <li>Current contact: Paul Shannon</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Two acres, private second-growth forest, first report in the region 2010.</h4>
+    <div style="width: 500px">
+As described in the
+<a href="https://www.seattletimes.com/pacific-nw-magazine/whats-killing-our-sword-ferns" target="_blank">Seattle
+ Times Pacific NW magazine, March 28th 2019</a>:
+
+<p>
+The ferns were so thick and enormous that, as a child, she could barely wade through them. More than
+nine years ago, as she was getting ready to go abroad for a year, Danilchik noticed the plants
+looked droopy. When she returned in 2010, she was horrified at the shriveled “crispy” ferns lining
+her driveway.
+
+<p>
+The ferns are all gone now, and all attempts to replant ended in failure. “It looks like a scorched
+earth,” Danilchik says.
+
+</div>
+  </div>
+  <div id="tab_2">
+    <div>
+      <img src="https://lh3.googleusercontent.com/56unZLrv9LEcafvoAMfMDkEjR5jJNnXGUHhcF0_h19sArknGjR5XQwB2ISmj_nSxxohlG8UD_DeJ7mFGctgaCstR2qIVNuVilaASc-G6mUxRHMWzO8-bUBVMAILHfujRQ0lzoPYE4ZY=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <iframe src="https://www.youtube.com/embed/uC38AX3aeRo"  height="500" width="500" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow11 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow11, 'domready', function() {
+              $("#infoWindow11_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow11.setPosition(markerCenter);
+              infoWindow11.open(map);
+              currentInfoWindow = infoWindow11;
+              });
+         } </script><script>
+ function create_marker_12() {
+           var markerLat = 47.532344;
+           var markerLon = -122.006808;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Tiger Mt. Swamp Trail Die Off 1 (TMD1)',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow12_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Tiger Mt. Swamp Trail Die Off 1 (TMD1)</h4>
+    <ul>
+      <li>First reported: 2019-06-25</li>
+      <li>Last update: 2019-06-25</li>
+      <li>lat: 47.532344</li>
+      <li>lon: -122.006808</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow12 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow12, 'domready', function() {
+              $("#infoWindow12_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow12.setPosition(markerCenter);
+              infoWindow12.open(map);
+              currentInfoWindow = infoWindow12;
+              });
+         } </script><script>
+ function create_marker_13() {
+           var markerLat = 47.592794;
+           var markerLon = -122.114915;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 50,
+                      title: 'Weowna Park Trails',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow13_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Weowna Park Trails</h4>
+    <ul>
+      <li>First reported: 2019-06-17</li>
+      <li>Last update: 2019-06-17</li>
+      <li>lat: 47.592794</li>
+      <li>lon: -122.114915</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 5</li>
+      <li>Current contact: Caleb Goldstein-Miller</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <h4>Weowna Parks Trail</h4>
+    <div style="width: 500px">
+      <table class='gmisc_table' style='border-collapse: collapse; margin-top: 1em; margin-bottom: 1em;' >
+        <thead>
+          <tr>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey;'> Field </th>
+            <th style='border-bottom: 1px solid grey; border-top: 2px solid grey; text-align: center;'>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style='text-align: left;'>ID</td>
+            <td style='text-align: left;'>50228</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Date</td>
+            <td style='text-align: left;'>06/17/2019</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Site.Name</td>
+            <td style='text-align: left;'>Weomna Park</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Surveyor</td>
+            <td style='text-align: left;'>Caleb GM</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Geo.Location</td>
+            <td style='text-align: left;'>47.592794,-122.114915</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Elevation</td>
+            <td style='text-align: left;'>232</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Area</td>
+            <td style='text-align: left;'>10m radius</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shape</td>
+            <td style='text-align: left;'>circle</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Slope</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Aspect</td>
+            <td style='text-align: left;'>0</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Healthy.</td>
+            <td style='text-align: left;'>82</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..No.new.growth.</td>
+            <td style='text-align: left;'>2</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Fern.Count..Dead.</td>
+            <td style='text-align: left;'>54</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>estimated.pre.die.off.sword.fern.dominance</td>
+            <td style='text-align: left;'>75</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Leaf.Litter.Depth</td>
+            <td style='text-align: left;'>80</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Canopy.Cover</td>
+            <td style='text-align: left;'>5ft, 1ft, 4ft, 1ft, 4ft</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees...DBH.</td>
+            <td style='text-align: left;'>mostly peripheral except maple on center point</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Distribution.</td>
+            <td style='text-align: left;'>Acer macrophyllum / Bigleaf maple, Big-leaf maple,Thuja plicata / Western red cedar, Western red cedar, Canoe cedar</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Trees..Species.</td>
+            <td style='text-align: left;'>Mahonia aquifolium / Tall oregon grape,Pteridium / Brackenfern,Gaultheria shallon / Salal</td>
+          </tr>
+          <tr>
+            <td style='text-align: left;'>Shrubs..Species.</td>
+            <td style='text-align: left;'>in grove of large cedars</td>
+          </tr>
+          <tr>
+            <td style='border-bottom: 2px solid grey; text-align: left;'>Notes</td>
+            <td style='border-bottom: 2px solid grey; text-align: left;'></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>`
+            
+           infoWindow13 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow13, 'domready', function() {
+              $("#infoWindow13_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow13.setPosition(markerCenter);
+              infoWindow13.open(map);
+              currentInfoWindow = infoWindow13;
+              });
+         } </script><script>
+function createMarkers(){ create_marker_1(); create_marker_2(); create_marker_3(); create_marker_4(); create_marker_5(); create_marker_6(); create_marker_7(); create_marker_8(); create_marker_9(); create_marker_10(); create_marker_11(); create_marker_12(); create_marker_13();}
+</script></head>
+  <body>
+    <div id="map_canvas" class="mapCanvasClass">yo!</div>
+  </body>
+</html>

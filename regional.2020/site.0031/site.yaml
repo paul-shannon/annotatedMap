@@ -1,0 +1,13 @@
+area: 10
+color: blue
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.52685155888322
+lon: -122.0041537323472
+notesFile: notes.html
+radius: 100
+severity: 0
+text: 80 plus dead to this point. Al Smith Field Report 15
+title: '>80 dead'
+type: simple
