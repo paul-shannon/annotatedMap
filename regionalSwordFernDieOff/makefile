@@ -1,5 +1,4 @@
-default: create
+default: 
+	python ../regen.py sewardParkGroundZero groundZero.html
 
-create:
-	python generateDirectories.py
 

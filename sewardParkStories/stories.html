@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
+
+        \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+.mapCanvasClass{
+   margin: 20px;
+   height: 90vh;
+   width: 90vw;
+}
+
+.infoWindowTab {
+    height: 650px;
+    width: 800px;
+}
+
+</style><script>
+var map;
+var currentInfoWindow = null;
+// var marker1, marker2, infoWindow1, infoWindow2;
+//----------------------------------------------------------------------------------------------------
+function initializeMap()
+{
+   console.log("==== initialzing map")
+   var initialLat = 47.556312;
+   var initialLon = -122.268748;
+   var initialZoom = 15.000000;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
+
+   var mapOptions = {
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       }
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
+
+   var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "water",          elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "geometry",  stylers: [{ visibility: "off" }]}
+                 ];
+
+   map.setOptions({styles: myStyle});
+
+} // initializeMap
+//----------------------------------------------------------------------------------------------------
+$(document).ready(function() {
+    console.log("ready!")
+    initializeMap()
+    })
+
+</script><script>
+ function create_marker_1() {
+           var markerLat = 47.553333;
+           var markerLon = -122.254167;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 30,
+                      title: 'Widewinging Heron',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow1_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Widewinging Heron</h4>
+    <ul>
+      <li>First reported: </li>
+      <li>Last update: </li>
+      <li>lat: 47.553333</li>
+      <li>lon: -122.254167</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 0</li>
+    </ul>
+  </div>
+  <div id="tab_1"><pre style='background-color:beige; font-size: 18px; font-family: georgia'>
+For who-knows-how-many years, a single great blue heron has come to
+balance on the old piling here. The heron flies into Denise Levertov's
+poem <a href="http://www.sharonsinger.ca/poem.php?poem_id=308/" target=blank>"A Reward"</a>.  And yes, seeing that "widewinged" bird wings
+the spirit wide open.
+<pre></div>
+</div>`
+            
+           infoWindow1 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow1, 'domready', function() {
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(markerCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } </script><script>
+ function create_marker_2() {
+           var markerLat = 47.558510;
+           var markerLon = -122.284200;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 30,
+                      title: 'Empire Espresso',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow2_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Empire Espresso</h4>
+    <ul>
+      <li>First reported: </li>
+      <li>Last update: </li>
+      <li>lat: 47.558510</li>
+      <li>lon: -122.284200</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 0</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <pre style='background-color:beige; font-size: 18px; font-family: georgia'>
+My seven-year-old goddaughter and I sit in a café, more than a mile
+from Seward Park, but still holding Sqebeqsed in mind. I read
+her <a href="http://www.washington.edu/uwired/outreach/cspn/Website/Classroom%20Materials/Reading%20the%20Region/Northwest%20Schools%20of%20Literature/Commentary/18.html">Denise Levertov's poem "Settling."</a> She tips her head at the line
+
+  Grey is the price 
+  of neighboring with eagles.
+
+This child has always lived close to eagles, always cupped small hands
+around her eyebrows on sunny days and complained of rays piercing her
+eyes. She is confused. How is that a price? she wants to know.
+
+</pre>
+  </div>
+</div>`
+            
+           infoWindow2 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow2, 'domready', function() {
+              $("#infoWindow2_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow2.setPosition(markerCenter);
+              infoWindow2.open(map);
+              currentInfoWindow = infoWindow2;
+              });
+         } </script><script>
+function createMarkers(){ create_marker_1(); create_marker_2();}
+</script></head>
+  <body>
+    <div id="map_canvas" class="mapCanvasClass">yo!</div>
+  </body>
+</html>

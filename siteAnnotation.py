@@ -28,7 +28,7 @@ class SiteAnnotation:
    def __init__(self, yamlFile):
        assert(os.path.exists(yamlFile))
        self.directoryAbsolutePath = os.path.dirname(yamlFile)
-       info = yaml.load(open(yamlFile))
+       info = yaml.load(open(yamlFile), Loader=yaml.FullLoader)
        keys = list(info.keys())
        assert(self.validAnnotation(info))
        self.title = info["title"]

@@ -27,7 +27,7 @@ class WebPage:
         self.directory = directory
         configFile = os.path.join(directory, "config.yaml")
         assert(os.path.exists(configFile))
-        config = yaml.load(open(configFile))
+        config = yaml.load(open(configFile), Loader=yaml.FullLoader)
         keys = list(config.keys())
         assert("mapCenter" in keys)
         assert("mapZoom" in keys)
@@ -94,13 +94,16 @@ class WebPage:
           # print("--- creating js function for site descirbed in %s" % siteAnnotationDirectory)
           markerNumber += 1
           yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
-          assert(os.path.exists(yamlFile))
-          siteAnnotation = SiteAnnotation(yamlFile)
-          marker = Marker(siteAnnotation, markerNumber)
-          filename = "marker_%d.js" % markerNumber
-          #print(" writing marker function to %s" % filename)
-          markerFunctionFileNames.append(filename)
-          marker.toJavascriptFile(filename)
+          #pdb.set_trace()
+          print(" yamlFile: %s   exists: %s" % (yamlFile, os.path.exists(yamlFile)))
+          if(os.path.exists(yamlFile)):
+             assert(os.path.exists(yamlFile))
+             siteAnnotation = SiteAnnotation(yamlFile)
+             marker = Marker(siteAnnotation, markerNumber)
+             filename = "marker_%d.js" % markerNumber
+             #print(" writing marker function to %s" % filename)
+             markerFunctionFileNames.append(filename)
+             marker.toJavascriptFile(filename)
 
        return(markerFunctionFileNames)
 

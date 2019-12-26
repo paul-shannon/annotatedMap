@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
+
+        \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+.mapCanvasClass{
+   margin: 20px;
+   height: 90vh;
+   width: 90vw;
+}
+
+.infoWindowTab {
+    height: 650px;
+    width: 800px;
+}
+
+</style><script>
+var map;
+var currentInfoWindow = null;
+// var marker1, marker2, infoWindow1, infoWindow2;
+//----------------------------------------------------------------------------------------------------
+function initializeMap()
+{
+   console.log("==== initialzing map")
+   var initialLat = 47.704000;
+   var initialLon = -122.040135;
+   var initialZoom = 14.000000;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
+
+   var mapOptions = {
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       }
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
+
+   var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "water",          elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "geometry",  stylers: [{ visibility: "off" }]}
+                 ];
+
+   map.setOptions({styles: myStyle});
+
+} // initializeMap
+//----------------------------------------------------------------------------------------------------
+$(document).ready(function() {
+    console.log("ready!")
+    initializeMap()
+    })
+
+</script><script>
+ function create_marker_1() {
+           var markerLat = 47.696677;
+           var markerLon = -122.051752;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 58,
+                      title: 'Redmond Watershed Preserve Number One',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow1_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">photo 1</a>
+    </li>
+    <li>
+      <a href="#tab_3">photo 2</a>
+    </li>
+    <li>
+      <a href="#tab_4">photo 3</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Number One</h4>
+    <ul>
+      <li>First reported: 2018-07-18</li>
+      <li>Last update: 2018-07-18</li>
+      <li>lat: 47.696677</li>
+      <li>lon: -122.051752</li>
+      <li>area:  0.40 acres</li>
+      <li>severity: 116</li>
+      <li>Current contact: Al Smith</li>
+    </ul>
+  </div>
+  <div id="tab_1">30 dead or so at beginning of trail 116, dead trout loop trail
+
+</div>
+  <div id="tab_2">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/138-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/139-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_4">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/140-small.png" height="600" />
+    </div>
+  </div>
+</div>`
+            
+           infoWindow1 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow1, 'domready', function() {
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(markerCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } </script><script>
+ function create_marker_2() {
+           var markerLat = 47.696443;
+           var markerLon = -122.055955;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 168,
+                      title: 'Redmond Watershed Preserve Number Four',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow2_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">photo 1</a>
+    </li>
+    <li>
+      <a href="#tab_3">photo 2</a>
+    </li>
+    <li>
+      <a href="#tab_4">photo 3</a>
+    </li>
+    <li>
+      <a href="#tab_5">photo 4</a>
+    </li>
+    <li>
+      <a href="#tab_6">photo 5</a>
+    </li>
+    <li>
+      <a href="#tab_7">photo 6</a>
+    </li>
+    <li>
+      <a href="#tab_8">photo 7</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Number Four</h4>
+    <ul>
+      <li>First reported: 2019-04-28</li>
+      <li>Last update: 2019-04-28</li>
+      <li>lat: 47.696443</li>
+      <li>lon: -122.055955</li>
+      <li>area:  1.00 acres</li>
+      <li>severity: 335</li>
+      <li>Current contact: Al Smith</li>
+    </ul>
+  </div>
+  <div id="tab_1">55 dead to this point 20+ dead in area many moss covered crowns.
+
+190 + dead trout loop trail, 50+ dead trillium connecter.
+
+20+ dead mostly start of trail.
+
+</div>
+  <div id="tab_2">
+    <div>
+      <img src="https://lh3.googleusercontent.com/v7IGQs0I1IT749ueWvXaXLcM86G2FBB5onmiBgSoNT6Yv64laAiAhB0pqg-QHhbrvhBCAWSWnxvDQROpYxKNdXz1uv0kQDO0DQTBFZSwzji_PIiPL6WtRSvXJIfR70jQZrV_53csvl4=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/568-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_4">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/569-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_5">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/570-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_6">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/571-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_7">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/572-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_8">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/573-small.png" height="600" />
+    </div>
+  </div>
+</div>`
+            
+           infoWindow2 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow2, 'domready', function() {
+              $("#infoWindow2_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow2.setPosition(markerCenter);
+              infoWindow2.open(map);
+              currentInfoWindow = infoWindow2;
+              });
+         } </script><script>
+ function create_marker_3() {
+           var markerLat = 47.705235;
+           var markerLon = -122.050972;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 30,
+                      title: 'Redmond Watershed Preserve Number 3',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow3_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">photo 1</a>
+    </li>
+    <li>
+      <a href="#tab_3">photo 2</a>
+    </li>
+    <li>
+      <a href="#tab_4">photo 3</a>
+    </li>
+    <li>
+      <a href="#tab_5">photo 4</a>
+    </li>
+    <li>
+      <a href="#tab_6">photo 5</a>
+    </li>
+    <li>
+      <a href="#tab_7">photo 6</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Number 3</h4>
+    <ul>
+      <li>First reported: 2019-04-28</li>
+      <li>Last update: 2019-04-28</li>
+      <li>lat: 47.705235</li>
+      <li>lon: -122.050972</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 30</li>
+      <li>Current contact: Al Smith</li>
+    </ul>
+  </div>
+  <div id="tab_1">August a few dead at this site. now over 30 dead plus others not looking so good.
+</div>
+  <div id="tab_2">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/542-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/543-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_4">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/544-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_5">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/545-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_6">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/546-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_7">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/547-small.png" height="600" />
+    </div>
+  </div>
+</div>`
+            
+           infoWindow3 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow3, 'domready', function() {
+              $("#infoWindow3_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow3.setPosition(markerCenter);
+              infoWindow3.open(map);
+              currentInfoWindow = infoWindow3;
+              });
+         } </script><script>
+ function create_marker_4() {
+           var markerLat = 47.699977;
+           var markerLon = -122.053719;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 51,
+                      title: 'Redmond Watershed Preserve Number 2',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow4_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">photo 1</a>
+    </li>
+    <li>
+      <a href="#tab_3">photo 2</a>
+    </li>
+    <li>
+      <a href="#tab_4">photo 3</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Redmond Watershed Preserve Number 2</h4>
+    <ul>
+      <li>First reported: 2018-07-18</li>
+      <li>Last update: 2018-07-18</li>
+      <li>lat: 47.699977</li>
+      <li>lon: -122.053719</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 102</li>
+      <li>Current contact: Al Smith</li>
+    </ul>
+  </div>
+  <div id="tab_1">87 dead to this point. here about 15 dead, but are mostly moss covered
+
+</div>
+  <div id="tab_2">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/141-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/142-small.png" height="600" />
+    </div>
+  </div>
+  <div id="tab_4">
+    <div>
+      <img src="http://pshannon.net/swordFerns/photos/143-small.png" height="600" />
+    </div>
+  </div>
+</div>`
+            
+           infoWindow4 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow4, 'domready', function() {
+              $("#infoWindow4_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow4.setPosition(markerCenter);
+              infoWindow4.open(map);
+              currentInfoWindow = infoWindow4;
+              });
+         } </script><script>
+function createMarkers(){ create_marker_1(); create_marker_2(); create_marker_3(); create_marker_4();}
+</script></head>
+  <body>
+    <div id="map_canvas" class="mapCanvasClass">yo!</div>
+  </body>
+</html>
