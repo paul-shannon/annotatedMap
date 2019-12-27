@@ -1,0 +1,2119 @@
+Cheasty Mt View 1:
+  Address: 4701 Mountain View Dr S, Seattle, WA 98108
+  Point_ID: CHMV_PP1
+  Date: 6/28/17
+  Num: 1
+  Comments: Off trail on ridge east of bowl
+  Other: Null
+  GlobalID: {BC3B1BD8-6275-4C82-9E17-31A50E35390B}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.297510721705
+  lat: 47.56139467268486
+Cheasty Mt View 2:
+  Address: 4701 Mountain View Dr S, Seattle, WA 98108
+  Point_ID: CHMV_PP2
+  Date: 6/28/17
+  Num: 2
+  Comments: Null
+  Other: Null
+  GlobalID: {E323CE58-9EDC-42A4-BA0D-4DB6EA1F9C71}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2976684084808
+  lat: 47.56145038247859
+Cheasty Mt View 3:
+  Address: 4701 Mountain View Dr S, Seattle, WA 98108
+  Point_ID: CHMV_PP3
+  Date: 6/28/17
+  Num: 1
+  Comments: On edge of social trail
+  Other: Null
+  GlobalID: {36307E02-5900-4E8A-89F6-F73C3ED70445}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2981092703879
+  lat: 47.56131516035519
+Cheasty Mt View 4:
+  Address: 4701 Mountain View Dr S, Seattle, WA 98108
+  Point_ID: CHMV_PP4
+  Date: 6/28/17
+  Num: 1
+  Comments: Just east of trail at base of decaying stump
+  Other: Null
+  GlobalID: {C1B40DD7-62D5-489A-A55F-802454692BBB}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2985703322633
+  lat: 47.56108211983135
+Lakeridge Park 1:
+  Address: Null
+  Point_ID: DHC#1
+  Date: 8/25/17
+  Num: 1
+  Comments: east of road facing due north
+  Other: stake approximately 12 feet east of pavement/road
+  GlobalID: {D791FDFB-880B-4707-9010-B459C99BE5EE}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2487508493193
+  lat: 47.50930839506513
+Lakeridge Park 2:
+  Address: Null
+  Point_ID: DHC#2
+  Date: 8/25/17
+  Num: 1
+  Comments: photo depicts steep se facing slope,  some completely dead ferns among healthy.  Mature acma forest
+  Other: photo facing wnw, stake near edge of wet "gully"
+  GlobalID: {263D9AE1-B72C-4A5C-B2A5-0C9833EB40C1}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2491365220084
+  lat: 47.50920995300584
+lakeridge park:
+  Address: Null
+  Point_ID: DHC#3
+  Date: 8/25/2017
+  Num: 3
+  Comments: 15 feet off trail, near base of western red cedar
+  Other: P1=SE, P2=E,  P3=SW
+  GlobalID: {26794048-0557-41C7-99BF-13664D642616}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2471889932981
+  lat: 47.50613253152888
+Lekeridge Park:
+  Address: Null
+  Point_ID: DHC#4
+  Date: 8/25/2017
+  Num: 2
+  Comments: east facing slope, at W edge of trail
+  Other: P1=SSW, P2=W
+  GlobalID: {EAB6FA81-2F7D-4CF8-ACB4-3B043F9CFF4C}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.247494205861
+  lat: 47.50534177116946
+seward park 1:
+  Address: Null
+  Point_ID: 1
+  Date: 9/13/17
+  Num: 2
+  Comments: Ground Zero
+  Other: Null
+  GlobalID: {CD1EEB9A-E38B-45E0-85A8-AFB54874B5F6}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.249524314591
+  lat: 47.55542120578977
+cougar, redtown:
+  Address: Null
+  Point_ID: crt#1
+  Date: 9-22,2017
+  Num: Null
+  Comments: northeast
+  Other: four or five scattered between trailhead and mead    ow restoration site and back in  a loop. sept 22 roughly 50 more dead
+  GlobalID: {D6F1A4CB-CCAA-4809-B69D-F79C256C7945}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1218461798249
+  lat: 47.5290264488799
+cougar 2:
+  Address: Null
+  Point_ID: 2
+  Date: Null
+  Num: Null
+  Comments: northeast
+  Other: gate at meadow view trails.about 20 dead
+  GlobalID: {6850F72F-BB8A-4FF9-9E31-3EE488B749D4}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.129009385031
+  lat: 47.53159879923452
+cougar 3:
+  Address: Null
+  Point_ID: 3
+  Date: 9-22, 2017
+  Num: Null
+  Comments: east, southeast
+  Other: up bagley seam trail.as of april 21, 2018 about 120 dead in area of redtown.
+  GlobalID: {A66D11D4-F4F0-4C2B-8633-B66E611A3C53}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1278360337935
+  lat: 47.53322438316035
+cougar, tibbets trail:
+  Address: Null
+  Point_ID: 1
+  Date: 9-23,2017
+  Num: Null
+  Comments: southeast
+  Other: five or more dead in half mile or so of trail.
+  GlobalID: {49A7BBE3-57D5-46DA-B783-A0ACA55FF2A5}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0953835901834
+  lat: 47.53852200002579
+coal creek 1:
+  Address: Null
+  Point_ID: 1
+  Date: 9-23,2017
+  Num: Null
+  Comments: south, southeast
+  Other: 70 or so dead on and along
+  GlobalID: {5A6CCE48-B190-42A9-B262-D9B013E78984}
+  Review: Missing point location photo
+  Status: 2
+  Status_Notes:
+  lon: -122.1299132897259
+  lat: 47.53576295271999
+cheasty 1:
+  Address: Null
+  Point_ID: 1
+  Date: 9-26,2017
+  Num: Null
+  Comments: northwest ,southwesthuguq
+  Other: three in february, eight now.on trail across from p24th place south.ce
+  GlobalID: {292F6F8E-1F12-4F77-8C95-68B8EAB507B0}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.300023850843
+  lat: 47.56398649472121
+Coal Creek 2:
+  Address: Null
+  Point_ID: 1
+  Date: 9-27, 2017
+  Num: Null
+  Comments: se, e
+  Other: just off maintenance road. 50 dead 100 " along trail
+  GlobalID: {2AE9F377-C816-4648-BEF1-8E8C5C6E932C}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.150924033768
+  lat: 47.54188570003971
+weowena park !:
+  Address: Null
+  Point_ID: 1
+  Date: 9-27,2017
+  Num: Null
+  Comments: n, se
+  Other: 50 dead in immediate area. 32 last time.south trail.ai
+  GlobalID: {CAFB0DA2-B145-47ED-8834-70D1B352A096}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1152324895522
+  lat: 47.59288590056305
+weowema park 2:
+  Address: Null
+  Point_ID: 1
+  Date: 9-27,2017
+  Num: Null
+  Comments: s, w
+  Other: about same dead 13
+  GlobalID: {A79D2258-15A9-4A77-851C-C6A8AB682280}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1142454000409
+  lat: 47.59267585002569
+weowena park 3:
+  Address: Null
+  Point_ID: 1
+  Date: 9-27,2017
+  Num: Null
+  Comments: s, sw
+  Other: was 40 dead,  now 70
+  GlobalID: {803F9E3E-73D8-4A34-8B84-9F2D5BE8DD68}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1126367474915
+  lat: 47.60347439326237
+squak mountain:
+  Address: Null
+  Point_ID: 1
+  Date: 9-29,2017
+  Num: Null
+  Comments: n,e
+  Other: 65 dead above where slope mower cut.
+  GlobalID: {538B3A70-E96C-4305-878E-AE9322373C55}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0877216118966
+  lat: 47.50367706260169
+squak:
+  Address: Null
+  Point_ID: 2
+  Date: 9-29,2017
+  Num: Null
+  Comments: ne
+  Other: about 20 dead in area
+  GlobalID: {0E1A7937-8AEC-47AC-8412-A87AC3058474}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0859865924567
+  lat: 47.50649363117321
+cheasty 2:
+  Address: Null
+  Point_ID: 1
+  Date: 9-26,2017
+  Num: Null
+  Comments: nw, sw
+  Other: 3 dead in feb, 8 dead now , trail across from 24th place south
+  GlobalID: {C2223E41-05BD-4E40-A389-54A3AA46A886}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3003039277879
+  lat: 47.56369685018017
+madrona woods 1:
+  Address: Null
+  Point_ID: 1
+  Date: 9-29,2017
+  Num: Null
+  Comments: se, sw
+  Other: jan 15 , no dead , now see about eight dead from     bridge.as of april 2018 the number dead is the same but fallen acer mac leaves obscures the dead.
+  GlobalID: {36C81563-5397-47E5-A251-CDFB0D25F30B}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2834791800658
+  lat: 47.61138550336556
+interlaken:
+  Address: seattle
+  Point_ID: 1
+  Date: 9-28 ,2017
+  Num: Null
+  Comments: w, n
+  Other: a few dead associated with restoration project? no change as of april 2018.as of august 2018 counted 27 dead.
+  GlobalID: {8FC35A8A-2A17-4C05-9091-A5D886E6A517}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3071577204478
+  lat: 47.63396470850389
+Wilburton:
+  Address: Bellevue
+  Point_ID: BBG_1
+  Date: 9/28/2017
+  Num: Null
+  Comments: ne, sw
+  Other: some 50 dead around bridge
+  GlobalID: {39851F28-5C16-4D2A-AA15-CE9968750AC8}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.175423961809
+  lat: 47.60545598470343
+madrona woods 2:
+  Address: Null
+  Point_ID: 1
+  Date: 10-04,2017
+  Num: Null
+  Comments: se, sw
+  Other: see eight from bridge. six dead nearby.little change as of  august 2018.
+  GlobalID: {D6CF8EB4-2922-4117-A843-853C0CB0000D}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2834700763409
+  lat: 47.61134248461826
+bridal trails 1:
+  Address: bellevue
+  Point_ID: 1
+  Date: 10-07,2017
+  Num: Null
+  Comments: s, w
+  Other: about 10 dead south. as of april 2018- no change.
+  GlobalID: {D016F413-5340-40A1-8028-2D908E79CEA9}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1699051248429
+  lat: 47.65121361678528
+denny:
+  Address: kirkland
+  Point_ID: oo1
+  Date: 10-28, 2017
+  Num: Null
+  Comments: four dead in area.
+  Other: nw , e
+  GlobalID: {7AF2A45D-E08F-46CF-90B9-88576EED217E}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2478421828104
+  lat: 47.71049990060028
+may creek 1:
+  Address: Null
+  Point_ID: Null
+  Date: Null
+  Num: 2
+  Comments: about ten dead
+  Other: Null
+  GlobalID: {90FE5867-0E7F-4FE3-8730-A9234A2DD643}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.160909187541
+  lat: 47.51883581140758
+coleman park:
+  Address: coleman
+  Point_ID: 1c
+  Date: tmarch 02, 2018
+  Num: Null
+  Comments: sw
+  Other: recent cluster of four or five dead sword ferns w hich are not obviously related to mishaps from reforestation efforts. maybe some 20- 30 dead in park
+  GlobalID: {F539C97E-4453-4168-86C3-684F665A63D4}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.288339426752
+  lat: 47.58528829307688
+lincoln park 1:
+  Address: seattle
+  Point_ID: 1li
+  Date: 3-07, 2018
+  Num: Null
+  Comments: 25 plus dead. some just stubble covered with moss.
+  Other: south , southwest
+  GlobalID: {01D2DF56-571D-423F-8C59-36CFA8DCE576}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.3967746389856
+  lat: 47.53153234711719
+sedward:
+  Address: Null
+  Point_ID: 1se
+  Date: 5-05,2018
+  Num: Null
+  Comments: I found three dead  2014. shannon took video jan or thereabouts 50 dead. now 100 plus.originaldead site almost bereft of buttercup ,
+  Other: lse
+  GlobalID: {1724F128-FFA9-4564-9850-4B9DF23CB134}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2511786322254
+  lat: 47.56182530797623
+fairweather park:
+  Address: fairwweather park, medina
+  Point_ID: fpm1
+  Date: 12-23, 2017
+  Num: Null
+  Comments: nw, se
+  Other: near east most entrance to park.about seven  dead.
+  GlobalID: {DDDA0758-662A-4A7E-B439-75BBA8B443A3}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2397543043302
+  lat: 47.63908919492944
+cougar mountain, trail to meadow views trails:
+  Address: Null
+  Point_ID: rt#3
+  Date: 11-08, 2017
+  Num: Null
+  Comments: ne,
+  Other: about 20 dead
+  GlobalID: {497C988F-23CE-453D-9EF1-7D109BE1FDF5}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1291126737372
+  lat: 47.53157680177599
+may  creek 2:
+  Address: Null
+  Point_ID: #1mc
+  Date: 11-17,2017
+  Num: Null
+  Comments: 2nd south , forth nw
+  Other:  february 24, 1or 2 dead. ten dead near photopoint, 53 dead along trail.
+  GlobalID: {C37EF8C2-6075-4052-AFA7-26D7DCAE5C9E}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1610788923018
+  lat: 47.51929920326109
+madrona woods 3:
+  Address: seattle
+  Point_ID: 3md
+  Date: 12-18, 2018
+  Num: Null
+  Comments: se, sw
+  Other: Null
+  GlobalID: {C6D10DD3-261B-47B6-BCD2-829CD1F6C4D7}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2833924396945
+  lat: 47.61130090686856
+Seward park 2:
+  Address: Null
+  Point_ID: Null
+  Date: 4-20-18
+  Num: Null
+  Comments: potential photo location
+  Other: Null
+  GlobalID: {89B134FF-CF05-4BD8-A13D-158C6DAB7895}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2520273996369
+  lat: 47.55615791629701
+tiger mountain. tradition plateau:
+  Address: issaquah
+  Point_ID: 1tp
+  Date: 6-02, 2018
+  Num: Null
+  Comments: about  15 dead to this point, but another20dead in immediate area.
+  Other: sw, w
+  GlobalID: {FAE80AB6-5F2C-4FB4-814B-53BB58AF1444}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0215521137602
+  lat: 47.52894887544999
+tiger mountain big tree trail:
+  Address: issaquah
+  Point_ID: 2bgt
+  Date: 6-02, 2018
+  Num: Null
+  Comments: about 20 dead in area
+  Other: nw , se
+  GlobalID: {10BE6AC0-4BA5-420B-A8C6-2A2635CE7888}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0140389833363
+  lat: 47.53192116111206
+tiger mountain swamp trail:
+  Address: Null
+  Point_ID: 3sw
+  Date: 6-02,2018
+  Num: Null
+  Comments: bunch of dead above trail.50? plus along swamp trail
+  Other: se, ne
+  GlobalID: {D63E579F-1D0C-492F-B92F-E27F07BFCDE4}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0064129672695
+  lat: 47.53099585467476
+tiger, swamp trail:
+  Address: Null
+  Point_ID: 5sw
+  Date: 6-02,2018
+  Num: Null
+  Comments: 50 plus dead
+  Other: w , e
+  GlobalID: {62A64F46-8836-416D-89CE-FE5AC811E0D2}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -121.99829576361
+  lat: 47.5310510721141
+same as 5sw:
+  Address: Null
+  Point_ID: Null
+  Date: Null
+  Num: Null
+  Comments: 122 dead counted from trail in just 100'.'
+  Other: Null
+  GlobalID: {3BD2EB9F-4424-4E03-A5D9-302B62D7C93B}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -121.9983830571527
+  lat: 47.53118964815624
+pritchard beach:
+  Address: Null
+  Point_ID: 1pb
+  Date: may 6 2018
+  Num: Null
+  Comments: south
+  Other: catherine alexander reported dead ferns.about 8 in area, but all planted?
+  GlobalID: {80373700-0CD4-4035-A00E-03517B580BFC}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2630109190609
+  lat: 47.5283033952519
+mercer island 1:
+  Address: north mercerdale
+  Point_ID: 1nm
+  Date: 6-08, 2018
+  Num: Null
+  Comments: about 100 dead
+  Other: e  , s
+  GlobalID: {20586DB9-8807-423A-990C-4BB948348B5B}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2393136012266
+  lat: 47.585615056319
+mercer island 2:
+  Address: upper luther burbank
+  Point_ID: 1ulb
+  Date: 6-08, 2018
+  Num: Null
+  Comments: over 100 dead, but unlike north mercerdale not many new dead in last year and one half
+  Other: lf.
+  GlobalID: {A41F22E8-B44F-4B3D-BC66-EDF7F1A55647}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2255192591456
+  lat: 47.58335215773569
+issaquah:
+  Address: trail to round lake, maybe.
+  Point_ID: 1trl
+  Date: 6-15, 2018
+  Num: 9
+  Comments: trail to round lake, hopefully. about 80 dead so far
+  Other: n, w
+  GlobalID: {6B255BF9-3D4C-465B-BF45-2F3E1DDE2BA9}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0235095737103
+  lat: 47.52434130747578
+redmond watershed preserve 1:
+  Address: Null
+  Point_ID: 1rwp
+  Date: july 18,2018
+  Num: Null
+  Comments: 30 dead or so at beginning of trail.116 dead trout loop trail
+  Other: nw, ne
+  GlobalID: {027E3D00-FCCD-43D8-A16D-0AFD7AC707D1}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0517520832564
+  lat: 47.69667711652929
+redmond watershed 2:
+  Address: Null
+  Point_ID: 2rwp, n , w
+  Date: july 18,2018
+  Num: Null
+  Comments: 87 dead to this point. here about 15 dead, but are mostly moss cove
+  Other: red stubble.
+  GlobalID: {03A2E07B-4392-46BD-9019-9D5CB09A1FC3}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0537187252145
+  lat: 47.69997725002186
+tradition lake trail:
+  Address: tiger mountain
+  Point_ID: 1tl
+  Date: 8-16, 2018
+  Num: Null
+  Comments: 80 plus dead to this point.
+  Other: e, nw
+  GlobalID: {E3A2700D-184D-45DD-9C54-E3EA039DCB82}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0041537323472
+  lat: 47.52685155888322
+tradittion lke yrail:
+  Address: Null
+  Point_ID: 2tl
+  Date: 8-16, 2018
+  Num: Null
+  Comments: 60 plus dead in area
+  Other: s, sw
+  GlobalID: {FEB9FF5E-B548-4F53-9737-1C131724F19A}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.007243883206
+  lat: 47.52879448336844
+o.o. denny:
+  Address: kirkland
+  Point_ID: 2 o.o.
+  Date: 7-29, 2018
+  Num: Null
+  Comments: nw, e
+  Other: was 3 or 4 dead. now 20 plus or so dead.
+  GlobalID: {0FC82575-F4C2-4D67-B134-C8998202FCAF}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.248290349272
+  lat: 47.71076710002004
+soos creek 1:
+  Address: Null
+  Point_ID: 1soos
+  Date: 8-03,2018
+  Num: Null
+  Comments: 30 plus dead  sword ferns.just a coupl
+  Other: sw, w. hundred feet north of first beyond  meridian park
+  GlobalID: {7772DC1F-A87D-46F4-BBFE-EDF769247A2C}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1396838854142
+  lat: 47.36609771230285
+bellevue:
+  Address: mctavish
+  Point_ID: 1mc
+  Date: august 16, 2018
+  Num: Null
+  Comments: 20 plus dead in area, 2 or 3 dead previously.
+  Other: sw, nw
+  GlobalID: {1D27FF29-13D2-406B-A8F9-1631DF740414}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.167543383081
+  lat: 47.59584074430801
+mcavish:
+  Address: bellevue
+  Point_ID: 1mc
+  Date: 8-16,2018
+  Num: Null
+  Comments: 20 plus dead ln area. 2 or 3 previously- October 13, 2017.
+  Other: s, w
+  GlobalID: {66899646-F6F3-4250-B589-49EDB0A7C502}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1675566630037
+  lat: 47.59576430660447
+cougar 4:
+  Address: de leo trail or close by
+  Point_ID: 1dl
+  Date: 9-07,2018
+  Num: Null
+  Comments: about 15 dead in area another 30 or so on wildside, de leo and marshalls hill trail.
+  Other: no compass.
+  GlobalID: {3A80E325-C6FD-4CF6-9B87-06F8AC339640}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1430884667681
+  lat: 47.52488406658871
+cheasty. boulevard:
+  Address: Null
+  Point_ID: 1cb
+  Date: 9-14, 2018
+  Num: Null
+  Comments: 30 plus dead over couple hundred feet by fifty feet.
+  Other: w, ne
+  GlobalID: {691C1EAE-EA03-488F-A2D1-F487E977E28F}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.3008602367887
+  lat: 47.5634311006828
+madrona woods, seattle:
+  Address: Null
+  Point_ID: 1mw
+  Date: 9-14,2018
+  Num: Null
+  Comments: 15 or so dead within 50 uptrail and downstream.
+  Other: s, se
+  GlobalID: {01C02E36-0853-4227-8E55-10A7756850E7}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2835073339808
+  lat: 47.61126073303547
+interlaken, seattle:
+  Address: Null
+  Point_ID: 1il
+  Date: 9-14,2018
+  Num: Null
+  Comments: sw, nw
+  Other: restoration site, but 20 plus  dead.
+  GlobalID: {F796941B-69CD-438A-8C11-336A7B402C12}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3070172089509
+  lat: 47.63311878719915
+east mercer way:
+  Address: mercer island
+  Point_ID: 1em
+  Date: 9-15, 2018
+  Num: Null
+  Comments: about 40 plus dead along some 150 feet of embankment.
+  Other: n, nw
+  GlobalID: {4BD7BDA3-1BE7-42DC-B5F1-57D64E22194B}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.211908148423
+  lat: 47.56637951101672
+mctavish woodridge:
+  Address: bellevue
+  Point_ID: 1mw
+  Date: 9-15,2018
+  Num: Null
+  Comments: 20 plus dead vs a couple a year ago.
+  Other: s, n
+  GlobalID: {BF47DB2F-CB66-4219-851D-C5907BA4CFF3}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1677542337945
+  lat: 47.59584736674281
+may creek 3:
+  Address: newcastle
+  Point_ID: 1mc
+  Date: 9-15,2018
+  Num: Null
+  Comments: more dead and dying since last time.about 40 in first 400 feet
+  Other: n, n, se
+  GlobalID: {D089763E-BD92-4051-A2FA-C5CB8CAF98B7}
+  Review: Null
+  Status: 2
+  Status_Notes: up to 116 dead along lenght of trail</td></tr></table></body></html>]]></description>
+  lon: -122.1612607665263
+  lat: 47.51892203321663
+se 53rd open space:
+  Address: mercer island
+  Point_ID: 1sgs
+  Date: 9-19, 2018
+  Num: Null
+  Comments: 83 plus dead in area.
+  Other: nw, e
+  GlobalID: {DE451B4C-D9CA-445C-B447-4199E38B215C}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2152444480588
+  lat: 47.55357983217399
+camp long 1:
+  Address: seattle
+  Point_ID: 1cp
+  Date: 9-28, 2018
+  Num: Null
+  Comments: a few dead along 100 feet of trail, but 15 more near dead
+  Other: ne , n
+  GlobalID: {7A88888A-1274-4634-ACBD-910BA4B341CC}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3742091893552
+  lat: 47.55792134232509
+upper luther burbank park 1:
+  Address: mercer island
+  Point_ID: 2ulb
+  Date: 10 -07, 2018
+  Num: Null
+  Comments: about 25 dead. jumped over the ridge and into east ravine. few reduced to stubble as of now.
+  Other: couldn't get GPS point so it was manually punched in and is off.
+  GlobalID: {B01BBB5C-EEF4-4E4A-828C-1F5E41288034}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2252119684736
+  lat: 47.58291193160579
+luther burbank park 2:
+  Address: mercer island
+  Point_ID: 1lb
+  Date: 10-07, 2018
+  Num: Null
+  Comments: about 20 dead in area. maybe planted.
+  Other: s, w
+  GlobalID: {AD203922-C033-46AA-8FBF-FC35E2F7DCC8}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2271352733366
+  lat: 47.59188000319936
+Brink trail:
+  Address: tiger mountain, issaquah
+  Point_ID: 1br
+  Date: 10-12,2018
+  Num: Null
+  Comments: 50+ dead sword ferns along and about 50' of trail.
+  Other: ne,sw
+  GlobalID: {C66AB9F2-BBE5-472A-BB91-442A1157E41C}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.013351439406
+  lat: 47.53490204254159
+unknown:
+  Address: Null
+  Point_ID: Null
+  Date: Null
+  Num: Null
+  Comments: 140+ dead on brink trail including 70+ in patch a couple hundred feet beyondfirst patch of 50+.
+  Other: Null
+  GlobalID: {B50ACE01-F540-4F3D-8C4F-A2AFFFF3311C}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.007526025895
+  lat: 47.53474812669187
+swamp trail, tiger mountain:
+  Address: Null
+  Point_ID: Null
+  Date: 10-12, 2018
+  Num: Null
+  Comments: photos left-right every 10 or so i.e. 3 paces for 100'.
+  Other: Null
+  GlobalID: {67DC7075-E5CE-4FAD-A601-28C8A2BF4C66}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -121.9986255731253
+  lat: 47.53142137282615
+tiger mountain:
+  Address: Null
+  Point_ID: Null
+  Date: 10-12, 2018
+  Num: Null
+  Comments: 1000+ dead sword ferns counted so far on trails,  swamp 450, big tree 100,plateau lake 200, school? 150, brink 150.
+  Other: Null
+  GlobalID: {3FA1D910-2DFD-4B24-927D-0B3DF76782BC}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.0232397967299
+  lat: 47.53052140989762
+weona park 1:
+  Address: bellevue
+  Point_ID: 1wp
+  Date: 10-13, 2018
+  Num: Null
+  Comments: 100+ dead now on both sides of trail. previously about 30 dead.
+  Other: se, w
+  GlobalID: {813F322D-4300-4623-8BC5-4CD8F31AD209}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.1151105331921
+  lat: 47.59278286716147
+weona park 2:
+  Address: just off Sammamish parkway
+  Point_ID: 2wp
+  Date: 10-13, 2018
+  Num: Null
+  Comments: about 84 dead in area. so far 2 big areas of die-off, 2 smaller areas of less than 20 dead each and some scattered adding to about 250 dead.
+  Other: se,s
+  GlobalID: {F20E5BA5-AF38-40AC-ABE1-C3D50A2AA19B}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1126027132392
+  lat: 47.60341058683053
+soos creek 2:
+  Address: Null
+  Point_ID: 2sc
+  Date: 10-16,2018
+  Num: Null
+  Comments: New device, better pictures. counted 50+ dead sword ferns
+  Other: w
+  GlobalID: {5FAEC670-1A4F-43A4-BAE9-C0A5D846D77D}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1436892494968
+  lat: 47.36755197652074
+soos creek 3:
+  Address: Null
+  Point_ID: 3sc
+  Date: 10-16, 2018
+  Num: Null
+  Comments: another 20 dead or so on other side, east side of trail.
+  Other: Null
+  GlobalID: {4AA74BA8-B5C4-40F7-BF46-8319CCDC500D}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1381059414106
+  lat: 47.36902340299372
+cougar mountain 1:
+  Address: bear ridge trail to junction with tibbets creek trail
+  Point_ID: 1brt
+  Date: 10-17, 2018
+  Num: Null
+  Comments: 247 dead along trail. many others looking poorly. just a couple dead at this photopoint.
+  Other: se, ne
+  GlobalID: {C542740E-B366-420E-9C31-9210180FFF29}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.0842103129424
+  lat: 47.53163509352912
+cougar 5:
+  Address: Null
+  Point_ID: 2bc
+  Date: 10-17, 2018
+  Num: Null
+  Comments: 30 dead in area
+  Other: se, n
+  GlobalID: {AF989AA8-52F7-4EF4-809B-6B8E0059CC10}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0835923035314
+  lat: 47.53136306018916
+cougar-talus open space:
+  Address: Null
+  Point_ID: 3br
+  Date: 10-17, 2018
+  Num: Null
+  Comments: more dead, about 22 in area.
+  Other: s,ne
+  GlobalID: {1B8ACF13-26A1-4D0A-9062-FEB714C1CDF7}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0701828932215
+  lat: 47.52800100317045
+cougar-talus slope:
+  Address: bear ridge trail
+  Point_ID: 4br
+  Date: 10-17, 2018
+  Num: Null
+  Comments: 25 or so dead in area. 247 or so dead before intersection of bear ridge trail with west tibbets creek trail.
+  Other: we, ne
+  GlobalID: {014F1C6C-5532-405B-8A8A-3B7E12D1EAA2}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0670131575899
+  lat: 47.52771500699448
+Evans creek preserve 1:
+  Address: sammamish
+  Point_ID: 1ecp
+  Date: 10-19, 2018
+  Num: Null
+  Comments: about 15 dead in area
+  Other: sw,sw,e
+  GlobalID: {D27E52E3-8364-4892-8665-87B8A58D1E21}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.052464156162
+  lat: 47.64398177707056
+Evans creek preserve 2:
+  Address: sammamish
+  Point_ID: 2ecp
+  Date: 10-19, 2018
+  Num: Null
+  Comments: sw,ne
+  Other: 20 or so dead in area, many reduced to moss covered  stubble. hiked  most trails and counted about 85 dead minus those lost from restoration work and
+  GlobalID: {56A0E14E-DBA1-4B0A-BCBA-5E685CAA5747}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0444600537992
+  lat: 47.64000090306377
+lakemont:
+  Address: bellevue
+  Point_ID: 1la
+  Date: 10-20, 2018
+  Num: Null
+  Comments: about 30 dead so far. 8+ dead in area.
+  Other: s,e
+  GlobalID: {CD95E722-2383-4E16-B99D-ECE089649103}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1031864104231
+  lat: 47.55533238719408
+lakemont park:
+  Address: bellevue
+  Point_ID: 2la
+  Date: 10-20, 2018
+  Num: Null
+  Comments: 45 dead to this point. 10 + dead in area
+  Other: nw,w
+  GlobalID: {9D3ECF93-29DE-48B5-8C38-00A32DEE1CBE}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1054896329461
+  lat: 47.55642653021992
+squeak mountain connector trail:
+  Address: cougar mountain
+  Point_ID: 1smc
+  Date: 10-20, 2018
+  Num: Null
+  Comments: 114 dead or more along length of trail. a couple areas of ten or more.
+  Other: nw,nw,nw,e
+  GlobalID: {7C0A1A9A-6237-4FC9-9E4E-17BBFB6947FF}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0838484918956
+  lat: 47.51462274168978
+Sauk mountain connector:
+  Address: Null
+  Point_ID: 2smc
+  Date: 10-20, 2018
+  Num: Null
+  Comments: about 10 dead in area
+  Other: w,e
+  GlobalID: {FE96FA54-1B1D-4C8B-8A42-9E18FCC589EB}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.089478899714
+  lat: 47.51417595661773
+Sauk mountain 1:
+  Address: cougar squak corridor
+  Point_ID: 3sm
+  Date: 10-20, 2018,
+  Num: Null
+  Comments: 35 dead along road to just a little beyond this point.some back up in woods, 59+ dead so far.
+  Other: se, e
+  GlobalID: {DF87CF32-5997-41B3-89AA-52ACBDBDE9DA}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0855741346248
+  lat: 47.506151596031
+Sauk mountain 2:
+  Address: Null
+  Point_ID: 4sm
+  Date: 10-20, 2018
+  Num: Null
+  Comments: 183 dead to this point. going home
+  Other: ne,se
+  GlobalID: {E38D95A4-0ACC-4638-92F1-817C47462075}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.0827953661086
+  lat: 47.50716332706997
+westwood-highland park 1:
+  Address: bellevue?
+  Point_ID: 1wh
+  Date: 10-27,2018
+  Num: Null
+  Comments: 106 dead .5 mile length of trail. some might have been planted as perhaps the 7+ dead at this point.
+  Other: nw,s
+  GlobalID: {600B1314-BB8C-4871-B75D-1288A91D1799}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1488578333033
+  lat: 47.55206360296923
+westwood-highland park 2:
+  Address: bellevue
+  Point_ID: 2wh
+  Date: 10-27, 2018
+  Num: Null
+  Comments: 20 or more dead in area. along the trail others looking sickly.
+  Other: w,ne
+  GlobalID: {117C7149-7EC4-45B7-A371-257479ACBA0D}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1538900128564
+  lat: 47.55185859638883
+coleman:
+  Address: seattle
+  Point_ID: 3c
+  Date: 11-01,2018
+  Num: Null
+  Comments: 50+ dead in park, at least some planted. 16 dead in vicinity.
+  Other: w,e
+  GlobalID: {E8B29F63-8C60-4E4F-8793-4DC8B615B8F1}
+  Review: Null
+  Status: 2
+  Status_Notes: many planted ferns have died...</td></tr></table></body></html>]]></description>
+  lon: -122.2886310766213
+  lat: 47.58549528979501
+Seward park 3:
+  Address: south skunk cabbage patch
+  Point_ID: 1scp
+  Date: 11-09, 2018
+  Num: Null
+  Comments: lots of dead sword ferns and not many skunk cabbages still visible.
+  Other: n,e
+  GlobalID: {FFC57AF5-0D7F-4444-9806-5AE921CC3B6F}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2475838775735
+  lat: 47.55485769993568
+Seward park 4:
+  Address: north skunk cabbage patch
+  Point_ID: 2scp
+  Date: 11-09, 2018
+  Num: Null
+  Comments: skunk cabbage patch looks more robust compared to southern patch. also north patch has no dead sword ferns.
+  Other: sw,w
+  GlobalID: {F894C875-33CA-47D8-A15E-210C7321B842}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2482727899905
+  lat: 47.55874981335069
+Seward park 5:
+  Address: north end of Bailey peninsula
+  Point_ID: 2nebp
+  Date: 11-13, 2018
+  Num: Null
+  Comments: knapsack in middle of 4 dead stubble sword ferns first noticed in 2014.
+  Other: n,s,e,w times 2.last picture split by log
+  GlobalID: {55008AC4-27A5-458F-9361-2C78A8C004AB}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2541052496006
+  lat: 47.56089816019799
+lincoln park 2:
+  Address: west seattle
+  Point_ID: 2li
+  Date: 11-14, 2018
+  Num: Null
+  Comments: Sharon said ivy removed. stubble ferns moss covered killed by ivy?some ferns exhibiting an unhealthy looking yellowish green, as in last photo.
+  Other: s,sw
+  GlobalID: {F3859B35-066A-46A2-87E5-2F287CA75E1C}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3969771737941
+  lat: 47.53164785674279
+cougar mountain 2:
+  Address: cave hole trail
+  Point_ID: 1cht
+  Date: 11-17, 2018
+  Num: Null
+  Comments: 8 or so dead in area. another 20 or so scattered along .1 mile trail to redtown dam.
+  Other: e,w
+  GlobalID: {AE097F4B-C100-4967-8F15-5F99022BC594}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.0910660701997
+  lat: 47.50416198165451
+cougar mountain 3:
+  Address: sky country trail
+  Point_ID: 1sct
+  Date: 11-17, 2018
+  Num: Null
+  Comments: 10 or so dead in area including 3 near knapsack which might have been brushed to death.last picture shows one unhealthy looking sword fern.
+  Other: ne,ne, se.  1060 feet elevation?
+  GlobalID: {E88DE058-84C6-479C-8AA8-E93F1108D412}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.118257649685
+  lat: 47.52751804085312
+bridal trails 2:
+  Address: Null
+  Point_ID: 2br
+  Date: 11-24, 2018
+  Num: Null
+  Comments: about 10 dead in area. same place as previous photopoint?
+  Other: s,ne
+  GlobalID: {015E4759-F036-4D66-BA69-AA1C7EA8C52A}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1654380130317
+  lat: 47.65119038614598
+luther burbank park 3:
+  Address: mercer island
+  Point_ID: 2lb
+  Date: 11-28, 2018
+  Num: Null
+  Comments: this time counted 30+ dead in area.
+  Other: s,w
+  GlobalID: {8E7EF4D6-89F5-4F9E-8A55-6E2CA16FD466}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2271185460458
+  lat: 47.59179067337578
+upper luther burbank park 4:
+  Address: mercer island
+  Point_ID: 2ulb
+  Date: 11-28, 2018
+  Num: Null
+  Comments: going for better GPS point. 20+ dead in immediate area and all reveal evidence of pathogen straying into east ravine.
+  Other: Null
+  GlobalID: {09A24AD3-09CA-4270-8C9E-6FD47313B350}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2258667363363
+  lat: 47.58275980015264
+Seward 53rd st open space:
+  Address: mercer island
+  Point_ID: Null
+  Date: 11-28, 2018
+  Num: Null
+  Comments: Samsung tab, better pictures? better gps? only  counted about 70 dead, but probably many crowns buried under fallen Acer mac leaves.
+  Other: sw, ne
+  GlobalID: {DDB828AB-40AA-4A92-AB10-815901558D41}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.214042233113
+  lat: 47.55491285033582
+coal creek 3:
+  Address: bellevue
+  Point_ID: 3ccp
+  Date: 12-02, 2018
+  Num: Null
+  Comments: about 50 dead, some not visible buried by fallen Acer mac leaves. still not much different from initial photopoint.
+  Other: se,
+  GlobalID: {5852A88A-22B8-4747-BD3E-4765B0AEAF1F}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1504499487972
+  lat: 47.54195374011282
+coal creek 4:
+  Address: bellevue
+  Point_ID: 4ccp
+  Date: 12-02, 2018
+  Num: Null
+  Comments: covered with Acer mac leaves but a few more sickly looking ferns. hard to count number of dead.
+  Other: se,e
+  GlobalID: {2B9DBA23-C8FB-4C5F-874E-1D69C6CB3F39}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1298638575298
+  lat: 47.5357556833512
+east duwamish greenbelt:
+  Address: seattle
+  Point_ID: 1edg
+  Date: 12-06, 2018
+  Num: Null
+  Comments: 10 or more dead along an eroded bank along 75' or so of side walk.attachment #5 sword fern above not looking too good.
+  Other: sw,nw
+  GlobalID: {93ACC8B8-569A-41EE-93AA-99FA79CA22D8}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2802849028598
+  lat: 47.51650756845974
+camp long 2:
+  Address: seattle
+  Point_ID: 2cl
+  Date: 12-14, 2018
+  Num: Null
+  Comments: some restoration work. many sickly looking but fewer dead along 200 feet or so of trail.
+  Other: e,w
+  GlobalID: {29E29F20-8D6D-4624-8280-2EC4739A15B4}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.3745518197888
+  lat: 47.55808040890179
+camp long 3:
+  Address: seattle
+  Point_ID: 3cl
+  Date: 12-14, 2018
+  Num: Null
+  Comments: 3 or so dead in area, but mainly just trying to get a good GPS point.
+  Other: e,w
+  GlobalID: {51FC357F-7211-42EE-8212-52E7A97D035F}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.374204643221
+  lat: 47.55763581660314
+madrona woods 4:
+  Address: seattle
+  Point_ID: 3mw
+  Date: 12-18, 2018
+  Num: Null
+  Comments: we, sw
+  Other: 25+ dead 50 feet down stream and 100 feet along trail. last photo of sick looking fern. if. cleared most ferns in pictures from Acer mac leaves.
+  GlobalID: {D6247351-8FA4-4AC1-A411-98E921B97D85}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2834255303717
+  lat: 47.61125718399134
+Bellevue botanical garden:
+  Address: Null
+  Point_ID: 1btg
+  Date: 21-21, 2018
+  Num: Null
+  Comments: Alex Wright, botanist was aware of the off in garden and wilburton hill before I took first photopoint. many dead elsewhere in the garden.
+  Other: n,n,s
+  GlobalID: {6BDFE535-ED6B-4FA3-BC17-69D92C345B94}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1770184210158
+  lat: 47.60548373608372
+wilburton park se 5th street:
+  Address: bellevue
+  Point_ID: 1se5
+  Date: 12-21 2018
+  Num: Null
+  Comments: many dead along gravel road. 30+?
+  Other: n,ne
+  GlobalID: {BA236D50-2243-40D1-91DE-A6384A183A6D}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1783172008675
+  lat: 47.60517848027934
+wilburton hill:
+  Address: bellevue
+  Point_ID: 2wh
+  Date: 12-21, 2018
+  Num: Null
+  Comments: sw, ne
+  Other: very hard to count number of dead ferns. the larger proportion reduced to crowns or stubble and buried under fallen Acer mac leaves.
+  GlobalID: {F448E52B-7190-4B20-96CB-C70E18A476FC}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1752920071116
+  lat: 47.60563305337299
+cheasty boulevard greenspace:
+  Address: seattle
+  Point_ID: 2cb
+  Date: 1-02, 2019
+  Num: Null
+  Comments: 45+ dead along a couple hundred feet of trail and 30 feet to either side. many more, perhaps a quarter more appear to be dying.
+  Other: nw,e
+  GlobalID: {1C22B9A9-EF55-4937-AB2E-97A3E124E3C9}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2996924001585
+  lat: 47.56373053646463
+cougar mountain 4:
+  Address: big tree ridge trail
+  Point_ID: 1btr
+  Date: 1-10, 2019
+  Num: Null
+  Comments: counted 8 dead may 18, 2018 up to shangra la trail. obviously missed seeing these 16. + crowns and stubble covered with moss.
+  Other: ne,w
+  GlobalID: {9780B17A-163A-47F3-A4AA-CDC125D823A6}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.07436700034
+  lat: 47.54576026951687
+cougar mountain 5:
+  Address: surprise lake trail
+  Point_ID: 1slt
+  Date: 1-10, 2019
+  Num: Null
+  Comments: about 20 dead scattered to this point. thorough brushwacking along trails killing off sword ferns makes count difficult. about 7 dead or dying at this
+  Other: nw,s
+  GlobalID: {CA82D6BA-69A3-4DAC-A716-B75491020CC1}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0803621603057
+  lat: 47.54232242054441
+o.o Denny park:
+  Address: juanita
+  Point_ID: 3ood
+  Date: 1-13, 2019
+  Num: Null
+  Comments: about 7 dead in immediate vicinity, but others looking very sick indeed. 20+ dead in area.
+  Other: n,w
+  GlobalID: {DF39A717-6B99-4CBB-A3F3-08F175AD5A2C}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.2476158585329
+  lat: 47.71051351600652
+coal creek park:
+  Address: Bellevue, north section of trail just west of coal creek parkway
+  Point_ID: 4ccp
+  Date: 1-26, 2019
+  Num: Null
+  Comments: eight dead in immediate area + some looking quite sickly. lots of ivy and removed some in a few pictures
+  Other: ne,w.      10 or so deaf from coal creek parkway along trail to 119se.
+  GlobalID: {40036DDF-8BC5-4982-B08E-3F9EACD8C4A8}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.166594267146
+  lat: 47.55654502837989
+Redmond watershed preserve 3:
+  Address: pipeline connector trail
+  Point_ID: 3rdp
+  Date: 1-28, 2019
+  Num: Null
+  Comments: August 2018 a few dead at this site. now over 30 dead plus others not looking so good.
+  Other: ne,sw
+  GlobalID: {BAC36114-4514-4DE5-B3BA-55A621E20EFB}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0509721338077
+  lat: 47.7052353401718
+coal creek plus primrose trail:
+  Address: bellevue
+  Point_ID: 1pr
+  Date: march 10, 2019
+  Num: Null
+  Comments: 24 dead to this point from coal creekparkway trail head at least 25 more dead in this area.many stubble or just crowns.
+  Other: sw,ne
+  GlobalID: {E5FC850B-834E-40A5-8A19-098D2BE90CC4}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.1488203501045
+  lat: 47.54314381699635
+bainbridge island:
+  Address: blakely harbor
+  Point_ID: 1bh
+  Date: march 11, 2019
+  Num: Null
+  Comments: lots of sickly looking from blakely hill intersection to this point. about 20 dead here mostly stubble
+  Other: n,s
+  GlobalID: {8FEC3020-1341-4473-B8A0-07C100B8AE3B}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.5195481331362
+  lat: 47.59730299300649
+blakely harbor:
+  Address: bainbridge island
+  Point_ID: 2bh
+  Date: march 11, 2019
+  Num: Null
+  Comments: very rough count of 60+ dead. photo displays maybe 1 dead but some looking quite sad.
+  Other: nw, e
+  GlobalID: {3299F4CE-895A-4C9D-8BFB-8DD715B131AE}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.5172051332346
+  lat: 47.59748553326639
+port blakely -fort ward trail:
+  Address: bainbridge
+  Point_ID: 1pbfw
+  Date: march 11, 1019
+  Num: Null
+  Comments: maybe 10 or so dead  in area.
+  Other: sw,ne
+  GlobalID: {CB17F1F2-B881-4EE6-8C9A-43763BA7A98B}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -122.5225178068437
+  lat: 47.59643521358591
+port blakely-fort ward trail :
+  Address: Null
+  Point_ID: 3bbfw
+  Date: march 11, 2019
+  Num: Null
+  Comments: at least a couple hundred dead in area
+  Other: se,n
+  GlobalID: {4D31D1F1-6D3D-4563-9CFA-D786D80FA7F0}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -122.5239978700496
+  lat: 47.59665946644839
+redmond watershed preserve 4:
+  Address: trout loop trail
+  Point_ID: 2tlt
+  Date: april 28,2019
+  Num: Null
+  Comments: 55 dead to this point 20+ dead in area many moss covered crowns.190 + dead trout loop trail, 50+ dead trillium connecter, 20+ dead mostly start of tre
+  Other: n,s.  e frog loop trail.
+  GlobalID: {E6E540A5-EEEC-4C04-BD39-9DE675F98FB4}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.0559549073172
+  lat: 47.69644282693302
+madrona woods 5:
+  Address: seattle
+  Point_ID: Null
+  Date: 4-30, 2019
+  Num: Null
+  Comments: sw, ne
+  Other: attachment 2, four dead ferns 30' up from the trail in picture and then another 15+ dead.+
+  GlobalID: {CC2CF482-C593-4662-9D79-251E27B57660}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2834762238885
+  lat: 47.61120095547944
+madrona woods 6:
+  Address: seattle
+  Point_ID: 4mw
+  Date: 4-30, 2019
+  Num: Null
+  Comments: 20+ dead 30' up hill
+  Other: sw, nw
+  GlobalID: {41C32357-066C-46E8-9D5E-ACE556C586D2}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2835340331041
+  lat: 47.61133832663884
+arboretum 1:
+  Address: seattle, along 28th ave e
+  Point_ID: 1arb
+  Date: 4-30, 2019
+  Num: Null
+  Comments: about 70 dead in restoration project, most dead planted?
+  Other: nw,e
+  GlobalID: {71C27D57-46F5-4563-8C83-0333D5CF0F69}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2949911453144
+  lat: 47.62586810272784
+issaquah highlands?:
+  Address: coal mine loop trail
+  Point_ID: 1cml
+  Date: 5-03, 2019
+  Num: Null
+  Comments: 22 dead to this point mostly along paved path. here 50+ dead along both sides of trail.
+  Other: se, n
+  GlobalID: {4A3BAE6B-AF14-4CCC-A678-EA622865780B}
+  Review: Null
+  Status: 1
+  Status_Notes:
+  lon: -121.9986396536083
+  lat: 47.53843247957087
+issaquah highlands:
+  Address: grand ridge trail
+  Point_ID: 1grt
+  Date: 5-03, 2019
+  Num: Null
+  Comments: 20+ dead at this point and 170 dead counted on 2 trails, so far.south pond trailhead tohigh point trailhead 315 + dead.
+  Other: n, s
+  GlobalID: {F6F32BA7-C2B3-487F-89FB-EA254EBCC6B3}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -121.9919678069854
+  lat: 47.53657051697851
+arboretum 2:
+  Address: road-path west of japanese garden
+  Point_ID: 1rpw
+  Date: 5-05, 2019
+  Num: Null
+  Comments: about 34+ dead just uphill from path, many struggling to put up fiddleheads.
+  Other: s, n
+  GlobalID: {8901F28F-E05D-4521-B90F-30CB2F051D6D}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.2965919356968
+  lat: 47.62867737640345
+arbotetum:
+  Address: seattle west of parking lot
+  Point_ID: 1swp
+  Date: 5-05, 2019
+  Num: Null
+  Comments: 20+ dead in area restoration site
+  Other: sw, ne
+  GlobalID: {85512FFA-CD6E-4E35-A665-7725F8700B22}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.296347307272
+  lat: 47.62821067635068
+arboretum 3:
+  Address: Null
+  Point_ID: Null
+  Date: Null
+  Num: Null
+  Comments: Graffiti on sign
+  Other: Null
+  GlobalID: {5EAFB240-89B2-4E9D-A9A4-8A9BA298851C}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.295260877006
+  lat: 47.62754288018401
+coal creek park 6:
+  Address: Null
+  Point_ID: 2ccp
+  Date: 5-08, 2019
+  Num: Null
+  Comments: 50 dead recorded sept 2017. this time including area adjacent to maintenance road.120 + dead not including many sickly looking lacking fiddleheads.
+  Other: se, n
+  GlobalID: {4C07B7C5-B440-4B06-9B9A-67D60D411373}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -122.1509267902198
+  lat: 47.54153480354499
+trail alongside newcastle golf club road:
+  Address: coal creek
+  Point_ID: 1tang
+  Date: 5-08, 2019
+  Num: Null
+  Comments: 37 + dead in area another 13 dead from ymca
+  Other: s,n
+  GlobalID: {7EB97BAA-BDEB-48A4-8FF9-911B2168D1D3}
+  Review: Null
+  Status: 2
+  Status_Notes: 50+ dead noted along apprx.1st mi of trail (from YMCA to here)</td></tr></table></body></html>]]></description>
+  lon: -122.1503773795079
+  lat: 47.54026246304497
+Normandy Park:
+  Address: Null
+  Point_ID: Null
+  Date: 05/16/19
+  Num: Null
+  Comments: Null
+  Other: Null
+  GlobalID: {50D87A36-68D8-44AC-8324-466A150A8B66}
+  Review: Null
+  Status: 0
+  Status_Notes: No decline noted along main trails</td></tr></table></body></html>]]></description>
+  lon: -122.3459849298589
+  lat: 47.43089425355252
+Unknown 2:
+  Address: Null
+  Point_ID: Null
+  Date: 05/16/19
+  Num: Null
+  Comments: Null
+  Other: Null
+  GlobalID: {564DAC2C-7F2D-414A-8FC0-DEA9FB9FD149}
+  Review: Null
+  Status: 0
+  Status_Notes: 11 scattered dead ferns (from 200th to Sound) but not overt symptoms of decline</td></tr></table></body></html>]]></description>
+  lon: -122.3059509994936
+  lat: 47.41957135606906
+couple hundred feet up from highpoint trailhead on:
+  Address: issaquah-preston trail
+  Point_ID: 1ipt
+  Date: 5-20, 2019
+  Num: Null
+  Comments: 130+ dead in 100 feet or so along trail
+  Other: n,s
+  GlobalID: {EA7F17C1-25BE-46B5-BAA8-BEA7FA217CA8}
+  Review: Null
+  Status: 3
+  Status_Notes:
+  lon: -121.9939527919154
+  lat: 47.53317635863182
+west tiger mountain:
+  Address: Null
+  Point_ID: Null
+  Date: 5-20, 2019
+  Num: Null
+  Comments: about upper limit of sword ferns at 2200 feet. 150 dead ferns scattered about along trail but no more after about 1600 feet.
+  Other: Null
+  GlobalID: {95255C1B-EE5D-4A7D-86A8-1EE93DCEB2BA}
+  Review: Null
+  Status: 2
+  Status_Notes:
+  lon: -121.9873640435425
+  lat: 47.51535212296946
+west tiger mountain trail:
+  Address: Null
+  Point_ID: 1wtmt
+  Date: 5-20, 2019
+  Num: Null
+  Comments: dead sword fern at 1400 feet. maybe uppermost of 150 dead?
+  Other: e,w
+  GlobalID: {3EFC1A78-C952-46CE-BE0C-B99442FDF494}
+  Review: Null
+  Status: 1
+  Status_Notes: usually dead in clumps of no greater than 5. made no effort to reconoiter off trail</td></tr></table></body></html>]]></description>
+  lon: -121.9888226272218
+  lat: 47.52041329649516
+marine view park:
+  Address: Null
+  Point_ID: Null
+  Date: 5-16, 2-019
+  Num: Null
+  Comments: no dead on main trail to shore
+  Other: Null
+  GlobalID: {B40CA101-A05E-4759-8EDF-1F1768AF2716}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3408858011778
+  lat: 47.41343770717391
+nw quadrant pioneer park mercer island:
+  Address: Null
+  Point_ID: Null
+  Date: april 21, 2019
+  Num: Null
+  Comments: Null
+  Other: Null
+  GlobalID: {8032A5C0-3811-4B77-84B0-BE8B753AE81B}
+  Review: Null
+  Status: 0
+  Status_Notes: couple dead</td></tr></table></body></html>]]></description>
+  lon: -122.2245852191191
+  lat: 47.54430750127793
+schmitz park:
+  Address: west seattle
+  Point_ID: Null
+  Date: april 12, 2019
+  Num: Null
+  Comments: two big dead ferns either side of a trail.
+  Other: Null
+  GlobalID: {8BA4D2CC-B20E-4D64-A75C-B5DEABB87EF0}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.4007097919277
+  lat: 47.57483162884839
+gallagher hill:
+  Address: Null
+  Point_ID: Null
+  Date: april 17, 2019
+  Num: Null
+  Comments: couple dead
+  Other: Null
+  GlobalID: {BFB56770-2E11-4FB6-BA83-F510430E920A}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2165171346666
+  lat: 47.57881235508168
+ravenna park seattle:
+  Address: Null
+  Point_ID: Null
+  Date: 5-07, 2019
+  Num: Null
+  Comments: couple dead in restoration site
+  Other: Null
+  GlobalID: {601E1991-F9C7-4F5B-A82E-AB35D9E400AC}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3089353286226
+  lat: 47.67258296276249
+hamlin park just north of seattle:
+  Address: Null
+  Point_ID: Null
+  Date: march 15, 2019
+  Num: Null
+  Comments: couple dead in two places
+  Other: Null
+  GlobalID: {6AB5EF77-F5E9-4F2B-A408-8E1928B21072}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.308420343804
+  lat: 47.74691276279166
+west duwamish greenbelt:
+  Address: Null
+  Point_ID: Null
+  Date: january 21, 2019
+  Num: Null
+  Comments: 7 scattered dead
+  Other: Null
+  GlobalID: {F3C05673-F6CE-499D-8A58-A924F2003FF3}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3491040907817
+  lat: 47.54139606520495
+st. edwards  east shore lk washington:
+  Address: Null
+  Point_ID: Null
+  Date: january 18, 2019
+  Num: Null
+  Comments: couple dead in earlier m more extensive survey found 14 scattered dead.
+  Other: Null
+  GlobalID: {78B9D542-C71A-4EFB-B4E5-12C0F60ED897}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.257093592458
+  lat: 47.73248248065695
+big hill park:
+  Address: juanita
+  Point_ID: Null
+  Date: january18, 2019
+  Num: Null
+  Comments: couple dead on trail adjacent to juanita drive.
+  Other: Null
+  GlobalID: {22EC8952-4CBF-4FC1-806A-C1A067FC5584}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2426740369628
+  lat: 47.72341821923472
+juanita woodlands park:
+  Address: Null
+  Point_ID: Null
+  Date: january 18, 2019
+  Num: Null
+  Comments: couple dead on trail thru park
+  Other: Null
+  GlobalID: {8AFA4D0C-C997-45C6-916E-1747D0412A04}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2375241946966
+  lat: 47.70661340889269
+homestead park:
+  Address: mercer island
+  Point_ID: Null
+  Date: january 09, 2019
+  Num: Null
+  Comments: only tree sword ferns other than small planted ones.
+  Other: Null
+  GlobalID: {C378800E-6E3F-406B-A1D6-31117386C1A6}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2311298086443
+  lat: 47.57357220892876
+skyway park:
+  Address: Null
+  Point_ID: Null
+  Date: january 4, 2019
+  Num: Null
+  Comments: svery few ferns and no dead
+  Other: Null
+  GlobalID: {EC8191DC-98D1-4464-9A27-4AA7EAA5B76F}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2431890204159
+  lat: 47.49482009088513
+pioneer park ne quadrant 1:
+  Address: mercer island
+  Point_ID: Null
+  Date: december 26, 2018
+  Num: Null
+  Comments: seven dead but probably planted
+  Other: Null
+  GlobalID: {1D72A20E-C35E-458E-ADEE-3742EE39A782}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2193013127855
+  lat: 47.54081939530773
+mercerdale park:
+  Address: mercer island
+  Point_ID: Null
+  Date: december 24, 2018
+  Num: Null
+  Comments: 10+ dead scattered and some associated with restoration.
+  Other: Null
+  GlobalID: {E9EA7C2F-D870-48D0-9B9C-5471177929ED}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2385273859761
+  lat: 47.58008886170003
+discovery park:
+  Address: magnolia seattle
+  Point_ID: Null
+  Date: 12-12, 2018
+  Num: Null
+  Comments: maybe 2 dead on 2.8 mile loop trail.
+  Other: Null
+  GlobalID: {F62442EC-F206-4822-AB16-74E50400015F}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.4191151551893
+  lat: 47.66345320939236
+fauntleroy:
+  Address: west seattle
+  Point_ID: Null
+  Date: 12-14, 2018
+  Num: Null
+  Comments: couple dead
+  Other: Null
+  GlobalID: {D62CC348-96E3-4543-9402-2FF78B9E5D34}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3834095888684
+  lat: 47.51989842257383
+spring lake lake desire park:
+  Address: ding county
+  Point_ID: Null
+  Date: 11-12, 2018
+  Num: Null
+  Comments: 3 dead on trail to bald mountain.
+  Other: Null
+  GlobalID: {5BE3F4EB-9FD8-4269-B198-08A7470A319B}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.0989237717805
+  lat: 47.43903383290834
+leschi park:
+  Address: seattle
+  Point_ID: Null
+  Date: oct 26, 2018
+  Num: Null
+  Comments: no dead
+  Other: Null
+  GlobalID: {3C8CB14A-BA9D-4BCB-BB87-0E80795224ED}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2875796245511
+  lat: 47.60110156684193
+robinswood:
+  Address: bellevue
+  Point_ID: Null
+  Date: 10-13, 2018
+  Num: Null
+  Comments: one or two dead
+  Other: Null
+  GlobalID: {46A363F4-C40A-4606-BFAB-1B52B83E598A}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.1399937562573
+  lat: 47.58715192424478
+burke gilman park:
+  Address: seattle
+  Point_ID: Null
+  Date: october 11, 2018
+  Num: Null
+  Comments: 0 dead
+  Other: Null
+  GlobalID: {C0F5158E-8F94-4A8C-B113-BA0401949737}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2826872751062
+  lat: 47.66671912345917
+pioneer park ne quadrant 2:
+  Address: mercer island
+  Point_ID: Null
+  Date: 10-03, 2018
+  Num: Null
+  Comments: one dead
+  Other: Null
+  GlobalID: {8A8A56C9-7279-498B-873E-93383443E9CB}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.220073788444
+  lat: 47.54383225535012
+parkwood ridge open space:
+  Address: mercer island
+  Point_ID: Null
+  Date: october 3, 2018
+  Num: Null
+  Comments: one dead
+  Other: Null
+  GlobalID: {09188EBE-596F-4643-B575-02C1FBE42D7E}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2151385244815
+  lat: 47.55256567269863
+westcrest:
+  Address: west seattle
+  Point_ID: Null
+  Date: 9-26, 2018
+  Num: Null
+  Comments: 2 dead
+  Other: Null
+  GlobalID: {AA207C64-525D-445D-A517-58C533595F7E}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3403225830439
+  lat: 47.52517291725157
+farrel mcwhirter:
+  Address: redmond
+  Point_ID: Null
+  Date: august 18, 2018
+  Num: Null
+  Comments: Null
+  Other: 1 dead
+  GlobalID: {BE77F349-E7D1-46B5-8F3E-98D529918988}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.0813713953035
+  lat: 47.69558323399848
+chism beach park:
+  Address: bellevue
+  Point_ID: Null
+  Date: august 13, 2018
+  Num: Null
+  Comments: couple dead
+  Other: Null
+  GlobalID: {ECD28B9E-A76F-4A31-83E7-6A58A78414B8}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.209774105513
+  lat: 47.60017556526959
+killarney glen park:
+  Address: bellevue
+  Point_ID: Null
+  Date: auguat 13, 2018
+  Num: Null
+  Comments: 3 dead newly planted
+  Other: Null
+  GlobalID: {7DF37313-B5A8-4B09-8FC2-FD6390E5E627}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.2035084653359
+  lat: 47.59386673929043
+boeing creek park:
+  Address: shoreline
+  Point_ID: Null
+  Date: august 09, 2018
+  Num: Null
+  Comments: one or two dead
+  Other: Null
+  GlobalID: {681EB796-F19D-424D-8609-0223C023E805}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3659859583364
+  lat: 47.7534943728186
+northacres park:
+  Address: seattle
+  Point_ID: Null
+  Date: august 09, 2018
+  Num: Null
+  Comments: one or two dead
+  Other: Null
+  GlobalID: {35AA21EF-4E26-46C3-B4DC-C3FD5B0CBE6E}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3274908947208
+  lat: 47.72233832834703
+twin ponds:
+  Address: north of seattle
+  Point_ID: Null
+  Date: 8-09, 2018
+  Num: Null
+  Comments: no dead
+  Other: Null
+  GlobalID: {CDD3D983-C004-46E9-95C7-2C56777CC744}
+  Review: Null
+  Status: 0
+  Status_Notes:
+  lon: -122.3300229003298
+  lat: 47.73887831878541

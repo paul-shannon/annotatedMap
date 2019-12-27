@@ -1,0 +1,20 @@
+area: 0.4
+color: red
+contact: 'Al Smith'
+firstReported: '2018-07-18'
+lastUpdate: '2018-07-18'
+lat: 47.6966771165293
+lon: -122.051752083256
+notesFile: notes.html
+radius: 58
+severity: 116
+title: Redmond Watershed Preserve Number One
+type: simple
+photoTabs:
+   - title: photo 1
+     url: http://pshannon.net/swordFerns/photos/138-small.png
+   - title: photo 2
+     url: http://pshannon.net/swordFerns/photos/139-small.png
+   - title: photo 3
+     url: http://pshannon.net/swordFerns/photos/140-small.png
+

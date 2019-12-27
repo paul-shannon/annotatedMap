@@ -1,0 +1,27 @@
+area: 1
+color: red
+contact: 'Al Smith'
+firstReported: '2019-04-28'
+lastUpdate: '2019-04-28'
+lat: 47.696442826933
+lon: -122.055954907317
+notesFile: notes.html
+radius: 168
+severity: 335
+title: Redmond Watershed Preserve Number Four
+type: simple
+photoTabs:
+  - title: photo 1
+    url:  https://lh3.googleusercontent.com/v7IGQs0I1IT749ueWvXaXLcM86G2FBB5onmiBgSoNT6Yv64laAiAhB0pqg-QHhbrvhBCAWSWnxvDQROpYxKNdXz1uv0kQDO0DQTBFZSwzji_PIiPL6WtRSvXJIfR70jQZrV_53csvl4=w2400
+  - title: photo 2
+    url: http://pshannon.net/swordFerns/photos/568-small.png
+  - title: photo 3
+    url: http://pshannon.net/swordFerns/photos/569-small.png
+  - title: photo 4
+    url: http://pshannon.net/swordFerns/photos/570-small.png
+  - title: photo 5
+    url: http://pshannon.net/swordFerns/photos/571-small.png
+  - title: photo 6
+    url: http://pshannon.net/swordFerns/photos/572-small.png
+  - title: photo 7
+    url: http://pshannon.net/swordFerns/photos/573-small.png
