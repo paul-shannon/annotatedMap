@@ -1,0 +1,14 @@
+area: 10
+color: orange
+borderColor: orange
+contact: ''
+firstReported: '2017-01-01'
+lastUpdate: '2019-03-01'
+lat: 47.596411
+lon: -122.519098
+notesFile: notes.html
+radius: 100
+severity: 3
+text: first reported(as extensive) in 2017, now with 100s of dead ferns (3/19)
+title: Port Blakeley Park
+type: circle

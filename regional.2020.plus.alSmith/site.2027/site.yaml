@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 4-20-18
+lastUpdate: 4-20-18
+lat: 47.5561636
+lon: -122.2520422
+notesFile: ''
+radius: 10.0
+severity: 1
+text: 'potential photo location '
+title: 'Seward: potential photo location'
+type: rectangle

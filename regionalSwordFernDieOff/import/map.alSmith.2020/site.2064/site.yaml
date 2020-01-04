@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 10-17, 2018
+lastUpdate: 10-17, 2018
+lat: 47.5313688
+lon: -122.0836071
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '30 dead in area '
+title: 'cougar: 30 dead in area'
+type: rectangle

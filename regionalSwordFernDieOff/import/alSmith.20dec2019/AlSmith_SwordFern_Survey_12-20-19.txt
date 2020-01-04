@@ -1,0 +1,211 @@
+OBJECTID	Park Location	Address	Point_ID	Date	Num	Comments	Other	GlobalID	Review	"Status (0=no decline, 3=severe decline)"	Status Notes	x	y
+1	Cheasty Mt View	"4701 Mountain View Dr S, Seattle, WA 98108"	CHMV_PP1	6/28/17	1	Off trail on ridge east of bowl		bc3b1bd8-6275-4c82-9e17-31a50e35390b		1		-122.2975255	47.56140035
+2	Cheasty Mt View	"4701 Mountain View Dr S, Seattle, WA 98108"	CHMV_PP2	6/28/17	2			e323ce58-9edc-42a4-ba0d-4db6ea1f9c71		1		-122.2976832	47.56145606
+3	Cheasty Mt View	"4701 Mountain View Dr S, Seattle, WA 98108"	CHMV_PP3	6/28/17	1	On edge of social trail		36307e02-5900-4e8a-89f6-f73c3ed70445		1		-122.2981241	47.56132084
+4	Cheasty Mt View	"4701 Mountain View Dr S, Seattle, WA 98108"	CHMV_PP4	6/28/17	1	Just east of trail at base of decaying stump		c1b40dd7-62d5-489a-a55f-802454692bbb		0		-122.2985851	47.5610878
+6	Lakeridge Park		DHC#1	8/25/17	1	east of road facing due north	stake approximately 12 feet east of pavement/road	d791fdfb-880b-4707-9010-b459c99be5ee		1		-122.2487656	47.50931408
+7	Lakeridge Park		DHC#2	8/25/17	1	"photo depicts steep se facing slope,  some completely dead ferns among healthy.  Mature acma forest"	"photo facing wnw, stake near edge of wet ""gully"""	263d9ae1-b72c-4a5c-b2a5-0c9833eb40c1		1		-122.2491513	47.50921563
+8	lakeridge park		DHC#3	8/25/2017	3	"15 feet off trail, near base of western red cedar"	"P1=SE, P2=E,  P3=SW"	26794048-0557-41c7-99bf-13664d642616		2		-122.2472038	47.50613821
+9	Lekeridge Park		DHC#4	8/25/2017	2	"east facing slope, at W edge of trail"	"P1=SSW, P2=W"	eab6fa81-2f7d-4cf8-acb4-3b043f9cff4c		1		-122.247509	47.50534745
+10	seward		1	9/13/17	2	Ground Zero		cd1eeb9a-e38b-45e0-85a8-afb54874b5f6		3		-122.2495391	47.55542689
+18	"cougar, redtown"		crt#1	"9-22,2017"		northeast	four or five scattered between trailhead and mead    ow restoration site and back in  a loop. sept 22 roughly 50 more dead	d6f1a4cb-ccaa-4809-b69d-f79c256c7945		1		-122.121861	47.52903215
+19	cougar		2			northeast	gate at meadow view trails.about 20 dead	6850f72f-bb8a-4ff9-9e31-3ee488b749d4		1		-122.1290242	47.53160449
+20	cougar		3	"9-22, 2017"		"east, southeast"	"up bagley seam trail.as of april 21, 2018 about 120 dead in area of redtown."	a66d11d4-f4f0-4c2b-8633-b66e611a3c53		2		-122.1278508	47.53323008
+21	"cougar, tibbets trail"		1	"9-23,2017"		southeast	five or more dead in half mile or so of trail.	49a7bbe3-57d5-46da-b783-a0aca55ff2a5		1		-122.0953984	47.5385277
+22	 coal creek		1	"9-23,2017"		"south, southeast"	70 or so dead on and along	5a6cce48-b190-42a9-b262-d9b013e78984	Missing point location photo	2		-122.1299281	47.53576865
+24	cheasty		1	"9-26,2017"		"northwest ,southwesthuguq"	"three in february, eight now.on trail across from p24th place south.ce"	292f6f8e-1f12-4f77-8c95-68b8eab507b0		1		-122.3000387	47.56399217
+26	Coal Creek		1	"9-27, 2017"		"se, e"	"just off maintenance road. 50 dead 100 "" along trail"	2ae9f377-c816-4648-bef1-8e8c5c6e932c		2		-122.1509388	47.54189139
+27	weowena park		1	"9-27,2017"		"n, se"	50 dead in immediate area. 32 last time.south trail.ai	cafb0da2-b145-47ed-8834-70d1b352a096		2		-122.1152473	47.5928916
+28	weowema park		1	"9-27,2017"		"s, w"	about same dead 13	a79d2258-15a9-4a77-851c-c6a8ab682280		1		-122.1142602	47.59268155
+29	weowena park		1	"9-27,2017"		"s, sw"	"was 40 dead,  now 70"	803f9e3e-73d8-4a34-8b84-9f2d5be8dd68		2		-122.1126515	47.60348009
+30	squak mountain		1	"9-29,2017"		"n,e"	65 dead above where slope mower cut.	538b3a70-e96c-4305-878e-ae9322373c55		2		-122.0877364	47.50368276
+31	squak		2	"9-29,2017"		ne	about 20 dead in area	0e1a7937-8aec-47ac-8412-a87ac3058474		1		-122.0860014	47.50649933
+32	cheasty		1	"9-26,2017"		"nw, sw"	"3 dead in feb, 8 dead now , trail across from 24th place south"	c2223e41-05bd-4e40-a389-54a3aa46a886		1		-122.3003187	47.56370253
+33	madrona woods		1	"9-29,2017"		"se, sw"	"jan 15 , no dead , now see about eight dead from     bridge.as of april 2018 the number dead is the same but fallen acer mac leaves obscures the dead."	36c81563-5397-47e5-a251-cdfb0d25f30b		1		-122.283494	47.61139119
+34	interlaken	seattle	1	"9-28 ,2017"		"w, n"	a few dead associated with restoration project? no change as of april 2018.as of august 2018 counted 27 dead.	8fc35a8a-2a17-4c05-9091-a5d886e6a517		1		-122.3071726	47.63397039
+35	Wilburton	Bellevue	BBG_1	9/28/2017		"ne, sw"	some 50 dead around bridge	39851f28-5c16-4d2a-aa15-ce9968750ac8		2		-122.1754388	47.60546168
+37	madrona woods		1	"10-04,2017"		"se, sw"	see eight from bridge. six dead nearby.little change as of  august 2018.	d6cf8eb4-2922-4117-a843-853c0cb0000d		1		-122.2834849	47.61134817
+38	bridal trails	bellevue	1	"10-07,2017"		"s, w"	about 10 dead south. as of april 2018- no change.	d016f413-5340-40a1-8028-2d908e79cea9		1		-122.1699199	47.65121931
+40	o.o. denny	kirkland	oo#1	"10-28, 2017"		four dead in area.	"nw , e"	7af2a45d-e08f-46cf-90b9-88576eed217e		1		-122.247857	47.71050559
+42	may creek				2	about ten dead		90fe5867-0e7f-4fe3-8730-a9234a2dd643		1		-122.160924	47.5188415
+46	seattle	coleman	1c	"tmarch 02, 2018"		sw	recent cluster of four or five dead sword ferns w hich are not obviously related to mishaps from reforestation efforts. maybe some 20- 30 dead in park	f539c97e-4453-4168-86c3-684f665a63d4		1		-122.2883542	47.58529397
+47	lincoln	seattle	1li	"3-07, 2018"		25 plus dead. some just stubble covered with moss.	"south , southwest"	01d2df56-571d-423f-8c59-36cfa8dce576		2		-122.3967895	47.53153801
+48	sedward		1se	"5-05,2018"		"I found three dead  2014. shannon took video jan or thereabouts 50 dead. now 100 plus.originaldead site almost bereft of buttercup ,"	lse	1724f128-ffa9-4564-9850-4b9df23cb134		1		-122.2511934	47.56183099
+50		"fairwweather park, medina"	fpm1	"12-23, 2017"		"nw, se"	near east most entrance to park.about seven  dead.	ddda0758-662a-4a7e-b439-75bba8b443a3		1		-122.2397691	47.63909488
+51	"cougar mountain, trail to meadow views trails"		rt#3	"11-08, 2017"		"ne,"	about 20 dead	497c988f-23ce-453d-9ef1-7d109be1fdf5		1		-122.1291275	47.5315825
+53	may  creek		#1mc	"11-17,2017"		"2nd south , forth nw"	" february 24, 1or 2 dead. ten dead near photopoint, 53 dead along trail."	c37ef8c2-6075-4052-afa7-26d7dcae5c9e		1		-122.1610937	47.51930489
+61	madrona woods	seattle	3md	"12-18, 2018"		"se, sw"		c6d10dd3-261b-47b6-bcd2-829cd1f6c4d7		2		-122.2834073	47.61130659
+62	Seward			4-20-18		potential photo location		89b134ff-cf05-4bd8-a13d-158c6dab7895		1		-122.2520422	47.5561636
+64	tiger mountain. tradition plateau	issaquah	1tp	"6-02, 2018"		"about  15 dead to this point, but another20dead in immediate area."	"sw, w"	fae80ab6-5f2c-4fb4-814b-53bb58af1444		1		-122.0215669	47.52895458
+65	tiger mountain big tree trail	issaquah	2bgt	"6-02, 2018"		about 20 dead in area	"nw , se"	10be6ac0-4ba5-420b-a8c6-2a2635ce7888		1		-122.0140537	47.53192687
+67	tiger mountain swamp trail		3sw	"6-02,2018"		bunch of dead above trail.50? plus along swamp trail	"se, ne"	d63e579f-1d0c-492f-b92f-e27f07bfcde4		2		-122.0064277	47.53100156
+68	"tiger, swamp trail"		5sw	"6-02,2018"		50 plus dead	"w , e"	62a64f46-8836-416d-89ce-fe5ac811e0d2		3		-121.9983105	47.53105678
+69	same as 5sw					122 dead counted from trail in just 100'.'		3bd2eb9f-4424-4e03-a5d9-302b62d7c93b		3		-121.9983978	47.53119536
+70	prit chard beach		1pb	may 6 2018		south	"catherine alexander reported dead ferns.about 8 in area, but all planted?"	80373700-0cd4-4035-a00e-03517b580bfc		1		-122.2630257	47.52830908
+72	mercer island	north mercerdale	1nm	"6-08, 2018"		about 100 dead	"e  , s"	20586db9-8807-423a-990c-4bb948348b5b		2		-122.2393284	47.58562074
+73	mercerisland	upper luther burbank	1ulb	"6-08, 2018"		"over 100 dead, but unlike north mercerdale not many new dead in last year and one half"	lf.	a41f22e8-b44f-4b3d-bc66-edf7f1a55647		2		-122.2255341	47.58335785
+74	issaquah	"trail to round lake, maybe."	1trl	"6-15, 2018"	9	"trail to round lake, hopefully. about 80 dead so far"	"n, w"	6b255bf9-3d4c-465b-bf45-2f3e1dde2ba9		2		-122.0235243	47.52434701
+77	redmond watershed preserve		1rwp	"july 18,2018"		30 dead or so at beginning of trail.116 dead trout loop trail	"nw, ne"	027e3d00-fccd-43d8-a16d-0afd7ac707d1		1		-122.0517669	47.69668283
+78	redmond watershed		"2rwp, n , w"	"july 18,2018"		"87 dead to this point. here about 15 dead, but are mostly moss cove"	red stubble.	03a2e07b-4392-46bd-9019-9d5cb09a1fc3		2		-122.0537335	47.69998296
+79	traditionlake trail	tiger mountain	1tl	"8-16, 2018"		80 plus dead to this point.	"e, nw"	e3a2700d-184d-45dd-9c54-e3ea039dcb82		2		-122.0041685	47.52685727
+80	tradittion lke yrail		2tl	"8-16, 2018"		60 plus dead in area	"s, sw"	feb9ff5e-b548-4f53-9737-1c131724f19a		2		-122.0072586	47.52880019
+82	o.o. denny	kirkland	2 o.o.	"7-29, 2018"		"nw, e"	was 3 or 4 dead. now 20 plus or so dead.	0fc82575-f4c2-4d67-b134-c8998202fcaf		1		-122.2483052	47.71077279
+83	soos creek		1soos	"8-03,2018"		30 plus dead  sword ferns.just a coupl	"sw, w. hundred feet north of first beyond  meridian park"	7772dc1f-a87d-46f4-bbfe-edf769247a2c		2		-122.1396986	47.3661034
+84	bellevue	mctavish	1mc	"august 16, 2018"		"20 plus dead in area, 2 or 3 dead previously."	"sw, nw"	1d27ff29-13d2-406b-a8f9-1631df740414		1		-122.1675582	47.59584644
+86	mcavish	bellevue	1mc	"8-16,2018"		"20 plus dead ln area. 2 or 3 previously- October 13, 2017."	"s, w"	66899646-f6f3-4250-b589-49edb0a7c502		1		-122.1675715	47.59577
+87	cougar	de leo trail or close by	1dl	"9-07,2018"		"about 15 dead in area another 30 or so on wildside, de leo and marshalls hill trail."	no compass.	3a80e325-c6fd-4cf6-9b87-06f8ac339640		1		-122.1431032	47.52488976
+88	cheasty. boulevard		1cb	"9-14, 2018"		30 plus dead over couple hundred feet by fifty feet.	"w, ne"	691c1eae-ea03-488f-a2d1-f487e977e28f		2		-122.3008751	47.56343678
+90	"madrona woods, seattle"		1mw	"9-14,2018"		15 or so dead within 50 uptrail and downstream.	"s, se"	01c02e36-0853-4227-8e55-10a7756850e7		2		-122.2835222	47.61126642
+91	"interlaken, seattle"		1il	"9-14,2018"		"sw, nw"	"restoration site, but 20 plus  dead."	f796941b-69cd-438a-8c11-336a7b402c12		1		-122.307032	47.63312447
+92	east mercer way	mercer island	1em	"9-15, 2018"		about 40 plus dead along some 150 feet of embankment.	"n, nw"	4bd7bda3-1be7-42dc-b5f1-57d64e22194b		2		-122.2119229	47.5663852
+94	mctavish woodridge	bellevue	1mw	"9-15,2018"		20 plus dead vs a couple a year ago.	"s, n"	bf47db2f-cb66-4219-851d-c5907ba4cff3		2		-122.167769	47.59585306
+95	may creek	newcastle	1mc	"9-15,2018"		more dead and dying since last time.about 40 in first 400 feet	"n, n, se"	d089763e-bd92-4051-a2fa-c5cb8caf98b7		2	up to 116 dead along lenght of trail	-122.1612755	47.51892772
+97	se 53rd open space.	mercer island	1sgs	"9-19, 2018"		83 plus dead in area.	"nw, e"	de451b4c-d9ca-445c-b447-4199e38b215c		2		-122.2152592	47.55358552
+98	camp long	seattle	1cp	"9-28, 2018"		"a few dead along 100 feet of trail, but 15 more near dead"	"ne , n"	7a88888a-1274-4634-acbd-910ba4b341cc		1		-122.374224	47.55792701
+99	upper luther burbank park	mercer island	2ulb	"10 -07, 2018"		about 25 dead. jumped over the ridge and into east ravine. few reduced to stubble as of now.	couldn't get GPS point so it was manually punched in and is off.	b01bbb5c-eef4-4e4a-828c-1f5e41288034		2		-122.2252268	47.58291762
+100	luther burbank park	mercer island	1lb	"10-07, 2018"		about 20 dead in area. maybe planted.	"s, w"	ad203922-c033-46aa-8fbf-fc35e2f7dcc8		1		-122.2271501	47.59188569
+101	Brink trail	"tiger mountain, issaquah"	1br	"10-12,2018"		50+ dead sword ferns along and about 50' of trail.	"ne,sw"	c66ab9f2-bbe5-472a-bb91-442a1157e41c		2		-122.0133662	47.53490775
+102						140+ dead on brink trail including 70+ in patch a couple hundred feet beyondfirst patch of 50+.		b50ace01-f540-4f3d-8c4f-a2affff3311c		2		-122.0075408	47.53475384
+103	"swamp trail, tiger mountain"			"10-12, 2018"		photos left-right every 10 or so i.e. 3 paces for 100'.		67dc7075-e5ce-4fad-a601-28c8a2bf4c66		3		-121.9986403	47.53142708
+104	tiger mountain			"10-12, 2018"		"1000+ dead sword ferns counted so far on trails: swamp 450, big tree 100,plateau lake 200, school? 150, brink 150."		3fa1d910-2dfd-4b24-927d-0b3df76782bc		3		-122.0232546	47.53052712
+105	   weona park	bellevue	1wp	"10-13, 2018"		100+ dead now on both sides of trail. previously about 30 dead. 	"se, w"	813f322d-4300-4623-8bc5-4cd8f31ad209		3		-122.1151253	47.59278857
+106	weona park	just off Sammamish parkway	2wp	"10-13, 2018"		"about 84 dead in area. so far 2 big areas of die-off, 2 smaller areas of less than 20 dead each and some scattered adding to about 250 dead."	"se,s"	f20e5ba5-af38-40ac-abe1-c3d50a2aa19b		2		-122.1126175	47.60341629
+107	soos creek		2sc	"10-16,2018"		"New device, better pictures. counted 50+ dead sword ferns"	w 	5faec670-1a4f-43a4-bae9-c0a5d846d77d		2		-122.143704	47.36755766
+108	soos creek		3sc	"10-16, 2018"		"another 20 dead or so on other side, east side of trail."		4aa74ba8-b5c4-40f7-bf46-8319ccdc500d		2		-122.1381207	47.36902909
+109	cougar mountain	bear ridge trail to junction with tibbets creek trail	1brt	"10-17, 2018"		247 dead along trail. many others looking poorly. just a couple dead at this photopoint.	"se, ne"	c542740e-b366-420e-9c31-9210180fff29		3		-122.0842251	47.53164079
+110	cougar		2bc	"10-17, 2018"		30 dead in area	"se, n"	af989aa8-52f7-4ef4-809b-6b8e0059cc10		2		-122.0836071	47.53136876
+111	cougar-talus open space		3br	"10-17, 2018"		"more dead, about 22 in area."	"s,ne"	1b8acf13-26a1-4d0a-9062-feb714c1cdf7		2		-122.0701977	47.52800671
+112	cougar-talus slope	bear ridge trail	4br	"10-17, 2018"		25 or so dead in area. 247 or so dead before intersection of bear ridge trail with west tibbets creek trail.	"we, ne"	014f1c6c-5532-405b-8a8a-3b7e12d1eaa2		2		-122.0670279	47.52772071
+113	Evans creek preserve	sammamish	1ecp	"10-19, 2018"		about 15 dead in area	"sw,sw,e"	d27e52e3-8364-4892-8665-87b8a58d1e21		1		-122.0524789	47.64398749
+114	Evans creek preserve	sammamish	2ecp	"10-19, 2018"		"sw,ne"	"20 or so dead in area, many reduced to moss covered  stubble. hiked  most trails and counted about 85 dead minus those lost from restoration work and"	56a0e14e-dba1-4b0a-bcba-5e685caa5747		2		-122.0444748	47.64000661
+116	lakemont	bellevue	1la	"10-20, 2018"		about 30 dead so far. 8+ dead in area.	"s,e"	cd95e722-2383-4e16-b99d-ece089649103		2		-122.1032012	47.55533809
+117	lakemont park	bellevue	2la	"10-20, 2018"		45 dead to this point. 10 + dead in area	"nw,w"	9d3ecf93-29de-48b5-8c38-00a32dee1cbe		2		-122.1055044	47.55643223
+118	squeak mountain connector trail	cougar mountain	1smc	"10-20, 2018"		114 dead or more along length of trail. a couple areas of ten or more.	"nw,nw,nw,e"	7c0a1a9a-6237-4fc9-9e4e-17bbfb6947ff		2		-122.0838633	47.51462844
+119	Sauk mountain connector		2smc	"10-20, 2018"		about 10 dead in area. 114 dead counted along connector trail.	"w,e"	fe96fa54-1b1d-4c8b-8a42-9e18fcc589eb		1		-122.0894937	47.51418166
+120	Sauk mountain	cougar squak corridor	3sm	"10-20, 2018,"		"35 dead along road to just a little beyond this point.some back up in woods, 59+ dead so far."	"se, e"	df87cf32-5997-41b3-89aa-52acbdbde9da		2		-122.0855889	47.50615729
+121	Sauk mountain		4sm	"10-20, 2018"		183 dead to this point. going home	"ne,se"	e38d95a4-0acc-4638-92f1-817c47462075		3		-122.0828101	47.50716903
+122	westwood-highland park	bellevue?	1wh	"10-27,2018"		106 dead .5 mile length of trail. some might have been planted as perhaps the 7+ dead at this point.	"nw,s"	600b1314-bb8c-4871-b75d-1288a91d1799		2		-122.1488726	47.5520693
+123	westwood-highland park	bellevue	2wh	"10-27, 2018"		20 or more dead in area. along the trail others looking sickly.	"w,ne"	117c7149-7ec4-45b7-a371-257479acba0d		2		-122.1539048	47.55186429
+124	coleman	seattle	3c	"11-01,2018"		"50+ dead in park, at least some planted. 16 dead in vicinity."	"w,e"	e8b29f63-8c60-4e4f-8793-4dc8b615b8f1		2	many planted ferns have died...	-122.2886459	47.58550097
+125	Seward park	south skunk cabbage patch	1scp	"11-09, 2018"		lots of dead sword ferns and not many skunk cabbages still visible.	"n,e"	ffc57af5-0d7f-4444-9806-5ae921cc3b6f		2		-122.2475987	47.55486338
+126	Seward park	north skunk cabbage patch	2scp	"11-09, 2018"		skunk cabbage patch looks more robust compared to southern patch. also north patch has no dead sword ferns.	"sw,w"	f894c875-33ca-47d8-a15e-210c7321b842		1		-122.2482876	47.5587555
+127	Seward park	north end of Bailey peninsula	2nebp	"11-13, 2018"		knapsack in middle of 4 dead stubble sword ferns first noticed in 2014.	"n,s,e,w times 2.last picture split by log"	55008ac4-27a5-458f-9361-2c78a8c004ab		1		-122.2541201	47.56090384
+128	lincoln	west seattle	2li	"11-14, 2018 "		"Sharon said ivy removed. stubble ferns moss covered killed by ivy?some ferns exhibiting an unhealthy looking yellowish green, as in last photo."	"s,sw"	f3859b35-066a-46a2-87e5-2f287ca75e1c		1		-122.396992	47.53165352
+129	cougar mountain	cave hole trail	1cht	"11-17, 2018"		8 or so dead in area. another 20 or so scattered along .1 mile trail to redtown dam.	"e,w"	ae097f4b-c100-4967-8f15-5f99022bc594		1		-122.0910808	47.50416768
+130	cougar mountain	sky country trail	1sct	"11-17, 2018"		10 or so dead in area including 3 near knapsack which might have been brushed to death.last picture shows one unhealthy looking sword fern.	"ne,ne, se.  1060 feet elevation?"	e88de058-84c6-479c-8aa8-e93f1108d412		1		-122.1182724	47.52752374
+131	bridal trails		2br	"11-24, 2018"		about 10 dead in area. same place as previous photopoint?	"s,ne"	015e4759-f036-4d66-ba69-aa1c7ea8c52a		1		-122.1654528	47.65119608
+132	luther burbank park	mercer island	2lb	"11-28, 2018"		this time counted 30+ dead in area.	"s,w"	8e7ef4d6-89f5-4f9e-8a55-6e2ca16fd466		1		-122.2271334	47.59179636
+133	upper luther burbank park	mercer island	2ulb	"11-28, 2018"		going for better GPS point. 20+ dead in immediate area and all reveal evidence of pathogen straying into east ravine.		09a24ad3-09ca-4270-8c9e-6fd47313b350		1		-122.2258815	47.58276549
+134	Seward 53rd st open space	mercer island		"11-28, 2018"		"Samsung tab, better pictures? better gps? only  counted about 70 dead, but probably many crowns buried under fallen Acer mac leaves."	"sw, ne"	ddb828ab-40aa-4a92-ab10-815901558d41		2		-122.214057	47.55491854
+135	coal creek	bellevue	3ccp	"12-02, 2018"		"about 50 dead, some not visible buried by fallen Acer mac leaves. still not much different from initial photopoint."	"se, "	5852a88a-22b8-4747-bd3e-4765b0aeaf1f		2		-122.1504647	47.54195943
+136	coal creek	bellevue	4ccp	"12-02, 2018"		covered with Acer mac leaves but a few more sickly looking ferns. hard to count number of dead.	"se,e"	2b9dba23-c8fb-4c5f-874e-1d69c6cb3f39		2		-122.1298786	47.53576138
+137	east duwamish greenbelt	seattle	1edg	"12-06, 2018"		10 or more dead along an eroded bank along 75' or so of side walk.attachment #5 sword fern above not looking too good.	"sw,nw"	93acc8b8-569a-41ee-93aa-99fa79ca22d8		1		-122.2821155	47.51941315
+138	camp long	seattle	2cl	"12-14, 2018"		some restoration work. many sickly looking but fewer dead along 200 feet or so of trail.	"e,w"	29e29f20-8d6d-4624-8280-2ec4739a15b4		1		-122.3745666	47.55808608
+139	camp long	seattle	3cl	"12-14, 2018"		"3 or so dead in area, but mainly just trying to get a good GPS point."	"e,w"	51fc357f-7211-42ee-8212-52e7a97d035f		1		-122.3742195	47.55764149
+140	madrona woods	seattle	3mw	"12-18, 2018"		"we, sw"	25+ dead 50 feet down stream and 100 feet along trail. last photo of sick looking fern. if. cleared most ferns in pictures from Acer mac leaves.	d6247351-8fa4-4ac1-a411-98e921b97d85		2		-122.2834404	47.61126287
+141	Bellevue botanical garden		1btg	"21-21, 2018"		"Alex Wright, botanist was aware of the off in garden and wilburton hill before I took first photopoint. many dead elsewhere in the garden."	"n,n,s"	6bdfe535-ed6b-4fa3-bc17-69d92c345b94		2		-122.1770332	47.60548943
+142	wilburton park se 5th street	bellevue	1se5	12-21 2018		many dead along gravel road. 30+?	"n,ne"	ba236d50-2243-40d1-91de-a6384a183a6d		1		-122.178332	47.60518417
+143	wilburton hill	bellevue	2wh	"12-21, 2018 "		"sw, ne"	very hard to count number of dead ferns. the larger proportion reduced to crowns or stubble and buried under fallen Acer mac leaves.	f448e52b-7190-4b20-96cb-c70e18a476fc		1		-122.1753068	47.60563875
+144	  cheasty boulevard greenspace	seattle	2cb	"1-02, 2019"		"45+ dead along a couple hundred feet of trail and 30 feet to either side. many more, perhaps a quarter more appear to be dying."	"nw,e"	1c22b9a9-ef55-4937-ab2e-97a3e124e3c9		2		-122.2997072	47.56373622
+146	cougar mountain	big tree ridge trail	1btr	"1-10, 2019"		"counted 8 dead may 18, 2018 up to shangra la trail. obviously missed seeing these 16. + crowns and stubble covered with moss."	"ne,w"	9780b17a-163a-47f3-a4aa-cdc125d823a6		1		-122.0743818	47.54576597
+147	cougar mountain	surprise lake trail	1slt	"1-10, 2019"		about 20 dead scattered to this point. thorough brushwacking along trails killing off sword ferns makes count difficult. about 7 dead or dying at this	"nw,s"	ca82d6ba-69a3-4dac-a716-b75491020cc1		2		-122.0803769	47.54232812
+148	o.o Denny park	juanita	3ood	"1-13, 2019"		"about 7 dead in immediate vicinity, but others looking very sick indeed. 20+ dead in area."	"n,w"	df39a717-6b99-4cbb-a3f3-08f175ad5a2c		1		-122.2476307	47.71051921
+149	coal creek park	"Bellevue, north section of trail just west of coal creek parkway"	4ccp	"1-26, 2019"		eight dead in immediate area + some looking quite sickly. lots of ivy and removed some in a few pictures	"ne,w.      10 or so deaf from coal creek parkway along trail to 119se."	40036ddf-8bc5-4982-b08e-3f9eacd8c4a8		1		-122.1666091	47.55655072
+150	Redmond watershed preserve	pipeline connector trail	3rdp	"1-28, 2019"		August 2018 a few dead at this site. now over 30 dead plus others not looking so good.	"ne,sw"	bac36114-4514-4de5-b3ba-55a621e20efb		2		-122.0509869	47.70524105
+151	coal creek plus primrose trail	bellevue	1pr	"march 10, 2019"		24 dead to this point from coal creekparkway trail head at least 25 more dead in this area.many stubble or just crowns.	"sw,ne"	e5fc850b-834e-40a5-8a19-098d2be90cc4		1		-122.1488351	47.54314951
+152	bainbridge island	blakely harbor	1bh	"march 11, 2019"		lots of sickly looking from blakely hill intersection to this point. about 20 dead here mostly stubble	"n,s"	8fec3020-1341-4473-b8a0-07c100b8ae3b		1		-122.519563	47.59730865
+153	blakely harbor	bainbridge island	2bh	"march 11, 2019"		very rough count of 60+ dead. photo displays maybe 1 dead but some looking quite sad.	"nw, e"	3299f4ce-895a-4c9d-8bfb-8dd715b131ae		2		-122.51722	47.59749119
+154	port blakely -fort ward trail	bainbridge	1pbfw	"march 11, 1019 "		maybe 10 or so dead  in area.	"sw,ne"	cb17f1f2-b881-4ee6-8c9a-43763ba7a98b		1		-122.5225327	47.59644087
+155	port blakely-fort ward trail 		3bbfw	"march 11, 2019"		at least a couple hundred dead in area	"se,n"	4d31d1f1-6d3d-4563-9cfa-d786d80fa7f0		3		-122.5240127	47.59666512
+156	redmond watershed preserve	trout loop trail	2tlt	"april 28,2019"		"55 dead to this point 20+ dead in area many moss covered crowns.190 + dead trout loop trail, 50+ dead trillium connecter, 20+ dead mostly start of tre"	"n,s.  e frog loop trail."	e6e540a5-eeec-4c04-bd39-9de675f98fb4		2		-122.0559697	47.69644854
+157	madrona woods	seattle		"4-30, 2019"		"sw, ne"	"attachment 2, four dead ferns 30' up from the trail in picture and then another 15+ dead.+"	cc2cf482-c593-4662-9d79-251e27b57660		2		-122.283491	47.61120664
+158	madrona woods	seattle	4mw	"4-30, 2019"		20+ dead 30' up hill	"sw, nw"	41c32357-066c-46e8-9d5e-ace556c586d2		2		-122.2835489	47.61134401
+159	arboretum	"seattle, along 28th ave e"	1arb	"4-30, 2019"		"about 70 dead in restoration project, most dead planted?"	"nw,e"	71c27d57-46f5-4563-8c83-0333d5cf0f69		2		-122.2975711	47.62896828
+160	issaquah highlands?	coal mine loop trail	1cml	"5-03, 2019"		22 dead to this point mostly along paved path. here 50+ dead along both sides of trail.	"se, n"	4a3bae6b-af14-4ccc-a678-ea622865780b		1		-121.9986544	47.53843819
+161	issaquah highlands	grand ridge trail	1grt	"5-03, 2019"		"20+ dead at this point and 170 dead counted on 2 trails, so far.south pond trailhead tohigh point trailhead 315 + dead."	"n, s"	f6f32ba7-c2b3-487f-89fb-ea254ebcc6b3		2		-121.9919826	47.53657623
+162	arboretum	road-path west of japanese garden	1rpw	"5-05, 2019"		"about 34+ dead just uphill from path, many struggling to put up fiddleheads."	"s, n"	8901f28f-e05d-4521-b90f-30cb2f051d6d		2		-122.2966068	47.62868306
+163	arbotetum	seattle west of parking lot	1swp	"5-05, 2019"		20+ dead in area restoration site	"sw, ne"	85512ffa-cd6e-4e35-a665-7725f8700b22		2		-122.2963621	47.62821636
+164	arboretum					Graffiti on sign		5eafb240-89b2-4e9d-a9a4-8a9ba298851c				-122.2952757	47.62754856
+165	coal creek park		2ccp	"5-08, 2019"		50 dead recorded sept 2017. this time including area adjacent to maintenance road.120 + dead not including many sickly looking lacking fiddleheads.	"se, n"	4c07b7c5-b440-4b06-9b9a-67d60d411373		2		-122.1509416	47.5415405
+166	trail alongside newcastle golf club road	coal creek	1tang	"5-08, 2019"		37 + dead in area another 13 dead from ymca	"s,n"	7eb97baa-bdeb-48a4-8ff9-911b2168d1d3		2	50+ dead noted along apprx.1st mi of trail (from YMCA to here) 99 dead to end of trail.	-122.1503922	47.54026816
+172	Normandy Park			05/16/19				50d87a36-68d8-44ac-8324-466a150a8b66		0	No decline noted along main trails	-122.3459997	47.43089992
+173				05/16/19				564dac2c-7f2d-414a-8fc0-dea9fb9fd149		0	11 scattered dead ferns (from 200th to Sound) but not overt symptoms of decline	-122.3059658	47.41957703
+174				2018		"device was not working, no photos taken"		5119cd9d-9116-4830-9973-0f32953ca8b4		1	apprx 20 dead ferns noted along trail	-122.0181422	47.27679054
+176	couple hundred feet up from highpoint trailhead on	issaquah-preston trail	1ipt	"5-20, 2019"		130+ dead in 100 feet or so along trail	"n,s"	ea7f17c1-25be-46b5-baa8-bea7fa217ca8				-121.9939675	47.53318207
+177	west tiger mountain			"5-20, 2019"		about upper limit of sword ferns at 2200 feet. 150 dead ferns scattered about along trail but no more after about 1600 feet.		95255c1b-ee5d-4a7d-86a8-1ee93dceb2ba		2		-121.9873788	47.51535783
+178	west tiger mountain trail		1wtmt	"5-20, 2019"		dead sword fern at 1400 feet. maybe uppermost of 150 dead?	"e,w"	3efc1a78-c952-46ce-be0c-b99442fdf494		1	usually dead in clumps of no greater than 5. made no effort to reconoiter off trail	-121.9888374	47.52041901
+183	marine view park			"5-16, 2-019"		no dead on main trail to shore		b40ca101-a05e-4759-8edf-1f1768af2716				-122.3409006	47.41344337
+185	nw quadrant pioneer park mercer island			"april 21, 2019"				8032a5c0-3811-4b77-84b0-be8b753ae81b				-122.2246	47.54431319
+186	schmitz park	west seattle		"april 12, 2019"		two big dead ferns either side of a trail.		8ba4d2cc-b20e-4d64-a75c-b5deabb87ef0				-122.4007246	47.5748373
+187	gallagher hill			"april 17, 2019"		couple dead		bfb56770-2e11-4fb6-ba83-f510430e920a				-122.2165319	47.57881804
+188	ravenna park seattle			"5-07, 2019"		couple dead in restoration site		601e1991-f9c7-4f5b-a82e-ab35d9e400ac				-122.3089502	47.67258865
+189	hamlin park just north of seattle			"march 15, 2019"		couple dead in two places		6ab5ef77-f5e9-4f2b-a408-8e1928b21072				-122.3084352	47.74691845
+190	west duwamish greenbelt			"january 21, 2019"		7 scattered dead		f3c05673-f6ce-499d-8a58-a924f2003ff3				-122.3491189	47.54140174
+191	st. edwards  east shore lk washington			"january 18, 2019"		couple dead in earlier m more extensive survey found 14 scattered dead.		78b9d542-c71a-4efb-b4e5-12c0f60ed897				-122.2571084	47.73248817
+192	big hill park	juanita		"january18, 2019"		couple dead on trail adjacent to juanita drive.		22ec8952-4cbf-4fc1-806a-c1a067fc5584				-122.2426889	47.72342391
+193	juanita woodlands park			"january 18, 2019"		couple dead on trail thru park		8afa4d0c-c997-45c6-916e-1747d0412a04				-122.237539	47.7066191
+194	homestead park	mercer island		"january 09, 2019"		only tree sword ferns other than small planted ones.		c378800e-6e3f-406b-a1d6-31117386c1a6				-122.2311446	47.5735779
+195	skyway park			"january 4, 2019"		svery few ferns and no dead		ec8191dc-98d1-4464-9a27-4aa7eaa5b76f				-122.2432038	47.49482577
+196	pioneer park ne quadrant	mercer island		"december 26, 2018"		seven dead but probably planted		1d72a20e-c35e-458e-adee-3742ee39a782				-122.2193161	47.54082508
+197	mercerdale park	mercer island		"december 24, 2018"		10+ dead scattered and some associated with restoration.		e9ea7c2f-d870-48d0-9b9c-5471177929ed				-122.2385422	47.58009455
+198	discovery park	magnolia seattle		"12-12, 2018"		maybe 2 dead on 2.8 mile loop trail.		f62442ec-f206-4822-ab16-74e50400015f				-122.41913	47.66345888
+199	fauntleroy	west seattle		"12-14, 2018"		couple dead		d62cc348-96e3-4543-9402-2ff78b9e5d34				-122.3834244	47.51990409
+200	spring lake lake desire park	ding county		"11-12, 2018"		3 dead on trail to bald mountain.		5be3f4eb-9fd8-4269-b198-08a7470a319b				-122.0989385	47.43903953
+201	leschi park	seattle		"oct 26, 2018"		no dead		3c8cb14a-ba9d-4bcb-bb87-0e80795224ed				-122.2875944	47.60110725
+202	robinswood	bellevue		"10-13, 2018"		one or two dead		46a363f4-c40a-4606-bfab-1b52b83e598a				-122.1400085	47.58715762
+203	burke gilman park	seattle		"october 11, 2018"		0 dead		c0f5158e-8f94-4a8c-b113-ba0401949737				-122.2827021	47.66672481
+204	pioneer park ne quadrant	mercer island		"10-03, 2018"		one dead		8a8a56c9-7279-498b-873e-93383443e9cb				-122.2200886	47.54383794
+205	parkwood ridge open space	mercer island		"october 3, 2018"		one dead		09188ebe-596f-4643-b575-02c1fbe42d7e				-122.2151533	47.55257136
+206	westcrest	west seattle		"9-26, 2018"		2 dead		aa207c64-525d-445d-a517-58c533595f7e				-122.3403374	47.52517859
+207	farrel mcwhirter	redmond		"august 18, 2018"			1 dead	be77f349-e7d1-46b5-8f3e-98d529918988				-122.0813862	47.69558894
+208	chism beach park	bellevue		"august 13, 2018"		couple dead		ecd28b9e-a76f-4a31-83e7-6a58a78414b8				-122.2097889	47.60018125
+209	killarney glen park	bellevue		"auguat 13, 2018"		3 dead newly planted		7df37313-b5a8-4b09-8fc2-fd6390e5e627				-122.2035233	47.59387243
+210	boeing creek park	shoreline		"august 09, 2018"		one or two dead		681eb796-f19d-424d-8609-0223c023e805				-122.3660008	47.75350005
+211	northacres park	seattle		"august 09, 2018"		one or two dead		35aa21ef-4e26-46c3-b4dc-c3fd5b0cbe6e				-122.3275058	47.72234401
+212	twin ponds	north of seattle		"8-09, 2018"		no dead		cdd3d983-c004-46e9-95c7-2c56777cc744				-122.3300378	47.738884
+213	westcrest park	mercer island		"september 26, 2018"		wandered trails for 1 and 1/2 hours. 2 dead.		23b2652a-bf8d-417d-971f-39496cdcf0fb				-122.2242085	47.55165898
+214	pigeon point park	west seattle		"september 22, 2018"		"degraded slopes, 10  or so scattered dead"		dfd34101-1269-420d-90bc-44348341ee75				-122.3583619	47.56202728
+215	carkeek park	seattle		"july 28, 2018"		no dead		80eb5091-76b2-4b6c-b3d0-47210da2458c				-122.3736398	47.71239728
+216	jim whitaker trail	cougar mountain	1jwy	"5-23, 2019"		24 dead to this point. 4 dead in picture. 104 dead along length of whittaker trail.	"nw,e"	f720614a-d7e3-40d1-9ab6-29039e27e6d3		1		-122.0893122	47.51214042
+217	gombu wilderness cliffs trail	cougar mountain	1gwct	"5-23, 2019"		104 dead ferns to wilderness peak from trailhead.peak1600' dead ferns no longer after 1450. first dead fern going down cliffs trail at 1480'.	"sw,  e"	2b2e475d-3044-4b9f-9bf2-43d072579a76		0	just getting started?	-122.1022076	47.51384793
+218	junction of nawang gombu wilderness cliffs trail a	"and whittaker trails , cougar mountain"	1ngw	"5-23, 2019"		area in picture and along creek has 20+ dead	"n, s"	78080370-9542-47cf-87ee-1da50bf52b3c		1	only 15 dead down nawang gombu trail counted	-122.0914345	47.51420518
+219	seward park	seattle		"5-28, 2019"		"saw 3 or 4 dead sword ferns as early as 2014-2015. now many more in site where last year i saw one maiden hair fern, but this year lots of dead sword "	"in amongst an extensive coverage of creeping buttercup, lady fern both indicators of other than dry soil."	a1029272-6567-4895-bbe3-c145bb736a7d		2	"s,sw,ne"	-122.2541413	47.56104906
+220	cedar river trail	renton to landsberg. 17 miles ?	1rtl	"5-30, 2019"		"counted 2 dead to this point, but here along 30' of trail counted 37 dead."	"w, e"	3f1996fc-d9ef-4684-bede-9250ec0ad0d5		1		-122.043239	47.39614911
+221	flaming geyser state park	green river	1fgsp	"5- 30, 2019"		"2 dead in attachment 2, 20 or so dead scattered along 100' of trail."	"nw, se"	70e51d90-12ac-4de5-b0c8-892a6862aa79		1		-122.0194039	47.27436906
+222	kinnear park	seattle	"january 16, 2018"			5 or so dead recently planted.		005f07b1-1de7-46c0-b0da-1864d01afc63				-122.3671685	47.62740799
+223	david rogers park	queen anne -seattle		"january 16, 2018"		few ferns and no dead		82d117a2-0ddb-4f49-a14c-564f128d275d				-122.3591345	47.64424109
+224	lewis park- beacon hill seattle			"january 16, 2018"		0ne dead		0523b382-4a44-4cb0-9f82-3ac68bd4cd03				-122.3169058	47.59353123
+225	viewpoint prk	bellevue		"january 19, 2018"		no dead		096db101-bd2b-4cfa-b5dd-a4806d04a34a				-122.1613806	47.63125736
+226	magnuson park	seattle		"february 20, 2018"		6 or so dead planted		84b5aa62-b444-44ba-aa70-30427c829672				-122.2552794	47.68115052
+227	kirkland watershed park			"july 8, 2018"		one dead		378fd72a-754c-48dd-8ac1-8c04fc1defcf				-122.1896189	47.65022585
+228	groveland beach park	mercer island		"july 11, 2018"		one dead		06246d76-d18c-4e64-9c76-6b67bf43ba3a				-122.2338646	47.55123063
+229	stegosaurus butte	middle fork snoqualimie		"july 29, 2018"		no dead. hiked about one mile		4177efaa-ac5e-4e02-9597-11bb569ac0b5				-121.540889	47.5466975
+230	swan creek	pierce county		"september 2, 2018"		"pedestrian bridge closed, walked upland. one dead"		4a4bf409-160c-4278-8471-a92987504881				-122.3964064	47.21733782
+231	clark beach park	mercer island		"1-13, 2017"		no dead recorded		7b566828-3506-4bf4-89f3-510b898b44b6				-122.2155486	47.53364322
+232	black river	renton		"february 1, 2017"				6316d3ff-4c00-4536-9952-b8fa98d3ff80				-122.2394095	47.47698177
+233	bloedel preserve	bainbridge island		"june 30, 2017"		0 dead		ac9ee6f8-4407-4eea-a287-a75491e54404				-122.5396668	47.70819902
+234	fay bainbridge park			"june 30, 2017"		no dead		dd16ca85-f696-4611-a128-3a0b7ad7c195				-122.5087785	47.70354945
+235	hitts hill	columbia city- seattle		"november 30, 2017"		no dead		91b8b1eb-7aeb-4d25-9d48-74ea8159af4d				-122.2845887	47.55422563
+236	aseahurst	burien		"december 9, 2017"		1 dead		0b6e5ac6-9ab5-48c0-9dda-a82f09f16bdf				-122.3578881	47.48408772
+237	wetherhill nature preserve	uuanita		"january 24, 2018"		12 dead stubble planted?		bd821ccd-dcee-4434-b221-8439c3057275				-122.2228871	47.64001681
+238	crystal springs park	tukwila		"january 10, 2018"				b03ba3d5-60a9-47c6-aa59-3c893e07ade7				-122.2722827	47.46089553
+239	green river natural resources area			"january 10, 2018"		sort of no ferns- 0 dead		fd3c0726-568a-4720-abfd-99f78e0f137b				-122.2652874	47.40599995
+240	lake fenwick	kent		"january 10, 2018"		2 dead		6feef641-309c-4e5b-af7b-bdbe99be058e				-122.2678624	47.36962298
+241	yarrow bay	juanita		"january 14, 2018"		less than 10 ferns seen- 0 dead		957f7432-1761-4ca6-badf-2e7b89dac183				-122.2089826	47.64643572
+242	north mercerdale park		2nmp	"august 14, 2019"		photo in restoration site more than 154 dead in park. kim frappier found 100 more dead. probably in and around restoration site.		9c9c2ec7-b540-492f-b322-d04212587a0b				-122.2393314	47.5856189
+243	luther burbank	mercer island	3lb	"august18, 2019"		40 dead. no more seem to stressed or dying. some other than 40 are little more than stubble but displaying new growth. dead all planted ?	"sw,sw,w"	40c18bf8-7979-417c-a25a-d1f3ed6902f1		1		-122.2270354	47.59187638
+244								c4d6a434-87d0-43dc-bf60-b3258904f863				-122.2270555	47.59187494
+245	luther burbank	mercer island	4lb	"august 18, 2019"		20 or so dead in restoration project between two trails	"ne,ne,w"	2eba6f60-1dfb-40df-92f7-d424c60e30cd		1		-122.2267148	47.59290422
+246	upper luther burbank park	mercer island	4ulb	"august 19, 2019"		"80+ dead west slope, picture shows 2 sickly looking ferns of which none were seen so yellowish green in luther burbank park among 60 or so dead."	"ne,sw"	06c34650-d6c0-4ae2-9611-f1d88b2d305f		2	328+ dead in park. 40 or so dead east of ridge trail and between trail down to creek. couple of new patches of ferns present.	-122.2259156	47.58316598
+247	gallagher hills open space	mercer island	2ghos	"august 22, 2019"		10 or so dead upstream continuing beyond other side of bridge. perhaps most concerning is a number of sickly appearing ferns. 	"s,s,n"	c2242776-e229-406c-b40b-e49235f6de64		1		-122.2159959	47.57911912
+248	se 53rd st oprn space	mercer island	2se53	"august 22, 2019"		"counted over 110 dead. many still are dying, acer mac leaves no problem in seeing dead ferns."	"sw,ne"	0378b88e-c3dc-4fae-b226-67820eb69143		2		-122.2140266	47.55502071
+249	parkwood ridge open space	mercer island	2pwr	"august 30, 2019"		"2 or more dead ferns, but also some have at least touch of a sickly yellowish green color."	"nw, e"	e0f1cf26-9906-4df3-a96a-094a1ad1e8a1		1		-122.2147539	47.55227771
+250	engstrom preserve	mercer island	1ep	"september 1, 2019"		17deadfernsq towards east mercer way.	"n,nwq"	f9a4b2c0-1bec-459b-9175-de98ccd2c644		1		-122.2148166	47.54436923
+251	westcrest	mercer island	2wc	"september 2, 2019"		"nw,s"	"43 or so dead within area, but  many  othets dying replete with the all to typical"	ed852f6c-5bd4-4043-a341-f12ae3945e50		1	yellowish green fronds. 	-122.2258012	47.5509691
+252	soaring eagle		1sek	"9-24, 2019"		ten dead at start of trail	"e,w"	0f2860f9-e971-4e56-b2fc-e554f571d6f9		1		-121.9796545	47.60187377
+253	soaring eagle  - 30 acres park.  issaquah highland	blue jay way	1bjw	"9-24, 2019"		counted about  20 dead in area but probably many more hidden by trailing blackberry.	"sw,sw,sw, n"	cd572230-54b9-4494-bb38-a06fb1a4c43c		1		-121.9821041	47.60213156
+254	soaring eagle	nort trail.?	1nt?	"9-24, 2019"		a couple dead. checked out mounds of moss at least one covered sword fern stubble.	"ne,ne,sw"	a7cc0eb2-2e8c-4f5b-9da7-72a0bfed1a3e		1		-121.9871325	47.60584927
+256	east duwamish greenbelt	seattle	2edg	"10-31, 2019"		now about 16 dead in area	"w,nw"	701326e9-ce97-46ff-97ce-2915fe050d29		1		-122.2824507	47.51927732
+257	east duwamish greenbelt	seattle	3edg	"10-31, 2019"		about 10 dead up hillside	"w, nw"	e72adfbe-049e-4066-99a8-e6803e15aa90		1		-122.2820071	47.52014202
+258	west duwamish greenbelt	seattle	1wdg	"11-01, 2019"		25 or so dead in about an area 100 feet by 100 feet. many others sickly looking green. others struggling but with fronds with attenuated pinae. restor	"nw,sw"	dbd553f9-18e1-4154-9f03-bff8efd4e27f		1	ation site? herbicide killing ferns?	-122.3472798	47.54576837
+259								d0d6ef51-7dca-4f06-b3d9-872bcb7121ec		1		-122.3472343	47.54568077

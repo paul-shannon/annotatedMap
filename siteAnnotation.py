@@ -12,9 +12,10 @@ import os
 class SiteAnnotation:
 
    directoryAbsolutePath = None   # where the annotation (site.yaml, notes.html, etc) can be found
-   title = "",
+   title = ""
    lat = 0
    lon = 0
+   color = "black"
    firstReported = None
    lastUpdate = None
    contributedBy = None
@@ -24,6 +25,7 @@ class SiteAnnotation:
    notesFile = ''
    photoTabs = []
    videoTabs = []
+   shape = "circle"
 
    def __init__(self, yamlFile):
        assert(os.path.exists(yamlFile))
@@ -32,6 +34,9 @@ class SiteAnnotation:
        keys = list(info.keys())
        assert(self.validAnnotation(info))
        self.title = info["title"]
+       self.shape = info["type"]
+       self.color = info["color"]
+       self.borderColor = info["borderColor"]
        self.firstReported = info["firstReported"]
        self.lastUpdate = info["lastUpdate"]
        if("contact" in info.keys()):
@@ -72,6 +77,12 @@ class SiteAnnotation:
               assert("url" in videoInfoFields)
       return(True)
 
+   def getColor(self):
+      return(self.color)
+   
+   def getBorderColor(self):
+      return(self.borderColor)
+   
    def getTitle(self):
        return(self.title)
 

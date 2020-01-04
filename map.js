@@ -11,7 +11,13 @@ function initializeMap()
    var mapCenter = new google.maps.LatLng(initialLat, initialLon);
 
    var mapOptions = {
-       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       mapTypeControl: true,
+       zoom: initialZoom,
+       center: mapCenter,
+       //mapTypeId: google.maps.MapTypeId.HYBRID    // TERRAIN SATTELITE ROADMAP
+       //mapTypeId: google.maps.MapTypeId.TERRAIN
+       //mapTypeId: google.maps.MapTypeId.SATTELITE
+       mapTypeId: google.maps.MapTypeId.ROADMAP   // TERRAIN SATTELITE ROADMAP
        }
    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
    google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});

@@ -1,0 +1,14 @@
+area: 10
+color: orange
+borderColor: orange
+contact: ''
+firstReported: '2017-07-01'
+lastUpdate: '2017-07-01'
+lat: 47.931323
+lon: -122.693893
+notesFile: notes.html
+radius: 100
+severity: 3
+text: First report, summer 2017, private second-growth forest, die-off follows trail
+title: Port Ludlow
+type: circle

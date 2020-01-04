@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 9-29,2017
+lastUpdate: 9-29,2017
+lat: 47.5036828
+lon: -122.0877364
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '"n,e" '
+title: 'squak mountain: n,e'
+type: rectangle

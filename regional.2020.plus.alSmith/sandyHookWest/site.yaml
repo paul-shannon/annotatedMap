@@ -1,0 +1,14 @@
+area: 10
+color: orange
+borderColor: orange
+contact: ''
+firstReported: '2019-02-01'
+lastUpdate: '2019-02-01'
+lat: 47.69595
+lon: -122.59327
+notesFile: notes.html
+radius: 100
+severity: 2
+text: 'February, 2019: dead ferns, reported by John Oleary'
+title: Sandy Hook West
+type: circle

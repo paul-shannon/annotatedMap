@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
+
+        \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+.mapCanvasClass{
+   margin: 20px;
+   height: 90vh;
+   width: 90vw;
+}
+
+.infoWindowTab {
+    height: 650px;
+    width: 800px;
+}
+
+</style><script>
+var map;
+var currentInfoWindow = null;
+// var marker1, marker2, infoWindow1, infoWindow2;
+//----------------------------------------------------------------------------------------------------
+function initializeMap()
+{
+   console.log("==== initialzing map")
+   var initialLat = 47.555514;
+   var initialLon = -122.252480;
+   var initialZoom = 16.000000;
+   var mapCenter = new google.maps.LatLng(initialLat, initialLon);
+
+   var mapOptions = {
+       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       }
+   map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+   google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
+
+   var myStyle = [{featureType: "administrative", elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "poi",            elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "water",          elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "labels",    stylers: [{ visibility: "off" }]},
+                  {featureType: "road",           elementType: "geometry",  stylers: [{ visibility: "off" }]}
+                 ];
+
+   map.setOptions({styles: myStyle});
+
+} // initializeMap
+//----------------------------------------------------------------------------------------------------
+$(document).ready(function() {
+    console.log("ready!")
+    initializeMap()
+    })
+
+</script><script>
+ function create_marker_1() {
+           var markerLat = 47.556604;
+           var markerLon = -122.251273;
+           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+           marker = new google.maps.Circle({
+                      strokeColor: '#FF0000',
+                      strokeOpacity: 0.8,
+                      strokeWeight: 2,
+                      fillColor: '#FFAAAA',
+                      fillOpacity: 0.35,
+                      center: markerCenter,
+                      radius: 5,
+                      title: 'Pauls fern, in front of mature alder on the Windfall Trail',
+                      map: map
+                      });
+            var markup = `<div id="infoWindow1_tabs" class="infoWindowTab">
+  <ul>
+    <li>
+      <a href="#tab_0">Overview</a>
+    </li>
+    <li>
+      <a href="#tab_1">Notes</a>
+    </li>
+    <li>
+      <a href="#tab_2">1/12/19</a>
+    </li>
+    <li>
+      <a href="#tab_3">3/24</a>
+    </li>
+    <li>
+      <a href="#tab_4">3/31</a>
+    </li>
+  </ul>
+  <div id="tab_0">
+    <h4>Pauls fern, in front of mature alder on the Windfall Trail</h4>
+    <ul>
+      <li>First reported: 2018</li>
+      <li>Last update: 2019-03-31</li>
+      <li>lat: 47.556604</li>
+      <li>lon: -122.251273</li>
+      <li>area: 10.00 acres</li>
+      <li>severity: 10</li>
+    </ul>
+  </div>
+  <div id="tab_1">
+    <div style="width:500px">
+  No notes yet
+</div>
+  </div>
+  <div id="tab_2">
+    <div>
+      <img src="https://lh3.googleusercontent.com/a_dW1uKU1crRXMyj6K2j7KJbg-X0768gAg_MWrh3Frw78nswVPDwdsYKzGSr0RvGZ4jmqKmOrct8ycssnSk86tL-UplJUHaREpSwqaasxDZf1fjJ0fsWw0DTC9hbxfLT9xKg99EExZM=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_3">
+    <div>
+      <img src="https://lh3.googleusercontent.com/FaEcuPT3B6o5_iBzFJZ68cFCFcjAcAGP7YHmPaqg2XsXiNpzf2iE8zkbG7PuLkTMd4WVrkbZUb593PGWC4NYx6J3hAeSNQaV0Y5XAm0PdsV4OI7g6yhKSOjtayd7FQLLHlQC0BNBH0Q=w2400" height="600" />
+    </div>
+  </div>
+  <div id="tab_4">
+    <div>
+      <img src="https://lh3.googleusercontent.com/WCtg9wqFAV8Qyy7xnPMvNOAcTGLMOcT-01A-UagBD9sx4rAT4mPUaPoaq6TwGYHuHcw77N_wIRQfZp6db6U-vUEqUc9xkRghFiXozwtFaFxOhKESUjN3RJFQS71fcUwuzvFltI84JNU=w2400" height="600" />
+    </div>
+  </div>
+</div>`
+            
+           infoWindow1 = new google.maps.InfoWindow({
+                content: markup
+               });
+            google.maps.event.addListener(infoWindow1, 'domready', function() {
+              $("#infoWindow1_tabs").tabs();
+              $("a[href='#tab_0']").click()
+              });
+
+           google.maps.event.addListener(marker, 'click', function (){
+              if(currentInfoWindow != null)
+                 currentInfoWindow.close()
+              infoWindow1.setPosition(markerCenter);
+              infoWindow1.open(map);
+              currentInfoWindow = infoWindow1;
+              });
+         } </script><script>
+function createMarkers(){ create_marker_1();}
+</script></head>
+  <body>
+    <div id="map_canvas" class="mapCanvasClass">yo!</div>
+  </body>
+</html>

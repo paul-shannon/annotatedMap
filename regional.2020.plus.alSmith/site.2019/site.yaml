@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 9/28/2017
+lastUpdate: 9/28/2017
+lat: 47.6054617
+lon: -122.1754388
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '"ne, sw" Bellevue'
+title: 'Wilburton: ne, sw'
+type: rectangle

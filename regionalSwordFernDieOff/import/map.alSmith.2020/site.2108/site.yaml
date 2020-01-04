@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 4-30, 2019
+lastUpdate: 4-30, 2019
+lat: 47.6112066
+lon: -122.283491
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '"sw, ne" seattle'
+title: 'madrona woods: sw, ne'
+type: rectangle

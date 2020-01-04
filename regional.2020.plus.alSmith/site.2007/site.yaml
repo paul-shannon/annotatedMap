@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 9-23,2017
+lastUpdate: 9-23,2017
+lat: 47.5385277
+lon: -122.0953984
+notesFile: ''
+radius: 10.0
+severity: 1
+text: 'southeast '
+title: 'cougar, tibbets trail: southeast'
+type: rectangle

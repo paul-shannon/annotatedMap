@@ -24,6 +24,8 @@ class WebPage:
     def __init__(self, directory):
 
         assert(os.path.isdir(directory))
+        if(not os.path.exists("markers")):
+           os.mkdir("markers")
         self.directory = directory
         configFile = os.path.join(directory, "config.yaml")
         assert(os.path.exists(configFile))
@@ -91,19 +93,20 @@ class WebPage:
        markerFunctionFileNames = []
 
        for siteAnnotationDirectory in self.siteAnnotationDirectories:
-          # print("--- creating js function for site descirbed in %s" % siteAnnotationDirectory)
+          # print("--- creating js function for site described in %s" % siteAnnotationDirectory)
           markerNumber += 1
           yamlFile = os.path.join(siteAnnotationDirectory, "site.yaml")
           #pdb.set_trace()
-          print(" yamlFile: %s   exists: %s" % (yamlFile, os.path.exists(yamlFile)))
+          #print(" yamlFile: %s   exists: %s" % (yamlFile, os.path.exists(yamlFile)))
           if(os.path.exists(yamlFile)):
              assert(os.path.exists(yamlFile))
              siteAnnotation = SiteAnnotation(yamlFile)
              marker = Marker(siteAnnotation, markerNumber)
              filename = "marker_%d.js" % markerNumber
-             #print(" writing marker function to %s" % filename)
              markerFunctionFileNames.append(filename)
-             marker.toJavascriptFile(filename)
+             fullPath = "markers/%s" % filename
+             # print(" writing marker function to %s" % fullPath)
+             marker.toJavascriptFile(fullPath)
 
        return(markerFunctionFileNames)
 
@@ -115,7 +118,7 @@ class WebPage:
       createMarkersFunction = "function createMarkers(){"
 
       for jsFilename in markerFunctionFileNames:
-         jsFilenamePath = os.path.join(os.getcwd(), jsFilename)
+         jsFilenamePath = os.path.join(os.getcwd(), "markers", jsFilename)
          #print("wish to load javascript marker function file: %s" % jsFilenamePath)
          assert(os.path.exists(jsFilenamePath))
          jsSource = jsSource + "<script>\n%s</script>" % open(jsFilenamePath).read()
@@ -143,6 +146,8 @@ class WebPage:
               htmlDoc.asis(self.getJavascript())
               htmlDoc.asis(self.getMarkerJavascriptFunctions(markerFunctionFileNames))
           with htmlDoc.tag('body'):
+             #with htmlDoc.tag("div", id="sideBar"):
+             #  htmlDoc.text("sidebar")
              with htmlDoc.tag("div", id="map_canvas", klass="mapCanvasClass"):
                htmlDoc.text("yo!")
 

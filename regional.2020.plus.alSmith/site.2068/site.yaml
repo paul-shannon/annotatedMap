@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 10-19, 2018
+lastUpdate: 10-19, 2018
+lat: 47.6400066
+lon: -122.0444748
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '"sw,ne" sammamish'
+title: 'Evans creek preserve: sw,ne'
+type: rectangle

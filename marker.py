@@ -16,27 +16,62 @@ class Marker:
     #------------------------------------------------------------------------------------------------------------------------
     def toJavascript(self):
 
-        s0 = """ function create_marker_%d() {
-           var markerLat = %f;
-           var markerLon = %f;
-           var markerCenter = new google.maps.LatLng(markerLat, markerLon);
-           marker = new google.maps.Circle({
-                      strokeColor: '#FF0000',
-                      strokeOpacity: 0.8,
-                      strokeWeight: 2,
-                      fillColor: '#FFAAAA',
-                      fillOpacity: 0.35,
-                      center: markerCenter,
-                      radius: %d,
-                      title: '%s',
-                      map: map
-                      });""" % (self.markerNumber,
-                                self.siteAnnotation.getLat(),
-                                self.siteAnnotation.getLon(),
-                                self.siteAnnotation.getRadius(),
-                                self.siteAnnotation.getTitle())
-
+        #print("marker.toJavascript, shape: %s" % self.siteAnnotation.shape)
+        shape = self.siteAnnotation.shape
+        assert(shape in ["circle", "rectangle"]);
+        s0 = "";
+        if(shape=="circle"):
+              s0 = """ function create_marker_%d() {
+                var markerLat = %f;
+                var markerLon = %f;
+                var markerCenter = new google.maps.LatLng(markerLat, markerLon);
+                marker = new google.maps.Circle({
+                           strokeColor: '%s',
+                           strokeOpacity: 0.8,
+                           strokeWeight: 2,
+                           fillColor: '%s',
+                           fillOpacity: 0.35,
+                           center: markerCenter,
+                           radius: %d,
+                           title: '%s',
+                           map: map
+                           });""" % (self.markerNumber,
+                                     self.siteAnnotation.getLat(),
+                                     self.siteAnnotation.getLon(),
+                                     self.siteAnnotation.getBorderColor(),
+                                     self.siteAnnotation.getColor(),
+                                     self.siteAnnotation.getRadius(),
+                                     self.siteAnnotation.getTitle())
+        elif(shape == "rectangle"):
+            delta = self.siteAnnotation.getRadius() / 100000;
+            north = self.siteAnnotation.getLat() + (delta * 0.75);
+            south = self.siteAnnotation.getLat() - (delta * 0.75);
+            east = self.siteAnnotation.getLon() + delta;
+            west = self.siteAnnotation.getLon() - delta;
+            s0 = """ function create_marker_%d() {
+              var markerCenter = new google.maps.LatLng(%f, %f);
+              marker = new google.maps.Rectangle({
+                         strokeColor: '%s',
+                         strokeOpacity: 0.8,
+                         strokeWeight: 2,
+                         fillColor: '%s',
+                         fillOpacity: 0.35,
+                         bounds: {
+                           north: %f,
+                           south: %f,
+                           east: %f,
+                           west: %f},
+                         title: '%s',
+                         map: map
+                         });""" % (self.markerNumber,
+                                   self.siteAnnotation.getLat(),
+                                   self.siteAnnotation.getLon(),
+                                   self.siteAnnotation.getBorderColor(),
+                                   self.siteAnnotation.getColor(),
+                                   north, south, east, west,
+                                   self.siteAnnotation.getTitle())
         html = self.createPopupContent()
+
         s1 = """
             var markup = `%s`
             """  %  html
@@ -116,7 +151,8 @@ class Marker:
             htmlDoc.line('li', 'Last update: %s' % anno.lastUpdate)
             htmlDoc.line('li', 'lat: %f' % anno.lat)
             htmlDoc.line('li', 'lon: %f' % anno.lon)
-            htmlDoc.line('li', 'area: %5.2f acres' % anno.area)
+            if(anno.area > 0):
+               htmlDoc.line('li', 'area: %5.2f acres' % anno.area)
             htmlDoc.line('li', 'severity: %d' % anno.severity)
             if(len(anno.contact) > 0):
                htmlDoc.line('li', 'Current contact: %s' % anno.contact)
@@ -159,6 +195,7 @@ class Marker:
     #------------------------------------------------------------------------------------------------------------------------
     def toJavascriptFile(self, filename):
         text = self.toJavascript()
+        # print("marker.py, toJavascriptFile, writing to %s", filename)
         f = open(filename, "w")
         f.write(text)
         f.close()

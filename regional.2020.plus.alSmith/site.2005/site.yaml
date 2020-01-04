@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: ''
+lastUpdate: ''
+lat: 47.5316045
+lon: -122.1290242
+notesFile: ''
+radius: 10.0
+severity: 1
+text: 'northeast '
+title: 'cougar: northeast'
+type: rectangle

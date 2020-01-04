@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: march 11, 2019
+lastUpdate: march 11, 2019
+lat: 47.5966651
+lon: -122.5240127
+notesFile: ''
+radius: 10.0
+severity: 3
+text: 'at least a couple hundred dead in area '
+title: 'port blakely-fort ward trail : at least a couple hundred dead in area'
+type: rectangle

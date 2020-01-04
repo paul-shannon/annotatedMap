@@ -1,4 +1,11 @@
-default: regen
+# source ~/github/slexil/tests/pshannon-py363/bin/activate
+
+default: region
+
+region:
+	python regen.py regional.2020 tmp.html
+	open tmp.html
+
 
 regen:
 	python regen.py

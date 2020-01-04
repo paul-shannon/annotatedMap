@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 9-28 ,2017
+lastUpdate: 9-28 ,2017
+lat: 47.6339704
+lon: -122.3071726
+notesFile: ''
+radius: 10.0
+severity: 1
+text: '"w, n" seattle'
+title: 'interlaken: w, n'
+type: rectangle

@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 10-20, 2018
+lastUpdate: 10-20, 2018
+lat: 47.5564322
+lon: -122.1055044
+notesFile: ''
+radius: 10.0
+severity: 2
+text: 45 dead to this point. 10 + dead in area bellevue
+title: 'lakemont park: 45 dead to this point. 10 + dead in area'
+type: rectangle

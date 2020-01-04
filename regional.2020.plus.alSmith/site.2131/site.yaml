@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: september 2, 2019
+lastUpdate: september 2, 2019
+lat: 47.5509691
+lon: -122.2258012
+notesFile: ''
+radius: 10.0
+severity: 1
+text: '"nw,s" mercer island'
+title: 'westcrest: nw,s'
+type: rectangle

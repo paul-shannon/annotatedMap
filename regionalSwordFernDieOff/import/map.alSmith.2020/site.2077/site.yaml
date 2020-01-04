@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: 11-01,2018
+lastUpdate: 11-01,2018
+lat: 47.585501
+lon: -122.2886459
+notesFile: ''
+radius: 10.0
+severity: 2
+text: '"50+ dead in park, at least some planted. 16 dead in vicinity." seattle'
+title: 'coleman: 50+ dead in park, at least some planted. 16 dead in vicinity.'
+type: rectangle

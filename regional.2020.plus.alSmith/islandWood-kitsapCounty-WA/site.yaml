@@ -1,0 +1,19 @@
+title:  IslandWood
+lat: 47.604903
+lon: -122.531818
+firstReported: 2018
+lastUpdate:  2019-03-28
+color: orange
+borderColor: orange
+# contact: Tim Billo
+radius:  400
+area: 10
+severity: 3
+notesFile: notes.html
+type: circle
+photoTabs:
+  - title: 2/19 photo
+    url: https://lh3.googleusercontent.com/iVT6p0Sx40pjJj7v1BrmTojQ4is-iecdlvGUr7ovJE3DJROTAypt6t-ph4pykjq3mxs9cS9kTjDVIqTMWXjBDsg9FYg4Qw28ir9aA27ijoOh9wPRqES64u8ubo4Y_Ys_5uOA0MKUlag=w2400
+videoTabs:
+   - title: 2/19 video
+     url: https://www.youtube.com/embed/8zf5GQ1dWPM?rel=0

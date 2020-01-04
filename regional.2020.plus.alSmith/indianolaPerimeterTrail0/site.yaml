@@ -1,0 +1,14 @@
+area: 10
+color: orange
+borderColor: orange
+contact: ''
+firstReported: '2000-01-01'
+lastUpdate: '2000-01-01'
+lat: 47.754489
+lon: -122.519484
+notesFile: notes.html
+radius: 100
+severity: 0
+text: First report, June 2017
+title: Indianola Perimeter Trail (First Report)
+type: circle

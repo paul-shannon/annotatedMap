@@ -1,0 +1,14 @@
+area: 0.0
+color: blue
+borderColor: blue
+contact: Al Smith
+firstReported: '12-21, 2018 '
+lastUpdate: '12-21, 2018 '
+lat: 47.6056387
+lon: -122.1753068
+notesFile: ''
+radius: 10.0
+severity: 1
+text: '"sw, ne" bellevue'
+title: 'wilburton hill: sw, ne'
+type: rectangle

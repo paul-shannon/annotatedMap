@@ -3,16 +3,37 @@
   <head><meta charset="UTF-8"><link href='http://code.google.com/apis/maps/documentation/javascript/examples/default.css' rel='stylesheet' type='text/css'><script src='https://code.jquery.com/jquery-1.12.4.js'></script><script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css' type='text/css'>
 
         \<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDkGwPVB2OLaBmQjLQvkoLv5M1ZQU64V7A' type='text/javascript'></script><style>
+#sideBar{
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 90%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: beige;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  }
+
+
 .mapCanvasClass{
-   margin: 20px;
-   height: 90vh;
-   width: 90vw;
-}
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  margin-left: 190px;
+  margin-top: 0px;
+  height: 90vh;
+  width: 85vw;
+  }
 
 .infoWindowTab {
-    height: 650px;
-    width: 800px;
-}
+  height: 650px;
+  width: 800px;
+  }
 
 </style><script>
 var map;
@@ -28,7 +49,13 @@ function initializeMap()
    var mapCenter = new google.maps.LatLng(initialLat, initialLon);
 
    var mapOptions = {
-       zoom: initialZoom, center: mapCenter, mapTypeId: google.maps.MapTypeId.ROADMAP
+       mapTypeControl: true,
+       zoom: initialZoom,
+       center: mapCenter,
+       //mapTypeId: google.maps.MapTypeId.HYBRID    // TERRAIN SATTELITE ROADMAP
+       //mapTypeId: google.maps.MapTypeId.TERRAIN
+       //mapTypeId: google.maps.MapTypeId.SATTELITE
+       mapTypeId: google.maps.MapTypeId.ROADMAP   // TERRAIN SATTELITE ROADMAP
        }
    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
    google.maps.event.addListener(map, 'tilesloaded', function(){createMarkers()});
@@ -6715,6 +6742,7 @@ earth,” Danilchik says.
 function createMarkers(){ create_marker_1(); create_marker_2(); create_marker_3(); create_marker_4(); create_marker_5(); create_marker_6(); create_marker_7(); create_marker_8(); create_marker_9(); create_marker_10(); create_marker_11(); create_marker_12(); create_marker_13(); create_marker_14(); create_marker_15(); create_marker_16(); create_marker_17(); create_marker_18(); create_marker_19(); create_marker_20(); create_marker_21(); create_marker_22(); create_marker_23(); create_marker_24(); create_marker_25(); create_marker_26(); create_marker_27(); create_marker_28(); create_marker_29(); create_marker_30(); create_marker_31(); create_marker_32(); create_marker_33(); create_marker_34(); create_marker_35(); create_marker_36(); create_marker_37(); create_marker_38(); create_marker_39(); create_marker_40(); create_marker_41(); create_marker_42(); create_marker_43(); create_marker_44(); create_marker_45(); create_marker_46(); create_marker_47(); create_marker_48(); create_marker_49(); create_marker_50(); create_marker_51(); create_marker_52(); create_marker_53(); create_marker_54(); create_marker_55(); create_marker_56(); create_marker_57(); create_marker_58(); create_marker_59(); create_marker_60(); create_marker_61(); create_marker_62(); create_marker_63(); create_marker_64(); create_marker_65(); create_marker_66(); create_marker_67(); create_marker_68(); create_marker_69(); create_marker_70(); create_marker_71(); create_marker_72(); create_marker_73(); create_marker_74(); create_marker_75(); create_marker_76(); create_marker_77(); create_marker_78(); create_marker_79(); create_marker_80(); create_marker_81(); create_marker_82(); create_marker_83(); create_marker_84(); create_marker_85(); create_marker_86(); create_marker_87(); create_marker_88(); create_marker_89(); create_marker_90(); create_marker_91(); create_marker_92(); create_marker_93(); create_marker_94(); create_marker_95(); create_marker_96(); create_marker_97(); create_marker_98();}
 </script></head>
   <body>
+    <div id="sideBar">sidebar</div>
     <div id="map_canvas" class="mapCanvasClass">yo!</div>
   </body>
 </html>
